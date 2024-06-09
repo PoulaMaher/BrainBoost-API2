@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Courses\\2f63c326-0b4f-40fa-9257-e1102b09d01d_89b69d44-16a2-473e-9d32-5bcb5674162c.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\2f63c326-0b4f-40fa-9257-e1102b09d01d_89b69d44-16a2-473e-9d32-5bcb5674162c.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BrainBoost-API.props",
+      "PackagePath": "build\\BrainBoost-API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BrainBoost-API.props",
+      "PackagePath": "buildMultiTargeting\\BrainBoost-API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BrainBoost-API.props",
+      "PackagePath": "buildTransitive\\BrainBoost-API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

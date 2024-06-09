@@ -1,0 +1,1040 @@
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.Development.json
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.json
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.exe
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.deps.json
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.runtimeconfig.json
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.pdb
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Core.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Identity.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\EntityFrameworkCore.GenericRepository.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Humanizer.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Mono.TextTemplating.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.CodeDom.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Convention.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Hosting.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Runtime.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Drawing.Common.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Memory.Data.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Runtime.Caching.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Permissions.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Windows.Extensions.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.AssemblyReference.cache
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.GeneratedMSBuildEditorConfig.editorconfig
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfoInputs.cache
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfo.cs
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.CoreCompileInputs.cache
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cs
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cache
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.sourcelink.json
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.build.json
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.development.json
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.build.BrainBoost-API.props
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BrainBoost-API.props
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BrainBoost-API.props
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.pack.json
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\scopedcss\bundle\BrainBoost-API.styles.css
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoo.92CB53B7.Up2Date
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\refint\BrainBoost-API.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.pdb
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.genruntimeconfig.cache
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\ref\BrainBoost-API.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.Development.json
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.json
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.exe
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.deps.json
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.runtimeconfig.json
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.pdb
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Core.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Identity.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\EntityFrameworkCore.GenericRepository.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Humanizer.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.CodeDom.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Memory.Data.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.AssemblyReference.cache
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfoInputs.cache
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfo.cs
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.CoreCompileInputs.cache
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cs
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cache
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.sourcelink.json
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.build.json
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.development.json
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.build.BrainBoost-API.props
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BrainBoost-API.props
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BrainBoost-API.props
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.pack.json
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\scopedcss\bundle\BrainBoost-API.styles.css
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.CopyComplete
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\refint\BrainBoost-API.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.pdb
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.genruntimeconfig.cache
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\ref\BrainBoost-API.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.json
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.exe
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.deps.json
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.runtimeconfig.json
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.pdb
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\EntityFrameworkCore.GenericRepository.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Humanizer.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.AssemblyReference.cache
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfoInputs.cache
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfo.cs
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.CoreCompileInputs.cache
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.sourcelink.json
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.build.BrainBoost-API.props
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BrainBoost-API.props
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BrainBoost-API.props
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\scopedcss\bundle\BrainBoost-API.styles.css
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoo.92CB53B7.Up2Date
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\refint\BrainBoost-API.dll
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.pdb
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.genruntimeconfig.cache
+C:\Users\BlueLap2\Source\Repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\ref\BrainBoost-API.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.Development.json
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.json
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.exe
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.deps.json
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.runtimeconfig.json
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.pdb
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Core.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Identity.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\EntityFrameworkCore.GenericRepository.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Humanizer.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.CodeDom.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Memory.Data.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.AssemblyReference.cache
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfoInputs.cache
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfo.cs
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.CoreCompileInputs.cache
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cs
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cache
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.sourcelink.json
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.build.json
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.development.json
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.build.BrainBoost-API.props
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BrainBoost-API.props
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BrainBoost-API.props
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\scopedcss\bundle\BrainBoost-API.styles.css
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoo.92CB53B7.Up2Date
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\refint\BrainBoost-API.dll
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.pdb
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.genruntimeconfig.cache
+D:\source\repos\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\ref\BrainBoost-API.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\AutoMapper.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\RestSharp.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\RestSharp.Serializers.NewtonsoftJson.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\AutoMapper.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Newtonsoft.Json.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\RestSharp.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\RestSharp.Serializers.NewtonsoftJson.dll
+F:\BrainBoost\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.staticwebassets.runtime.json
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.staticwebassets.runtime.json
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.Development.json
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.json
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.staticwebassets.runtime.json
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.exe
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.deps.json
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.runtimeconfig.json
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.pdb
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\AutoMapper.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Core.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Identity.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\EntityFrameworkCore.GenericRepository.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Humanizer.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Mono.TextTemplating.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Newtonsoft.Json.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\RestSharp.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\RestSharp.Serializers.NewtonsoftJson.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.CodeDom.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Convention.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Hosting.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Runtime.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Drawing.Common.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Memory.Data.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Runtime.Caching.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Permissions.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Windows.Extensions.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.AssemblyReference.cache
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.GeneratedMSBuildEditorConfig.editorconfig
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfoInputs.cache
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfo.cs
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.CoreCompileInputs.cache
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cs
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cache
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.sourcelink.json
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.build.json
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.development.json
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.build.BrainBoost-API.props
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BrainBoost-API.props
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BrainBoost-API.props
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.pack.json
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\scopedcss\bundle\BrainBoost-API.styles.css
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.CopyComplete
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\refint\BrainBoost-API.dll
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.pdb
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.genruntimeconfig.cache
+G:\graduation project\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\ref\BrainBoost-API.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.Development.json
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.json
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.staticwebassets.runtime.json
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.exe
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.deps.json
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.runtimeconfig.json
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.pdb
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\AutoMapper.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Core.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Identity.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\EntityFrameworkCore.GenericRepository.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Humanizer.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Mono.TextTemplating.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Newtonsoft.Json.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\RestSharp.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\RestSharp.Serializers.NewtonsoftJson.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.CodeDom.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Convention.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Hosting.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Runtime.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Drawing.Common.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Memory.Data.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Runtime.Caching.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Permissions.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Windows.Extensions.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.AssemblyReference.cache
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.GeneratedMSBuildEditorConfig.editorconfig
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfoInputs.cache
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfo.cs
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.CoreCompileInputs.cache
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cs
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cache
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.sourcelink.json
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.build.json
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.development.json
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.build.BrainBoost-API.props
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BrainBoost-API.props
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BrainBoost-API.props
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.pack.json
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\scopedcss\bundle\BrainBoost-API.styles.css
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoo.92CB53B7.Up2Date
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.dll
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\refint\BrainBoost-API.dll
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.pdb
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.genruntimeconfig.cache
+F:\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\ref\BrainBoost-API.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.Development.json
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\appsettings.json
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.staticwebassets.runtime.json
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.exe
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.deps.json
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.runtimeconfig.json
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\BrainBoost-API.pdb
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\AutoMapper.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Core.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Azure.Identity.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\EntityFrameworkCore.GenericRepository.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Humanizer.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Mono.TextTemplating.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Newtonsoft.Json.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\RestSharp.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\RestSharp.Serializers.NewtonsoftJson.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.CodeDom.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Convention.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Hosting.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.Runtime.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Drawing.Common.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Memory.Data.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Runtime.Caching.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Security.Permissions.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\System.Windows.Extensions.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.AssemblyReference.cache
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.GeneratedMSBuildEditorConfig.editorconfig
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfoInputs.cache
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.AssemblyInfo.cs
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.csproj.CoreCompileInputs.cache
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cs
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.MvcApplicationPartsAssemblyInfo.cache
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.sourcelink.json
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.build.json
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.development.json
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.build.BrainBoost-API.props
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BrainBoost-API.props
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BrainBoost-API.props
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\staticwebassets.pack.json
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\scopedcss\bundle\BrainBoost-API.styles.css
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoo.92CB53B7.Up2Date
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\refint\BrainBoost-API.dll
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.pdb
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.genruntimeconfig.cache
+F:\BBTest\BrainBoost-API\BrainBoost-API\obj\Debug\net8.0\ref\BrainBoost-API.dll
