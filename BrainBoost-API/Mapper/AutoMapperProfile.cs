@@ -7,7 +7,7 @@ using BrainBoost_API.Models;
 using BrainBoost_API.DTOs.Quiz;
 using BrainBoost_API.DTOs.Question;
 using BrainBoost_API.DTOs.Answer;
-using BrainBoost_API.DTOs;
+using BrainBoost_API.DTOs.Teacher;
 
 namespace BrainBoost_API.Mapper
 {
@@ -16,7 +16,7 @@ namespace BrainBoost_API.Mapper
         public AutoMapperProfile()
         {
             CreateMap<SubscriptionDto, subscription>().ReverseMap();
-            CreateMap<CourseDetails, Course>().ReverseMap();
+            CreateMap<CourseDetailsDto, Course>().ReverseMap();
             CreateMap<ReviewDTO, Review>().ReverseMap();
             CreateMap<WhatToLearnDTO, WhatToLearn>().ReverseMap();
             CreateMap<EnrollmentDto, Enrollment>().ReverseMap();
@@ -26,6 +26,7 @@ namespace BrainBoost_API.Mapper
             CreateMap<CertificateDTO, Course>().ReverseMap();
             CreateMap<Course, CourseCardDataDto>();
             CreateMap<Teacher, CourseCardTeacherDataDto>();
+            CreateMap<CourseDetailsTeacherDataDto, Teacher>().ReverseMap();
 
         }
     }

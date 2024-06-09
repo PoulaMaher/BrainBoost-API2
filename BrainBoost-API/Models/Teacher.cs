@@ -10,6 +10,9 @@ namespace BrainBoost_API.Models
         public string? Fname { get; set; }
         public string? Lname { get; set; }
         public string? PictureUrl { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string? Address { get; set; }
+        public string? Career { get; set; }
         [ForeignKey("AppUser")]
         public string? UserId { get; set; }
         public bool IsDeleted { get; set; } = false;

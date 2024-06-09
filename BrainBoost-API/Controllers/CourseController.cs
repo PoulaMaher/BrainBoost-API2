@@ -43,12 +43,18 @@ namespace BrainBoost_API.Controllers
             {
                 Course Course = UnitOfWork.CourseRepository.Get(c=>c.Id==id, "Teacher,WhatToLearn");
                 var review=UnitOfWork.ReviewRepository.GetList(r=>r.CourseId==id).ToList();
-                if(review.Count()>4)
+                var numOfRates = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id).ToList().Count();
+                var numOfVideos = UnitOfWork.VideoRepository.GetList(r => r.CrsId == id).ToList().Count();
+
+                if (review.Count()>4)
                 {
                      review = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id).Take(4).ToList();
                 }
                
-                CourseDetails crsDetails = UnitOfWork.CourseRepository.getCrsDetails(Course, review);
+                CourseDetailsDto crsDetails = UnitOfWork.CourseRepository.getCrsDetails(Course, review);
+                crsDetails.NumOfRates = numOfRates;
+                crsDetails.NumOfVideos= numOfVideos;
+                crsDetails.TeacherDataDto.Email = UnitOfWork.TeacherRepository.Get(t => t.Id == Course.TeacherId, "AppUser").AppUser.Email;
 
 
                 return Ok(crsDetails);

@@ -1,6 +1,7 @@
 using AutoMapper;
 using BrainBoost_API.DTOs.Course;
 using BrainBoost_API.DTOs.Review;
+using BrainBoost_API.DTOs.Teacher;
 using BrainBoost_API.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,20 +18,21 @@ namespace BrainBoost_API.Repositories.Inplementation
             this.mapper = mapper;
         }
 
-        public CourseDetails getCrsDetails(Course crs,List<Review> review)
+        public CourseDetailsDto getCrsDetails(Course crs,List<Review> review)
         {
             if(crs!=null)
             {
-                CourseDetails crsDetails = mapper.Map<CourseDetails>(crs);
+                CourseDetailsDto crsDetails = mapper.Map<CourseDetailsDto>(crs);
                
                 crsDetails.Review= mapper.Map<IEnumerable<ReviewDTO>>(review).ToList();
                 crsDetails.WhatToLearn= mapper.Map<IEnumerable<WhatToLearnDTO>>(crs.WhatToLearn).ToList();
-                crsDetails.Fname = crs.Teacher.Fname;
-                crsDetails.Lname = crs.Teacher.Lname;
-                
+                crsDetails.TeacherDataDto = mapper.Map<CourseDetailsTeacherDataDto>(crs.Teacher);
+               
+
+
                 return crsDetails;
             }         
-            return new CourseDetails();
+            return new CourseDetailsDto();
         } public IEnumerable<Course> GetFilteredCourses(CourseFilterationDto filter , string? includeProps = null)
         {
             IQueryable<Course> courses = GetAll(includeProps).AsQueryable();

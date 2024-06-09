@@ -46,7 +46,14 @@ namespace BrainBoost_API.Repositories.Inplementation
 
         public void save()
         {
-            Context.SaveChanges();
+            try
+            {
+                Context.SaveChanges();
+            }
+           catch (Exception ex)
+            {
+
+            }
         }
     }
 }
