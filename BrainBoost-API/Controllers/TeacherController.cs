@@ -1,6 +1,5 @@
 ﻿using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BrainBoost_API.Controllers
@@ -29,5 +28,29 @@ namespace BrainBoost_API.Controllers
             return Ok(Courses);
         }
 
+        [HttpGet("GetTeachers")]
+        public async Task<IActionResult> GetTeachers()
+        {
+            if (ModelState.IsValid)
+            {
+                List<Teacher> teachers = unitOfWork.TeacherRepository.GetAll().ToList();
+                return Ok(teachers);
+            }
+            return BadRequest(ModelState);
+        }
+
+        [HttpDelete("DeleteTeacher")]
+        public IActionResult DeleteTeacher(int teacherId)
+        {
+            if (ModelState.IsValid)
+            {
+                var teacher = unitOfWork.TeacherRepository.Get(c => c.Id == teacherId);
+                teacher.IsDeleted = true;
+                unitOfWork.TeacherRepository.remove(teacher);
+                unitOfWork.save();
+                return Ok("Successfully Deleted");
+            }
+            return BadRequest(ModelState);
+        }
     }
 }
