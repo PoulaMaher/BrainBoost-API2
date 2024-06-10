@@ -113,7 +113,7 @@ namespace BrainBoost_API.Controllers
         [HttpGet("GetFilteredCourses")]
         public ActionResult<List<CourseCardDataDto>> GetFilteredCourses([FromQuery] CourseFilterationDto filter)
         { 
-            List<Course> courses = UnitOfWork.CourseRepository.GetFilteredCourses(filter ,null).ToList();
+            List<Course> courses = UnitOfWork.CourseRepository.GetFilteredCourses(filter ,"Category,Teacher").ToList();
             List<CourseCardDataDto> filteredCourseCards = new List<CourseCardDataDto>();
             foreach (Course course in courses)
             {
