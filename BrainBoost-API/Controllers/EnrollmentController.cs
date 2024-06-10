@@ -100,6 +100,7 @@ namespace BrainBoost_API.Controllers
                     enrollment.IsActive = true;
                     unitOfWork.StudentEnrolledCoursesRepository.add(stdCourse);
                     unitOfWork.save();
+                    HandleVideoState(stdCourse.StudentId , stdCourse.CourseId,stdCourse.Id);
                     break;
                 case "Declined":
                     enrollment.SubscribtionsStatus = "Declined";
@@ -200,6 +201,24 @@ namespace BrainBoost_API.Controllers
             return token.id_token;
 
         }
+
+        [NonAction]
+
+        public async Task HandleVideoState(int courseId , int studentId , int StudentEnrolledCourseId)
+        {
+            List<Video> videos = unitOfWork.VideoRepository.GetList(c => c.Course.Id == courseId ).ToList();
+            foreach(Video video in videos)
+            {
+                VideoState videoState = new VideoState()
+                {
+                    VideoId = video.Id,
+                    StudentEnrolledCourseId = StudentEnrolledCourseId,
+                    State = false
+                };
+                unitOfWork.VideoStateRepository.add(videoState);
+            }
+            unitOfWork.save();
+        } 
 
 
     }

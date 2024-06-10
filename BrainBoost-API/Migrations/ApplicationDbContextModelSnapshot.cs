@@ -658,6 +658,9 @@ namespace BrainBoost_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
                     b.Property<int>("StudentEnrolledCourseId")
                         .HasColumnType("int");
 

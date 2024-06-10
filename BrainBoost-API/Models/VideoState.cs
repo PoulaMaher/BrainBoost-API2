@@ -10,7 +10,8 @@ namespace BrainBoost_API.Models
         [ForeignKey("StudentEnrolledCourses")]
         public int StudentEnrolledCourseId { get; set; }
         public Video Video { get; set; }
-       
+        public bool State { get; set; } = false;
+
         public StudentEnrolledCourses StudentEnrolledCourses { get; set; }
     }
 }
