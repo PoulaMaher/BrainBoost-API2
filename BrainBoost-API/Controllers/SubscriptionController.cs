@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BrainBoost_API.DTOs.Paylink;
 using BrainBoost_API.DTOs.Subscription;
 using BrainBoost_API.Mapper;
 using BrainBoost_API.Models;

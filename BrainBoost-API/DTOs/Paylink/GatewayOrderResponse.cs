@@ -1,4 +1,4 @@
-﻿namespace HelperPlan.DTO.Paylink
+﻿namespace BrainBoost_API.DTOs.Paylink
 {
     public class GatewayOrderResponse
     {
