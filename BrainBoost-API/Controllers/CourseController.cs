@@ -109,8 +109,8 @@ namespace BrainBoost_API.Controllers
 
         [HttpGet("GetFilteredCourses")]
         public ActionResult<List<CourseCardDataDto>> GetFilteredCourses([FromQuery] CourseFilterationDto filter)
-        { 
-            List<Course> courses = UnitOfWork.CourseRepository.GetFilteredCourses(filter ,"Category,Teacher").ToList();
+        {
+            List<Course> courses = UnitOfWork.CourseRepository.GetFilteredCourses(filter, "Category,Teacher").ToList();
             List<CourseCardDataDto> filteredCourseCards = new List<CourseCardDataDto>();
             foreach (Course course in courses)
             {
@@ -160,6 +160,19 @@ namespace BrainBoost_API.Controllers
                 return Ok("Successfully Deleted");
             }
             return BadRequest(ModelState);
+        }
+
+        [HttpGet("GetNotApprovedCourses")]
+        public ActionResult<List<NotApprovedCoursesDTO>> GetNotApprovedCourses()
+        {
+            List<Course> courses = UnitOfWork.CourseRepository.GetNotApprovedCourses().ToList();
+            List<NotApprovedCoursesDTO> courseNotApproved = new List<NotApprovedCoursesDTO>();
+            foreach (Course course in courses)
+            {
+                NotApprovedCoursesDTO currentCourse = mapper.Map<NotApprovedCoursesDTO>(course);
+                courseNotApproved.Add(currentCourse);
+            }
+            return Ok(courseNotApproved);
         }
 
     }
