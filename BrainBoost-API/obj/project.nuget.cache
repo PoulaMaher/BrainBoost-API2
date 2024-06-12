@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NDTECrearrXG/ttso9HArXBkmF8xggD5dVes266QhdwqDzynDT8PTrmuPBp8b9QK9i+2z9pxRds8z0RKw1qbvA==",
+  "dgSpecHash": "5DkrlWfl9PyET08YdrB/kcaQJvUVTz7HkhB4WYamA2f1RbRRE4EbaskCel6LbbCP3e9p5HdjDJCo5OyquZleVw==",
   "success": true,
-  "projectFilePath": "G:\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
+  "projectFilePath": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\org\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\org\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

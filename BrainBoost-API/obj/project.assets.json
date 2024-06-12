@@ -8978,11 +8978,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
+      "projectUniqueName": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
       "projectName": "BrainBoost-API",
-      "projectPath": "G:\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
+      "projectPath": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
       "packagesPath": "C:\\Users\\org\\.nuget\\packages\\",
-      "outputPath": "G:\\BrainBoost-API2\\BrainBoost-API\\obj\\",
+      "outputPath": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

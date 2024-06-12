@@ -13,6 +13,7 @@ namespace BrainBoost_API.Controllers
     {
         public IUnitOfWork UnitOfWork { get; }
         public IMapper Mapper { get; }
+
         public StudentController(IUnitOfWork unitOfWork,IMapper mapper)
         {
             UnitOfWork = unitOfWork;

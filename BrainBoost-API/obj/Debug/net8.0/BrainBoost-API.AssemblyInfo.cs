@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrainBoost-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18f6d57012961dcd5419019998892617e22643be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c12c13e4d8e0b8e1c55a2e15e5f4a29203ae522")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrainBoost-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrainBoost-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
