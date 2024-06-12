@@ -86,7 +86,6 @@ namespace BrainBoost_API.Repositories.Inplementation
             return new CertificateDTO();
 
         }
-
         public IEnumerable<Course> GetNotApprovedCourses(string? includeProps = null)
         {
             IQueryable<Course> courses = GetAll(includeProps).AsQueryable();
