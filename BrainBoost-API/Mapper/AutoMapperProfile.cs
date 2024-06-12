@@ -5,6 +5,7 @@ using BrainBoost_API.DTOs.Enrollment;
 using BrainBoost_API.DTOs.Question;
 using BrainBoost_API.DTOs.Quiz;
 using BrainBoost_API.DTOs.Review;
+using BrainBoost_API.DTOs.Student;
 using BrainBoost_API.DTOs.Subscription;
 using BrainBoost_API.DTOs.Teacher;
 using BrainBoost_API.Models;
@@ -29,6 +30,8 @@ namespace BrainBoost_API.Mapper
             CreateMap<Teacher, CourseCardTeacherDataDto>();
             CreateMap<Teacher, TeacherDataDTO>().ReverseMap();
             CreateMap<CourseDetailsTeacherDataDto, Teacher>().ReverseMap();
+            CreateMap<StudentDTO, Student>().ReverseMap();
+
 
         }
     }
