@@ -94,5 +94,11 @@ namespace BrainBoost_API.Repositories.Inplementation
             filteredCourses = courses.ToList();
             return filteredCourses;
         }
+
+        public int GetTotalNumOfCourse()
+        {
+            int numofCourse = Context.Courses.Count<Course>();
+            return numofCourse;
+        }
     }
 }

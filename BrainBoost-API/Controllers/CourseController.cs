@@ -175,5 +175,12 @@ namespace BrainBoost_API.Controllers
             return Ok(courseNotApproved);
         }
 
+        [HttpGet("GetTotalNumOfCourse")]
+        public IActionResult GetTotalNumOfCourse()
+        {
+            int numofcourse = UnitOfWork.CourseRepository.GetTotalNumOfCourse();
+            return Ok(numofcourse);
+        }
+
     }
 }
