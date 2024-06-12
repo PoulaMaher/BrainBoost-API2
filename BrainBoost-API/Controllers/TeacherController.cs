@@ -70,7 +70,7 @@ namespace BrainBoost_API.Controllers
                 Teacher teacher = mapper.Map<Teacher>(updatedTeacher);
                 unitOfWork.TeacherRepository.update(teacher);
                 unitOfWork.save();
-                return Ok("Successfully Deleted");
+                return Ok("Successfully Updated");
             }
             return BadRequest(ModelState);
         }
