@@ -10,5 +10,11 @@ namespace BrainBoost_API.Repositories.Inplementation
         {
             this.Context = context;
         }
+
+        public int GetTotalNumOfStudent()
+        {
+            int numofstudent = Context.Students.Count<Student>();
+            return numofstudent;
+        }
     }
 }
