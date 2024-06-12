@@ -27,6 +27,7 @@ namespace BrainBoost_API.Mapper
             CreateMap<Course, CourseCardDataDto>();
             CreateMap<Course, NotApprovedCoursesDTO>().ReverseMap();
             CreateMap<Teacher, CourseCardTeacherDataDto>();
+            CreateMap<Teacher, TeacherDataDTO>().ReverseMap();
             CreateMap<CourseDetailsTeacherDataDto, Teacher>().ReverseMap();
 
         }
