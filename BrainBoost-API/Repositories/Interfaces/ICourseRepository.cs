@@ -10,5 +10,6 @@ namespace BrainBoost_API.Repositories.Inplementation
         IEnumerable<Course> GetFilteredCourses(CourseFilterationDto filter, string? includeProps);
         List<Course> SearchCourses(string searchString, string? includeProps);
         IEnumerable<Course> GetNotApprovedCourses(string? includeProps = null);
+        int GetTotalNumOfCourse();
     }
 }
