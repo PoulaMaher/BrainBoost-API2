@@ -182,5 +182,12 @@ namespace BrainBoost_API.Controllers
             return Ok(numofcourse);
         }
 
+        [HttpGet("GetThreeCoursesForCategory")]
+        public IActionResult GetThreeCoursesForCategory(int categoryId)
+        {
+            List<Course> newcourses = UnitOfWork.CourseRepository.GetThreeCoursesForCategory(categoryId);
+            return Ok(newcourses);
+        }
+
     }
 }
