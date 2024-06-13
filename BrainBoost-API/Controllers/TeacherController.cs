@@ -74,5 +74,27 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
+        [HttpGet("GetTopTeachers")]
+        public async Task<IActionResult> GetTopTeachers()
+        {
+            if (ModelState.IsValid)
+            {
+                List<Teacher> teachers = unitOfWork.TeacherRepository.GetTopTeachers();
+                List<TeacherDataDTO> teachersData = new List<TeacherDataDTO>();
+                foreach (Teacher teacher in teachers)
+                {
+                    TeacherDataDTO teacherData = mapper.Map<TeacherDataDTO>(teacher);
+                    teachersData.Add(teacherData);
+                }
+                return Ok(teachersData);
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpGet("GetTotalNumOfTeachers")]
+        public IActionResult GetTotalNumOfTeachers()
+        {
+            int numOfTeachers = unitOfWork.TeacherRepository.GetTotalNumOfTeachers();
+            return Ok(numOfTeachers);
+        }
     }
 }
