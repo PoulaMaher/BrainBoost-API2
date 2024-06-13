@@ -100,5 +100,15 @@ namespace BrainBoost_API.Repositories.Inplementation
             int numofCourse = Context.Courses.Count<Course>();
             return numofCourse;
         }
+
+        public List<Course> GetThreeCoursesForCategory(int categoryid)
+        {
+            List<Course> lastThreeCourses = Context.Courses
+                                            .Where(c => c.CategoryId == categoryid)
+                                            .OrderByDescending(c => c.LastUpdate)
+                                            .Take(3)
+                                            .ToList();
+            return lastThreeCourses;
+        }
     }
 }
