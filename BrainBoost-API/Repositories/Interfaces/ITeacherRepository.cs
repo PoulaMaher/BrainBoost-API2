@@ -7,5 +7,7 @@ namespace BrainBoost_API.Repositories.Interfaces
     {
         Teacher GetTeacherById(int id);
         List<Course> GetCoursesForTeacher(int TeacherId);
+        List<Teacher> GetTopTeachers();
+        int GetTotalNumOfTeachers();
     }
 }
