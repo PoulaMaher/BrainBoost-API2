@@ -104,6 +104,7 @@ namespace BrainBoost_API.Controllers
                     unitOfWork.StudentEnrolledCoursesRepository.add(stdCourse);
                     unitOfWork.save();
                     HandleVideoState(stdCourse.StudentId , stdCourse.CourseId,stdCourse.Id);
+                    HandleEarnings(enrollment.Id);
                     break;
                 case "Declined":
                     enrollment.SubscribtionsStatus = "Declined";
@@ -244,6 +245,32 @@ namespace BrainBoost_API.Controllers
                 
             }
             return BadRequest(ModelState);
+        }
+
+        [NonAction]
+
+        public async Task HandleEarnings(int enrollmentId)
+        {
+            
+            Enrollment enrollment =  unitOfWork.EnrollmentRepository.Get(E => E.Id == enrollmentId);
+
+            Course currentCourse =  unitOfWork.CourseRepository.Get(C => C.Id == enrollment.CourseId);
+            decimal amount = currentCourse.Price;
+            decimal instructorEarnings = 0.8m * amount;
+            decimal websiteEarnings = 0.2m * amount;
+            Earnings earnings = new Earnings()
+            {
+                Amount = currentCourse.Price,
+                enrollment = enrollment,
+                enrollmentId = enrollment.Id,
+                InstructorEarnings = instructorEarnings,
+                paymentDate = DateTime.Now,
+                IsDeleted = false,
+                WebsiteEarnings = websiteEarnings
+            };
+            unitOfWork.EarningsRepository.add(earnings);
+            unitOfWork.save();
+                  
         }
 
 
