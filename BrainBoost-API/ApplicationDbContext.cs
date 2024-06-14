@@ -24,6 +24,7 @@
             public DbSet<Question> Questions { get; set; }
             public DbSet<WhatToLearn> WhatToLearn { get; set; }
             public DbSet<VideoState> videoStates { get; set; }
+            public DbSet<Earnings> Earnings { get; set; }
 
         public DbSet<StudentEnrolledCourses> StudentEnrolledCourses { get; set; }
             public DbSet<StudentSavedCourses> StudentSavedCourses { get; set; }
@@ -74,6 +75,7 @@
                 builder.Entity<Teacher>().HasQueryFilter(e => !e.IsDeleted);
                 builder.Entity<Video>().HasQueryFilter(e => !e.IsDeleted);
                 builder.Entity<WhatToLearn>().HasQueryFilter(e => !e.IsDeleted);
+                builder.Entity<Earnings>().HasQueryFilter(e => !e.IsDeleted);
 
         }
     }
