@@ -270,7 +270,7 @@ namespace BrainBoost_API.Migrations
                     b.Property<decimal>("WebsiteEarnings")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("enrollmentId")
+                    b.Property<int?>("enrollmentId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("paymentDate")
@@ -921,9 +921,7 @@ namespace BrainBoost_API.Migrations
                 {
                     b.HasOne("BrainBoost_API.Models.Enrollment", "enrollment")
                         .WithMany()
-                        .HasForeignKey("enrollmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("enrollmentId");
 
                     b.Navigation("enrollment");
                 });

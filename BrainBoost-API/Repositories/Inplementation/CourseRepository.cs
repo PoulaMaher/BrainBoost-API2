@@ -101,10 +101,9 @@ namespace BrainBoost_API.Repositories.Inplementation
             return numofCourse;
         }
 
-        public List<Course> GetThreeCoursesForCategory(int categoryid)
+        public List<Course> GetLastThreeCourses()
         {
             List<Course> lastThreeCourses = Context.Courses
-                                            .Where(c => c.CategoryId == categoryid)
                                             .OrderByDescending(c => c.LastUpdate)
                                             .Take(3)
                                             .ToList();
