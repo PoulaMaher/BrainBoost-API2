@@ -174,6 +174,23 @@ namespace BrainBoost_API.Controllers
             }
             return Ok(courseNotApproved);
         }
+        [HttpPut("ApproveCourse")]
+        public IActionResult ApproveCourse(int courseId)
+        {
+            if (ModelState.IsValid)
+            {
+                var course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
+                if (course == null)
+                {
+                    return NotFound("Course not found");
+                }
+                course.IsApproved = true;
+                UnitOfWork.CourseRepository.update(course);
+                UnitOfWork.save();
+                return Ok("Successfully Approved");
+            }
+            return BadRequest(ModelState);
+        }
 
         [HttpGet("GetTotalNumOfCourse")]
         public IActionResult GetTotalNumOfCourse()
