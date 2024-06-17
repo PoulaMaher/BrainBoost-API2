@@ -38,6 +38,7 @@ namespace BrainBoost_API.Controllers
             if (ModelState.IsValid)
             {
                 Course Course = UnitOfWork.CourseRepository.Get(c => c.Id == id, "Teacher,WhatToLearn");
+                
                 var review = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id).ToList();
                 var numOfRates = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id).ToList().Count();
                 var numOfVideos = UnitOfWork.VideoRepository.GetList(r => r.CrsId == id).ToList().Count();
@@ -83,7 +84,7 @@ namespace BrainBoost_API.Controllers
             return BadRequest(ModelState);
         }
         [HttpPost("AddCourse")]
-        public async Task<IActionResult> AddCourse(Course NewCourse)
+        public IActionResult AddCourse(Course NewCourse)
         {
             if (ModelState.IsValid)
             {
@@ -110,7 +111,7 @@ namespace BrainBoost_API.Controllers
         [HttpGet("GetFilteredCourses")]
         public ActionResult<List<CourseCardDataDto>> GetFilteredCourses([FromQuery] CourseFilterationDto filter)
         {
-            List<Course> courses = UnitOfWork.CourseRepository.GetFilteredCourses(filter, null).ToList();
+            List<Course> courses = UnitOfWork.CourseRepository.GetFilteredCourses(filter, "Category,Teacher").ToList();
             List<CourseCardDataDto> filteredCourseCards = new List<CourseCardDataDto>();
             foreach (Course course in courses)
             {
@@ -135,7 +136,7 @@ namespace BrainBoost_API.Controllers
 
         [HttpGet("GetCertificate/{id:int}")]
 
-        public async Task<IActionResult> GetCertificate(int id)
+        public IActionResult GetCertificate(int id)
         {
             if (ModelState.IsValid)
             {
@@ -145,6 +146,44 @@ namespace BrainBoost_API.Controllers
                 var course = UnitOfWork.CourseRepository.Get(c => c.Id == id);
                 var cert = UnitOfWork.CourseRepository.getCrsCertificate(course, name);
                 return Ok(cert);
+            }
+            return BadRequest(ModelState);
+        }
+
+        [HttpGet("GetTakingCourse/{id:int}")]
+
+        public  IActionResult GetTakingCourse(int id)
+        {
+            if (ModelState.IsValid)
+            {
+
+                string UserID = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+                Student std = UnitOfWork.StudentRepository.Get(c => c.UserId == UserID);
+                //info of taken course
+                Course TakenCourse=UnitOfWork.CourseRepository.Get(c=>c.Id== id);
+                //info of related courses
+                List<Course> CoursesMayYouTake = UnitOfWork.CourseRepository.GetList(c => c.CategoryId == TakenCourse.CategoryId && c.TeacherId == TakenCourse.TeacherId).ToList();
+                //info of state
+                var enrolledCourse = UnitOfWork.StudentEnrolledCoursesRepository.Get(c => c.StudentId == std.Id && c.CourseId == id);
+                //mapping
+               CourseTakingDTO Crs= UnitOfWork.CourseRepository.GetCourseTaking(TakenCourse,CoursesMayYouTake,enrolledCourse);
+               
+                return Ok(Crs);
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpGet("GetState/{id:int}")]
+        public IActionResult GetState(int id)
+        {
+            if (ModelState.IsValid)
+            {
+                string UserID = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+                Student std = UnitOfWork.StudentRepository.Get(c => c.UserId == UserID);
+
+                var enrolledCourse = UnitOfWork.StudentEnrolledCoursesRepository.Get(c => c.StudentId == std.Id && c.CourseId == id);
+                var state = UnitOfWork.CourseRepository.getCrsStates(enrolledCourse);
+
+                return Ok(state);
             }
             return BadRequest(ModelState);
         }
@@ -160,6 +199,33 @@ namespace BrainBoost_API.Controllers
                 return Ok("Successfully Deleted");
             }
             return BadRequest(ModelState);
+        }
+
+        [HttpGet("GetNotApprovedCourses")]
+        public ActionResult<List<NotApprovedCoursesDTO>> GetNotApprovedCourses()
+        {
+            List<Course> courses = UnitOfWork.CourseRepository.GetNotApprovedCourses().ToList();
+            List<NotApprovedCoursesDTO> courseNotApproved = new List<NotApprovedCoursesDTO>();
+            foreach (Course course in courses)
+            {
+                NotApprovedCoursesDTO currentCourse = mapper.Map<NotApprovedCoursesDTO>(course);
+                courseNotApproved.Add(currentCourse);
+            }
+            return Ok(courseNotApproved);
+        }
+
+        [HttpGet("GetTotalNumOfCourse")]
+        public IActionResult GetTotalNumOfCourse()
+        {
+            int numofcourse = UnitOfWork.CourseRepository.GetTotalNumOfCourse();
+            return Ok(numofcourse);
+        }
+
+        [HttpGet("GetThreeCoursesForCategory")]
+        public IActionResult GetThreeCoursesForCategory(int categoryId)
+        {
+            List<Course> newcourses = UnitOfWork.CourseRepository.GetThreeCoursesForCategory(categoryId);
+            return Ok(newcourses);
         }
 
     }

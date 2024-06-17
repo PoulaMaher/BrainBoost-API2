@@ -102,6 +102,7 @@ namespace BrainBoost_API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseStaticFiles();
             app.UseAuthorization();
             app.UseCors("MyPolicy");
             app.MapControllers();
