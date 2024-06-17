@@ -8972,23 +8972,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\org\\.nuget\\packages\\": {},
+    "C:\\Users\\BlueLap2\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
+      "projectUniqueName": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\BrainBoost-API.csproj",
       "projectName": "BrainBoost-API",
-      "projectPath": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
-      "packagesPath": "C:\\Users\\org\\.nuget\\packages\\",
-      "outputPath": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\obj\\",
+      "projectPath": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\BrainBoost-API.csproj",
+      "packagesPath": "C:\\Users\\BlueLap2\\.nuget\\packages\\",
+      "outputPath": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\org\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BlueLap2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8997,7 +8997,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9010,6 +9009,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -9082,7 +9086,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

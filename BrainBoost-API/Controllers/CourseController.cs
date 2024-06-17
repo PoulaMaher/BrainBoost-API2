@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BrainBoost_API.DTOs.Course;
 using BrainBoost_API.DTOs.Quiz;
+using BrainBoost_API.DTOs.Video;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
 using Microsoft.AspNetCore.Identity;
@@ -83,15 +84,49 @@ namespace BrainBoost_API.Controllers
             return BadRequest(ModelState);
         }
         [HttpPost("AddCourse")]
-        public async Task<IActionResult> AddCourse(Course NewCourse)
+        public async Task<IActionResult> AddCourse([FromForm]CourseDTO InsertedCourse)
         {
             if (ModelState.IsValid)
             {
-                UnitOfWork.CourseRepository.add(NewCourse);
-                UnitOfWork.save();
-                return Ok(NewCourse);
+                Category selectedCategory = this.UnitOfWork.CategoryRepository.Get((c)=>c.Name== InsertedCourse.CategoryName);
+                //bool filesiscopied = await InsertedCourse.UploadCourseAsync(InsertedCourse.CourseLectures,InsertedCourse.Name);
+                if (true)
+                {
+                    Course NewCourse = new Course()
+                    {
+                        Name = InsertedCourse.Name,
+                        Description = InsertedCourse.Description,
+                        Price = InsertedCourse.Price,
+                        TeacherId = InsertedCourse.TeacherId,
+                        CategoryId = selectedCategory.Id,
+                        Language = InsertedCourse.Language,
+                        Level = InsertedCourse.Level
+                    };
+                    UnitOfWork.CourseRepository.add(NewCourse);
+                    UnitOfWork.save();
+                    return Ok(NewCourse);
+                }
             }
             return BadRequest(ModelState);
+        }
+        [HttpPost("AddVideo")]
+        public async Task<IActionResult> AddVideo([FromForm] VideoDTO InsertedVideo)
+        {
+            if (ModelState.IsValid)
+            {
+                var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\Courses");
+
+                if (!Directory.Exists(uploads))
+                    Directory.CreateDirectory(uploads);
+
+                var filePath = Path.Combine(uploads, InsertedVideo.VideoFile.FileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await InsertedVideo.VideoFile.CopyToAsync(fileStream);
+                }
+            }
+            return Ok(ModelState);
         }
 
         [HttpGet("GetAllCoursesAsCards")]
@@ -161,6 +196,5 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
-
     }
 }
