@@ -187,7 +187,7 @@ namespace BrainBoost_API.Controllers
                 course.IsApproved = true;
                 UnitOfWork.CourseRepository.update(course);
                 UnitOfWork.save();
-                return Ok("Successfully Approved");
+                return Ok();
             }
             return BadRequest(ModelState);
         }
