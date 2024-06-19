@@ -19,7 +19,7 @@ namespace BrainBoost_API.Repositories.Inplementation
         {
             List<Student> students = Context.Students.
                 OrderByDescending(s => s.NumOfCertificates)
-                .Take(2).ToList();
+                .Take(6).ToList();
             return students;
         }
         public int GetTotalNumOfEnrolledCourses()
