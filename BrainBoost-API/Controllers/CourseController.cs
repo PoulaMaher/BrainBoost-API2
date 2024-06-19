@@ -205,6 +205,11 @@ namespace BrainBoost_API.Controllers
             List<Course> newcourses = UnitOfWork.CourseRepository.GetLastThreeCourses();
             return Ok(newcourses);
         }
+        [HttpGet("GetTopEarningCourses")]
+        public IActionResult GetTopEarningCourses()
+        {
+            return Ok(UnitOfWork.CourseRepository.GetTop3CoursesByEarnings());
+        }
 
     }
 }
