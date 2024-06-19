@@ -95,6 +95,5 @@ namespace BrainBoost_API.Controllers
             int numofenrolledcourse = UnitOfWork.StudentRepository.GetTotalNumOfEnrolledCourses();
             return Ok(numofenrolledcourse);
         }
-
     }
 }
