@@ -1,4 +1,6 @@
-﻿using BrainBoost_API.Models;
+﻿using AutoMapper;
+using BrainBoost_API.DTOs.Student;
+using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -9,10 +11,13 @@ namespace BrainBoost_API.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        public IUnitOfWork UnitOfWork { get; }
-        public StudentController(IUnitOfWork unitOfWork)
+        private readonly IUnitOfWork UnitOfWork;
+        private readonly IMapper Mapper;
+        
+        public StudentController(IUnitOfWork unitOfWork,IMapper mapper)
         {
             UnitOfWork = unitOfWork;
+            Mapper = mapper;
         }
 
         [HttpGet("GetAll")]
@@ -50,6 +55,32 @@ namespace BrainBoost_API.Controllers
             UnitOfWork.StudentRepository.remove(student);
             UnitOfWork.save();
             return Ok("Student Deleted Successfully!");
+        }
+        [HttpGet("GetTotalNumOfStudent")]
+        public IActionResult GetTotalNumOfStudent()
+        {
+            int numofstudent = UnitOfWork.StudentRepository.GetTotalNumOfStudent();
+            return Ok(numofstudent);
+        }
+
+        [HttpPut("Update")]
+        public IActionResult Update(StudentDTO studentDTO, int id)
+        {
+            Student studentfromDB = UnitOfWork.StudentRepository.Get(s => s.Id == id);
+            if (studentfromDB == null)
+            {
+                return NotFound();
+            }
+
+            if (studentDTO.Id == id && ModelState.IsValid)
+            {
+                Mapper.Map(studentDTO, studentfromDB);
+                UnitOfWork.StudentRepository.update(studentfromDB);
+                UnitOfWork.save();
+                return Ok("Data Updated Successfully");
+            }
+            return BadRequest(ModelState);
+
         }
     }
 }

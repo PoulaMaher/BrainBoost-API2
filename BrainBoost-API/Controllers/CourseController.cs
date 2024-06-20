@@ -84,13 +84,12 @@ namespace BrainBoost_API.Controllers
             return BadRequest(ModelState);
         }
         [HttpPost("AddCourse")]
-        public async Task<IActionResult> AddCourse([FromForm]CourseDTO InsertedCourse)
+        public async Task<IActionResult> AddCourse(CourseDTO InsertedCourse)
         {
             if (ModelState.IsValid)
             {
                 Category selectedCategory = this.UnitOfWork.CategoryRepository.Get((c)=>c.Name== InsertedCourse.CategoryName);
-                //bool filesiscopied = await InsertedCourse.UploadCourseAsync(InsertedCourse.CourseLectures,InsertedCourse.Name);
-                if (true)
+                if (ModelState.IsValid)
                 {
                     Course NewCourse = new Course()
                     {
@@ -104,13 +103,42 @@ namespace BrainBoost_API.Controllers
                     };
                     UnitOfWork.CourseRepository.add(NewCourse);
                     UnitOfWork.save();
-                    return Ok(NewCourse);
+                    Quiz newQuiz = new Quiz()
+                    {
+                        NumOfQuestions = InsertedCourse.Quiz.NumOfQuestions,
+                        Degree = InsertedCourse.Quiz.Degree,
+                        MinDegree = InsertedCourse.Quiz.Degree / 2,
+                        CourseId = NewCourse.Id
+                    };
+                    UnitOfWork.QuizRepository.add(newQuiz);
+                    UnitOfWork.save();
+                    InsertedCourse.Quiz.Questions.ForEach(q => {
+                        Question newQuestion = new Question() { 
+                            Content = q.HeadLine,
+                            Type=Enums.QuestionType.MultipleChoice,
+                            Degree=q.Degree,
+                        };
+                        UnitOfWork.QuestionRepository.add(newQuestion);
+                        UnitOfWork.save();
+                        q.Choices.ForEach(choice =>
+                        {
+                            Answer answer = new Answer()
+                            {
+                                Content=choice.Choice,
+                                QuestionId= newQuestion.Id,
+                                IsCorrect= choice.isCorrect,
+                            };
+                            UnitOfWork.AnswerRepository.add(answer);
+                            UnitOfWork.save();
+                        });
+                    });
+                    return Ok(new {id=NewCourse.Id});
                 }
             }
             return BadRequest(ModelState);
         }
-        [HttpPost("AddVideo")]
-        public async Task<IActionResult> AddVideo([FromForm] VideoDTO InsertedVideo)
+        [HttpPost("AddVideo/{courseId:int}")]
+        public async Task<IActionResult> AddVideo([FromForm]VideoDTO InsertedVideo,int courseId)
         {
             if (ModelState.IsValid)
             {
@@ -125,6 +153,14 @@ namespace BrainBoost_API.Controllers
                 {
                     await InsertedVideo.VideoFile.CopyToAsync(fileStream);
                 }
+                Video newVideo = new Video()
+                {
+                    Title = InsertedVideo.Title,
+                    VideoUrl = filePath,
+                    CrsId = courseId
+                };
+                UnitOfWork.VideoRepository.add(newVideo);
+                UnitOfWork.save();
             }
             return Ok(ModelState);
         }
@@ -145,7 +181,7 @@ namespace BrainBoost_API.Controllers
         [HttpGet("GetFilteredCourses")]
         public ActionResult<List<CourseCardDataDto>> GetFilteredCourses([FromQuery] CourseFilterationDto filter)
         {
-            List<Course> courses = UnitOfWork.CourseRepository.GetFilteredCourses(filter, null).ToList();
+            List<Course> courses = UnitOfWork.CourseRepository.GetFilteredCourses(filter, "Category,Teacher").ToList();
             List<CourseCardDataDto> filteredCourseCards = new List<CourseCardDataDto>();
             foreach (Course course in courses)
             {
@@ -196,5 +232,33 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
+
+        [HttpGet("GetNotApprovedCourses")]
+        public ActionResult<List<NotApprovedCoursesDTO>> GetNotApprovedCourses()
+        {
+            List<Course> courses = UnitOfWork.CourseRepository.GetNotApprovedCourses().ToList();
+            List<NotApprovedCoursesDTO> courseNotApproved = new List<NotApprovedCoursesDTO>();
+            foreach (Course course in courses)
+            {
+                NotApprovedCoursesDTO currentCourse = mapper.Map<NotApprovedCoursesDTO>(course);
+                courseNotApproved.Add(currentCourse);
+            }
+            return Ok(courseNotApproved);
+        }
+
+        [HttpGet("GetTotalNumOfCourse")]
+        public IActionResult GetTotalNumOfCourse()
+        {
+            int numofcourse = UnitOfWork.CourseRepository.GetTotalNumOfCourse();
+            return Ok(numofcourse);
+        }
+
+        [HttpGet("GetLastThreeCourses")]
+        public IActionResult GetLastThreeCourses()
+        {
+            List<Course> newcourses = UnitOfWork.CourseRepository.GetLastThreeCourses();
+            return Ok(newcourses);
+        }
+
     }
 }

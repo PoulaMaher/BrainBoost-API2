@@ -35,6 +35,5 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
-        
     }
 }

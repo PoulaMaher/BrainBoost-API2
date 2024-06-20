@@ -1,4 +1,8 @@
-﻿namespace BrainBoost_API.DTOs.Course
+﻿using BrainBoost_API.DTOs.Answer;
+using BrainBoost_API.DTOs.Question;
+using BrainBoost_API.DTOs.Quiz;
+
+namespace BrainBoost_API.DTOs.Course
 {
     public class CourseDTO
     {
@@ -9,7 +13,8 @@
         public string Language { get; set; }
         public string Level { get; set; }
         public string CategoryName { get; set; }
-        public IFormFile Image { get; set; }
+        public insertedQuiz Quiz { get; set; }
+        //public IFormFile Image { get; set; }
         public string? CertificateHeadline { get; set; }
         public string? CertificateAppreciationParagraph { get; set; }
     }

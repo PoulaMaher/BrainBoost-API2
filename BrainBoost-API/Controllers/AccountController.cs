@@ -59,9 +59,7 @@ namespace BrainBoost_API.Controllers
                                 AppUser = user,
                                 Fname= registerUser.FirstName,
                                 Lname= registerUser.LastName,
-
                             };
-
                             this.UnitOfWork.StudentRepository.add(student);
                             break;
 
@@ -71,7 +69,6 @@ namespace BrainBoost_API.Controllers
                                 AppUser = user,
                                 Fname = registerUser.FirstName,
                                 Lname = registerUser.LastName,
-
                             };
                             this.UnitOfWork.TeacherRepository.add(teacher);
                             break;

@@ -55,54 +55,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Price",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "TeacherId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Language",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Level",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "CategoryName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Image",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "CertificateHeadline",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "CertificateAppreciationParagraph",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "InsertedCourse",
+        "Type": "BrainBoost_API.DTOs.Course.CourseDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -110,7 +65,7 @@
   {
     "ContainingType": "BrainBoost_API.Controllers.CourseController",
     "Method": "AddVideo",
-    "RelativePath": "api/Course/AddVideo",
+    "RelativePath": "api/Course/AddVideo/{courseId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -124,6 +79,11 @@
         "Name": "VideoFile",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
+      },
+      {
+        "Name": "courseId",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -260,6 +220,36 @@
   },
   {
     "ContainingType": "BrainBoost_API.Controllers.CourseController",
+    "Method": "GetLastThreeCourses",
+    "RelativePath": "api/Course/GetLastThreeCourses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.CourseController",
+    "Method": "GetNotApprovedCourses",
+    "RelativePath": "api/Course/GetNotApprovedCourses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BrainBoost_API.DTOs.Course.NotApprovedCoursesDTO, BrainBoost-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.CourseController",
     "Method": "GetSearchedCourses",
     "RelativePath": "api/Course/GetSearchedCourses",
     "HttpMethod": "GET",
@@ -283,6 +273,37 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.CourseController",
+    "Method": "GetTotalNumOfCourse",
+    "RelativePath": "api/Course/GetTotalNumOfCourse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.EnrollmentController",
+    "Method": "CheckEnroll",
+    "RelativePath": "api/Enrollment/CheckEnroll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "studentId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "BrainBoost_API.Controllers.EnrollmentController",
@@ -426,6 +447,37 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BrainBoost_API.Controllers.StudentController",
+    "Method": "GetTotalNumOfStudent",
+    "RelativePath": "api/Student/GetTotalNumOfStudent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.StudentController",
+    "Method": "Update",
+    "RelativePath": "api/Student/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentDTO",
+        "Type": "BrainBoost_API.DTOs.Student.StudentDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BrainBoost_API.Controllers.SubscriptionController",
     "Method": "CheckStatus",
     "RelativePath": "api/Subscription/CheckStatus/{orderNumber}",
@@ -523,6 +575,42 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.TeacherController",
+    "Method": "GetTopTeachers",
+    "RelativePath": "api/Teacher/GetTopTeachers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.TeacherController",
+    "Method": "GetTotalNumOfTeachers",
+    "RelativePath": "api/Teacher/GetTotalNumOfTeachers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.TeacherController",
+    "Method": "UpdateTeacherData",
+    "RelativePath": "api/Teacher/UpdateTeacherData",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatedTeacher",
+        "Type": "BrainBoost_API.DTOs.Teacher.TeacherDataDTO",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

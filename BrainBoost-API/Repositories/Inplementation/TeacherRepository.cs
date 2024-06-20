@@ -1,10 +1,9 @@
 ﻿using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace BrainBoost_API.Repositories.Inplementation
 {
-    public class TeacherRepository : Repository<Teacher> , ITeacherRepository
+    public class TeacherRepository : Repository<Teacher>, ITeacherRepository
     {
         private readonly ApplicationDbContext Context;
         public TeacherRepository(ApplicationDbContext context) : base(context)
@@ -19,7 +18,7 @@ namespace BrainBoost_API.Repositories.Inplementation
                 return null;
             return teacher;
         }
-        public List<Course> GetCoursesForTeacher(int TeacherId) 
+        public List<Course> GetCoursesForTeacher(int TeacherId)
         {
             List<Course> Courses = Context.Courses
                                    .Where(c => c.TeacherId == TeacherId)
@@ -27,6 +26,20 @@ namespace BrainBoost_API.Repositories.Inplementation
             return Courses;
 
         }
+        public List<Teacher> GetTopTeachers()
+        {
+            List<Teacher> topTeachers = Context.Teachers
+                .OrderByDescending(t => t.NumOfCrs)
+                .Take(6)
+                .ToList();
+
+            return topTeachers;
+        }
+        public int GetTotalNumOfTeachers()
+        {
+            int numOfTeachers = Context.Teachers.Count<Teacher>();
+            return numOfTeachers;
+        }
     }
-        
+
 }

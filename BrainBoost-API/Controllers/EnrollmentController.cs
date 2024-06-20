@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BrainBoost_API.DTOs.Enrollment;
+using BrainBoost_API.DTOs.Paylink;
 using BrainBoost_API.DTOs.Subscription;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
@@ -73,7 +74,9 @@ namespace BrainBoost_API.Controllers
                 CourseId = enrollment.CourseId,
                 StudentId = enrollment.StudentId,
                 Student = enrollment.Student,
-                Course = enrollment.Course
+                Course = enrollment.Course,
+                QuizState = false,
+                CertificateState = false
             };
             if (enrollment == null)
             {
@@ -100,6 +103,8 @@ namespace BrainBoost_API.Controllers
                     enrollment.IsActive = true;
                     unitOfWork.StudentEnrolledCoursesRepository.add(stdCourse);
                     unitOfWork.save();
+                    HandleVideoState(stdCourse.StudentId , stdCourse.CourseId,stdCourse.Id);
+                    HandleEarnings(enrollment.Id);
                     break;
                 case "Declined":
                     enrollment.SubscribtionsStatus = "Declined";
@@ -143,8 +148,8 @@ namespace BrainBoost_API.Controllers
                 orderNumber = orderNumber,// "123456789",
 
 
-                callBackUrl = $"http://localhost:4200/success/{orderNumber}",
-                cancelUrl = $"http://localhost:4200/fail/{orderNumber}",
+                callBackUrl = $"http://localhost:4200/EnrollmentSuccess/{orderNumber}/{enrollmentDto.CourseId}",
+                cancelUrl = $"http://localhost:4200/EnrollmentSuccess/{orderNumber}/{enrollmentDto.CourseId}",
                 currency = "SAR",
                 note = "Test invoice",
 
@@ -199,6 +204,73 @@ namespace BrainBoost_API.Controllers
 
             return token.id_token;
 
+        }
+
+        [NonAction]
+
+        public async Task HandleVideoState(int courseId , int studentId , int StudentEnrolledCourseId)
+        {
+            List<Video> videos = unitOfWork.VideoRepository.GetList(c => c.Course.Id == courseId ).ToList();
+            foreach(Video video in videos)
+            {
+                VideoState videoState = new VideoState()
+                {
+                    VideoId = video.Id,
+                    StudentEnrolledCourseId = StudentEnrolledCourseId,
+                    State = false
+                };
+                unitOfWork.VideoStateRepository.add(videoState);
+            }
+            unitOfWork.save();
+        }
+
+        [HttpGet("CheckEnroll")]
+        public async Task<IActionResult> CheckEnroll([FromQuery]int courseId , [FromQuery] string studentId)
+        {
+            if (ModelState.IsValid)
+            {
+                ApplicationUser userFromDb = await user.FindByIdAsync(studentId);
+                if (userFromDb != null) {
+                    var student = unitOfWork.StudentRepository.Get(S => S.AppUser.Id == userFromDb.Id);
+                    var enrolledCourse = unitOfWork.StudentEnrolledCoursesRepository.Get(EC => EC.CourseId == courseId && EC.StudentId ==student.Id);
+                    if (enrolledCourse != null)
+                    {
+                        return Ok(true);
+                    }
+                    else
+                    {
+                        return Ok(false);
+                    }
+                }
+                
+            }
+            return BadRequest(ModelState);
+        }
+
+        [NonAction]
+
+        public async Task HandleEarnings(int enrollmentId)
+        {
+            
+            Enrollment enrollment =  unitOfWork.EnrollmentRepository.Get(E => E.Id == enrollmentId);
+
+            Course currentCourse =  unitOfWork.CourseRepository.Get(C => C.Id == enrollment.CourseId);
+            decimal amount = currentCourse.Price;
+            decimal instructorEarnings = 0.8m * amount;
+            decimal websiteEarnings = 0.2m * amount;
+            Earnings earnings = new Earnings()
+            {
+                Amount = currentCourse.Price,
+                enrollment = enrollment,
+                enrollmentId = enrollment.Id,
+                InstructorEarnings = instructorEarnings,
+                paymentDate = DateTime.Now,
+                IsDeleted = false,
+                WebsiteEarnings = websiteEarnings
+            };
+            unitOfWork.EarningsRepository.add(earnings);
+            unitOfWork.save();
+                  
         }
 
 
