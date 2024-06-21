@@ -1,4 +1,5 @@
 ﻿using BrainBoost_API.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BrainBoost_API.Repositories.Inplementation
 {
@@ -24,6 +25,14 @@ namespace BrainBoost_API.Repositories.Inplementation
                 .Sum(e => e.WebsiteEarnings);
 
             return totalWebsiteEarnings;
+        }
+
+        public decimal GetTotalEarning()
+        {
+            decimal TotalEarning = Context.Earnings
+                .Where(e => e.enrollment != null && e.enrollment.Course != null)
+                .Sum(e => e.WebsiteEarnings + e.InstructorEarnings);
+            return TotalEarning;
         }
     }
 }
