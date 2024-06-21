@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BrainBoost_API.DTOs.Course;
+using BrainBoost_API.DTOs.Question;
 using BrainBoost_API.DTOs.Quiz;
 using BrainBoost_API.DTOs.Video;
 using BrainBoost_API.Models;
@@ -103,6 +104,16 @@ namespace BrainBoost_API.Controllers
                     };
                     UnitOfWork.CourseRepository.add(NewCourse);
                     UnitOfWork.save();
+                    foreach (var WhatToLearnPoint in InsertedCourse.WhatToLearn)
+                    {
+                        WhatToLearn newWhatToLearnPoint = new WhatToLearn()
+                        {
+                            Content = WhatToLearnPoint,
+                            CrsId = NewCourse.Id
+                        };
+                        UnitOfWork.WhatToLearnRepository.add(newWhatToLearnPoint);
+                    };
+                    UnitOfWork.save();
                     Quiz newQuiz = new Quiz()
                     {
                         NumOfQuestions = InsertedCourse.Quiz.NumOfQuestions,
@@ -143,7 +154,7 @@ namespace BrainBoost_API.Controllers
             if (ModelState.IsValid)
             {
                 var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\Courses");
-
+                string videoUrl = "";
                 if (!Directory.Exists(uploads))
                     Directory.CreateDirectory(uploads);
 
@@ -153,10 +164,11 @@ namespace BrainBoost_API.Controllers
                 {
                     await InsertedVideo.VideoFile.CopyToAsync(fileStream);
                 }
+                videoUrl = $"http://localhost:5079/Courses/{InsertedVideo.VideoFile.FileName}";
                 Video newVideo = new Video()
                 {
                     Title = InsertedVideo.Title,
-                    VideoUrl = filePath,
+                    VideoUrl = videoUrl,
                     CrsId = courseId
                 };
                 UnitOfWork.VideoRepository.add(newVideo);
@@ -164,7 +176,28 @@ namespace BrainBoost_API.Controllers
             }
             return Ok(ModelState);
         }
+        [HttpPost("HandlePhoto/{courseId:int}")]
+        public async Task<IActionResult> HandlePhoto(IFormFile InsertedPhoto, int courseId)
+        {
+            if (ModelState.IsValid)
+            {
+                var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\Images");
+                string photoUrl = "";
+                if (!Directory.Exists(uploads))
+                    Directory.CreateDirectory(uploads);
 
+                var filePath = Path.Combine(uploads, InsertedPhoto.FileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await InsertedPhoto.CopyToAsync(fileStream);
+                }
+                photoUrl = $"http://localhost:5079/Images/{InsertedPhoto.FileName}";
+                Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
+                course.photoUrl = photoUrl;
+            }
+            return Ok(ModelState);
+        }
         [HttpGet("GetAllCoursesAsCards")]
         public ActionResult<List<CourseCardDataDto>> GetAllCoursesAsCards()
         {
@@ -245,6 +278,23 @@ namespace BrainBoost_API.Controllers
             }
             return Ok(courseNotApproved);
         }
+        [HttpPut("ApproveCourse")]
+        public IActionResult ApproveCourse(int courseId)
+        {
+            if (ModelState.IsValid)
+            {
+                var course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
+                if (course == null)
+                {
+                    return NotFound("Course not found");
+                }
+                course.IsApproved = true;
+                UnitOfWork.CourseRepository.update(course);
+                UnitOfWork.save();
+                return Ok();
+            }
+            return BadRequest(ModelState);
+        }
 
         [HttpGet("GetTotalNumOfCourse")]
         public IActionResult GetTotalNumOfCourse()
@@ -258,6 +308,11 @@ namespace BrainBoost_API.Controllers
         {
             List<Course> newcourses = UnitOfWork.CourseRepository.GetLastThreeCourses();
             return Ok(newcourses);
+        }
+        [HttpGet("GetTopEarningCourses")]
+        public IActionResult GetTopEarningCourses()
+        {
+            return Ok(UnitOfWork.CourseRepository.GetTop3CoursesByEarnings());
         }
 
     }

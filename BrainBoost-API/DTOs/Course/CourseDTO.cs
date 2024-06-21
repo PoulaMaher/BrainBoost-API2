@@ -14,7 +14,7 @@ namespace BrainBoost_API.DTOs.Course
         public string Level { get; set; }
         public string CategoryName { get; set; }
         public insertedQuiz Quiz { get; set; }
-        //public IFormFile Image { get; set; }
+        public List<string> WhatToLearn { get; set; }
         public string? CertificateHeadline { get; set; }
         public string? CertificateAppreciationParagraph { get; set; }
     }

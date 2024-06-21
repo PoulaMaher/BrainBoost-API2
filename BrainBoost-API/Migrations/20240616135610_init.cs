@@ -448,7 +448,7 @@ namespace BrainBoost_API.Migrations
                         column: x => x.CourseId,
                         principalTable: "Courses",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Reviews_Students_StudentId",
                         column: x => x.StudentId,
@@ -553,7 +553,7 @@ namespace BrainBoost_API.Migrations
                         column: x => x.CrsId,
                         principalTable: "Courses",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

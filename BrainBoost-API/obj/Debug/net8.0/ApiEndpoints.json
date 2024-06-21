@@ -90,6 +90,22 @@
   },
   {
     "ContainingType": "BrainBoost_API.Controllers.CourseController",
+    "Method": "ApproveCourse",
+    "RelativePath": "api/Course/ApproveCourse",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.CourseController",
     "Method": "DeleteCourse",
     "RelativePath": "api/Course/DeleteCourse",
     "HttpMethod": "DELETE",
@@ -276,12 +292,43 @@
   },
   {
     "ContainingType": "BrainBoost_API.Controllers.CourseController",
+    "Method": "GetTopEarningCourses",
+    "RelativePath": "api/Course/GetTopEarningCourses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.CourseController",
     "Method": "GetTotalNumOfCourse",
     "RelativePath": "api/Course/GetTotalNumOfCourse",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.CourseController",
+    "Method": "HandlePhoto",
+    "RelativePath": "api/Course/HandlePhoto/{courseId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "InsertedPhoto",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "courseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -444,6 +491,26 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.StudentController",
+    "Method": "GetTopStudent",
+    "RelativePath": "api/Student/GetTopStudent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.StudentController",
+    "Method": "GetTotalNumOfEnrolledCourses",
+    "RelativePath": "api/Student/GetTotalNumOfEnrolledCourses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
