@@ -30,7 +30,7 @@ namespace BrainBoost_API.Repositories.Inplementation
         {
             List<Teacher> topTeachers = Context.Teachers
                 .OrderByDescending(t => t.NumOfCrs)
-                .Take(6)
+                .Take(4)
                 .ToList();
 
             return topTeachers;
