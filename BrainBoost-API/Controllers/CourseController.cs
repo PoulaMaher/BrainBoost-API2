@@ -157,7 +157,7 @@ namespace BrainBoost_API.Controllers
                 course.IsDeleted = true;
                 UnitOfWork.CourseRepository.remove(course);
                 UnitOfWork.save();
-                return Ok("Successfully Deleted");
+                return Ok();
             }
             return BadRequest(ModelState);
         }
