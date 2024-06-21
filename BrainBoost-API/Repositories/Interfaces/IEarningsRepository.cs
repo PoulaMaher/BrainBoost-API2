@@ -6,5 +6,6 @@ namespace BrainBoost_API.Repositories.Inplementation
     {
         decimal GetTotalInstructorEarnings();
         decimal GetTotalWebsiteEarnings();
+        decimal GetTotalEarning();
     }
 }
