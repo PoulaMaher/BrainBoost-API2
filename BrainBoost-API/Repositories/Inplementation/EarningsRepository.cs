@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BrainBoost_API.DTOs.Course;
+using BrainBoost_API.DTOs.Teacher;
 using BrainBoost_API.Models;
 
 namespace BrainBoost_API.Repositories.Inplementation
@@ -63,5 +64,35 @@ namespace BrainBoost_API.Repositories.Inplementation
 
             return topCourses;
         }
+
+        public List<TeacherEarningData> GetTeachersAndEarnings()
+        {
+            var teachers = Context.Earnings
+                .Where(e => e.enrollment != null && e.enrollment.Course != null && e.enrollment.Course.Teacher != null)
+                .GroupBy(e => e.enrollment.Course.Teacher)
+                .Select(g => new
+                {
+                    Teacher = g.Key,
+                    TotalEarnings = g.Sum(e => e.Amount),
+                    TotalInstructorEarnings = g.Sum(e => e.InstructorEarnings),
+                    TotalWebsiteEarnings = g.Sum(e => e.WebsiteEarnings)
+                })
+                .ToList()
+            .Select(x =>
+            {
+                var dto = mapper.Map<TeacherEarningData>(x.Teacher);
+                dto.TotalEarnings = x.TotalEarnings;
+                dto.TotalInstructorEarnings = x.TotalInstructorEarnings;
+                dto.TotalWebsiteEarnings = x.TotalWebsiteEarnings;
+                return dto;
+            })
+                .ToList();
+
+            return teachers;
+        }
+
+
+
+
     }
 }

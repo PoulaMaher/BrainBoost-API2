@@ -42,5 +42,11 @@ namespace BrainBoost_API.Controllers
         {
             return Ok(UnitOfWork.EarningsRepository.GetCoursesAndEarningsForInstructor(instructorId));
         }
+
+        [HttpGet("GetTeachersAndEarnings")]
+        public IActionResult GetTeachersAndEarnings()
+        {
+            return Ok(UnitOfWork.EarningsRepository.GetTeachersAndEarnings());
+        }
     }
 }
