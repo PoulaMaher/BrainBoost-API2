@@ -348,6 +348,32 @@
   },
   {
     "ContainingType": "BrainBoost_API.Controllers.EarningController",
+    "Method": "GetCoursesAndEarningsForInstructor",
+    "RelativePath": "api/Earning/GetCoursesAndEarningsForInstructor/{instructorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instructorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.EarningController",
+    "Method": "GetTeachersAndEarnings",
+    "RelativePath": "api/Earning/GetTeachersAndEarnings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.EarningController",
     "Method": "GetTotalEarning",
     "RelativePath": "api/Earning/GetTotalEarning",
     "HttpMethod": "GET",

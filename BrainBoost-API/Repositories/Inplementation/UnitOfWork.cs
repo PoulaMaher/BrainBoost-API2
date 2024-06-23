@@ -1,13 +1,9 @@
-﻿using BrainBoost_API.Repositories.Inplementation;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using System.Linq.Expressions;
+﻿using AutoMapper;
 using BrainBoost_API.Repositories.Interfaces;
-using AutoMapper;
 
 namespace BrainBoost_API.Repositories.Inplementation
 {
-    public class UnitOfWork: IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext Context;
         public IVideoRepository VideoRepository { get; private set; }
@@ -28,13 +24,13 @@ namespace BrainBoost_API.Repositories.Inplementation
         public IEarningsRepository EarningsRepository { get; set; }
         public IWhatToLearnRepository WhatToLearnRepository { get; set; }
 
-        public UnitOfWork(ApplicationDbContext context,IMapper mapper)
+        public UnitOfWork(ApplicationDbContext context, IMapper mapper)
         {
             this.Context = context;
             VideoRepository = new VideoRepository(context);
-            QuizRepository = new QuizRepository(context,mapper);
+            QuizRepository = new QuizRepository(context, mapper);
             StudentRepository = new StudentRepository(context);
-            CourseRepository = new CourseRepository(context,mapper);
+            CourseRepository = new CourseRepository(context, mapper);
             TeacherRepository = new TeacherRepository(context);
             ReviewRepository = new ReviewRepository(context);
             SubscriptionRepository = new SubscriptionRepository(context);
@@ -46,8 +42,6 @@ namespace BrainBoost_API.Repositories.Inplementation
             QuestionRepository = new QuestionRepository(context);
             StudentEnrolledCoursesRepository = new StudentEnrolledCoursesRepository(context);
             VideoStateRepository = new VideoStateRepository(context);
-            EarningsRepository = new EarningsRepository(context);
-            WhatToLearnRepository = new WhatToLearnRepository(context);
         }
 
         public void save()
@@ -56,7 +50,7 @@ namespace BrainBoost_API.Repositories.Inplementation
             {
                 Context.SaveChanges();
             }
-           catch (Exception ex)
+            catch (Exception ex)
             {
 
             }
