@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "20PbhJ9zJjn19jJXGPURiQS1ci1KvXcHHSt6nuRm99w=",
+  "Hash": "JouGlsDt0mjx5gl2TxbsKQzfFeVZOupV0k0YSO/tYsI=",
   "Source": "BrainBoost-API",
   "BasePath": "_content/BrainBoost-API",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Videos\\Project3.mp4"
+    },
+    {
+      "Identity": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project4.mp4",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "RelativePath": "Images/Videos/Project4.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Videos\\Project4.mp4"
     }
   ]
 }

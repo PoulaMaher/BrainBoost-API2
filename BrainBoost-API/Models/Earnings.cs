@@ -7,7 +7,7 @@ namespace BrainBoost_API.Models
         public int Id { get; set; }
         public bool IsDeleted { get; set; }
         [ForeignKey("enrollment")]
-        public int enrollmentId { get; set; }
+        public int? enrollmentId { get; set; }
         public decimal Amount { get; set; }
         public decimal InstructorEarnings { get; set; }
         public decimal WebsiteEarnings { get; set; }

@@ -160,9 +160,9 @@ namespace BrainBoost_API.Controllers
                 string UserID = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
                 Student std = UnitOfWork.StudentRepository.Get(c => c.UserId == UserID);
                 //info of taken course
-                Course TakenCourse=UnitOfWork.CourseRepository.Get(c=>c.Id== id);
+                Course TakenCourse=UnitOfWork.CourseRepository.Get(c=>c.Id== id, "WhatToLearn,Teacher");
                 //info of related courses
-                List<Course> CoursesMayYouTake = UnitOfWork.CourseRepository.GetList(c => c.CategoryId == TakenCourse.CategoryId && c.TeacherId == TakenCourse.TeacherId).ToList();
+                List<Course> CoursesMayYouTake = UnitOfWork.CourseRepository.GetList(c => c.CategoryId == TakenCourse.CategoryId && c.TeacherId == TakenCourse.TeacherId ).Take(3).ToList();
                 //info of state
                 var enrolledCourse = UnitOfWork.StudentEnrolledCoursesRepository.Get(c => c.StudentId == std.Id && c.CourseId == id);
                 //mapping
