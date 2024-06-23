@@ -2,6 +2,7 @@
 using BrainBoost_API.DTOs.Course;
 using BrainBoost_API.DTOs.Question;
 using BrainBoost_API.DTOs.Quiz;
+using BrainBoost_API.DTOs.Uploader;
 using BrainBoost_API.DTOs.Video;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
@@ -143,7 +144,7 @@ namespace BrainBoost_API.Controllers
                             UnitOfWork.save();
                         });
                     });
-                    return Ok(new {id=NewCourse.Id});
+                    return Ok(new {id=NewCourse.Id, WhereToStore = NewCourse.GetType().Name,FolderName=NewCourse.Name });
                 }
             }
             return BadRequest(ModelState);
@@ -151,9 +152,10 @@ namespace BrainBoost_API.Controllers
         [HttpPost("AddVideo/{courseId:int}")]
         public async Task<IActionResult> AddVideo([FromForm]VideoDTO InsertedVideo,int courseId)
         {
+            Course course = UnitOfWork.CourseRepository.Get(c=>c.Id == courseId);
             if (ModelState.IsValid)
             {
-                var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\Courses");
+                var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\{course.GetType().Name}\\{course.Name}\\chapter {InsertedVideo.Chapter}");
                 string videoUrl = "";
                 if (!Directory.Exists(uploads))
                     Directory.CreateDirectory(uploads);
@@ -164,7 +166,7 @@ namespace BrainBoost_API.Controllers
                 {
                     await InsertedVideo.VideoFile.CopyToAsync(fileStream);
                 }
-                videoUrl = $"http://localhost:5079/Courses/{InsertedVideo.VideoFile.FileName}";
+                videoUrl = $"{Directory.GetCurrentDirectory()}/{course.GetType().Name}/{course.Name}/chapter {InsertedVideo.Chapter}/{InsertedVideo.VideoFile.FileName}";
                 Video newVideo = new Video()
                 {
                     Title = InsertedVideo.Title,
@@ -176,23 +178,27 @@ namespace BrainBoost_API.Controllers
             }
             return Ok(ModelState);
         }
-        [HttpPost("HandlePhoto/{courseId:int}")]
-        public async Task<IActionResult> HandlePhoto(IFormFile InsertedPhoto, int courseId)
+        [HttpPost("HandlePhoto/{courseId:int}/{WhereToStore:alpha}/{FolderName:alpha}")]
+        public async Task<IActionResult> HandlePhoto(IFormFile InsertedPhoto, int courseId, string WhereToStore,string FolderName)
         {
             if (ModelState.IsValid)
             {
-                var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\Images");
+                //var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\{WhereToStore}");
+                //string photoUrl = "";
+                //if (!Directory.Exists(uploads))
+                //    Directory.CreateDirectory(uploads);
+
+                //var filePath = Path.Combine(uploads, InsertedPhoto.FileName);
+
+                //using (var fileStream = new FileStream(filePath, FileMode.Create))
+                //{
+                //    await InsertedPhoto.CopyToAsync(fileStream);
+                //}
+                //photoUrl = $"http://localhost:5079/Images/{InsertedPhoto.FileName}";
+                //Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
+                //course.photoUrl = photoUrl;
                 string photoUrl = "";
-                if (!Directory.Exists(uploads))
-                    Directory.CreateDirectory(uploads);
-
-                var filePath = Path.Combine(uploads, InsertedPhoto.FileName);
-
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await InsertedPhoto.CopyToAsync(fileStream);
-                }
-                photoUrl = $"http://localhost:5079/Images/{InsertedPhoto.FileName}";
+                photoUrl = await Uploader.uploadPhoto(InsertedPhoto, WhereToStore, FolderName);
                 Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
                 course.photoUrl = photoUrl;
             }
@@ -261,7 +267,7 @@ namespace BrainBoost_API.Controllers
                 course.IsDeleted = true;
                 UnitOfWork.CourseRepository.remove(course);
                 UnitOfWork.save();
-                return Ok("Successfully Deleted");
+                return Ok();
             }
             return BadRequest(ModelState);
         }

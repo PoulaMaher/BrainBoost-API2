@@ -81,6 +81,11 @@
         "IsRequired": false
       },
       {
+        "Name": "Chapter",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
         "Name": "courseId",
         "Type": "System.Int32",
         "IsRequired": true
@@ -313,7 +318,7 @@
   {
     "ContainingType": "BrainBoost_API.Controllers.CourseController",
     "Method": "HandlePhoto",
-    "RelativePath": "api/Course/HandlePhoto/{courseId}",
+    "RelativePath": "api/Course/HandlePhoto/{courseId}/{WhereToStore}/{FolderName}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -327,9 +332,69 @@
         "Name": "courseId",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "WhereToStore",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "FolderName",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.EarningController",
+    "Method": "GetTotalEarning",
+    "RelativePath": "api/Earning/GetTotalEarning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.EarningController",
+    "Method": "GetTotalInstructorEarnings",
+    "RelativePath": "api/Earning/GetTotalInstructorEarnings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.EarningController",
+    "Method": "GetTotalWebsiteEarnings",
+    "RelativePath": "api/Earning/GetTotalWebsiteEarnings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "BrainBoost_API.Controllers.EnrollmentController",
@@ -598,6 +663,42 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.TeacherController",
+    "Method": "AddTeacher",
+    "RelativePath": "api/Teacher/AddTeacher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobTitles",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "aboutYou",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "photo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "yearsOfExperience",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

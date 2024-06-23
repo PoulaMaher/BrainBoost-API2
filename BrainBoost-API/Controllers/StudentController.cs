@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BrainBoost_API.DTOs.Student;
+using BrainBoost_API.DTOs.Teacher;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
 using Microsoft.AspNetCore.Http;
@@ -19,7 +20,15 @@ namespace BrainBoost_API.Controllers
             UnitOfWork = unitOfWork;
             Mapper = mapper;
         }
+        //[HttpPost("AddStudent")]
+        //public IActionResult AddStudent()
+        //{
+        //    Teacher teacher = new Teacher()
+        //    {
 
+        //    };
+        //    return Ok("insertedTeacher");
+        //}
         [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
