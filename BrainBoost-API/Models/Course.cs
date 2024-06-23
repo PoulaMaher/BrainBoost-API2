@@ -21,11 +21,8 @@ namespace BrainBoost_API.Models
         [ForeignKey("Category")]
         public int CategoryId { get; set; }
         public bool IsApproved { get; set; } = false;
-
         public string? CertificateHeadline { get; set; }
         public string? CertificateAppreciationParagraph { get; set; }
-
-
         public Teacher? Teacher { get; set; }
         public Category? Category { get; set; }
         public List<Video>? videos { get; set; }
@@ -33,8 +30,5 @@ namespace BrainBoost_API.Models
         public List<WhatToLearn>? WhatToLearn { get; set; }
         public List<StudentEnrolledCourses>? EnrolledCourses { get; set; }
         public List<StudentSavedCourses>? SavedCourses { get; set; }
-
-
-
     }
 }

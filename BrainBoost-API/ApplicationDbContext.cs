@@ -35,19 +35,19 @@
                 .HasMany(q => q.Answers)
                 .WithOne(a => a.Question)
                 .HasForeignKey(a => a.QuestionId);
-                //builder.Entity<Question>()
-                //.HasOne(q => q.TrueAnswer)
-                //.WithMany()
-                //.HasForeignKey(q => q.TrueAnswerId)
-                //.OnDelete(DeleteBehavior.NoAction);
+            //builder.Entity<Question>()
+            //.HasOne(q => q.TrueAnswer)
+            //.WithMany()
+            //.HasForeignKey(q => q.TrueAnswerId)
+            //.OnDelete(DeleteBehavior.NoAction);
             //////not returning
 
             //foreach (var model in builder.Model.GetEntityTypes())
             //{
             //    builder.Entity(model.Name).Property<bool>("IsDeleted").HasDefaultValue(false);
 
-
             //}
+            builder.Entity<Teacher>().HasIndex(Teacher => Teacher.UserId).IsUnique();
             foreach (var model in builder.Model.GetEntityTypes())
             {
                 var isDeletedProperty = model.FindProperty("IsDeleted");

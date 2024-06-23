@@ -19,7 +19,7 @@ namespace BrainBoost_API.Repositories.Inplementation
         IQuestionRepository QuestionRepository { get; }
         IVideoStateRepository VideoStateRepository { get; set; }
         IEarningsRepository EarningsRepository { get; set; }
-
+        IWhatToLearnRepository WhatToLearnRepository { get; set; }
 
         IStudentEnrolledCoursesRepository StudentEnrolledCoursesRepository { get;}
 

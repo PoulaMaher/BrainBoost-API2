@@ -22,6 +22,7 @@ namespace BrainBoost_API.Repositories.Inplementation
         public IStudentEnrolledCoursesRepository StudentEnrolledCoursesRepository { get; private set; }
         public IVideoStateRepository VideoStateRepository { get; set; }
         public IEarningsRepository EarningsRepository { get; set; }
+        public IWhatToLearnRepository WhatToLearnRepository { get; set; }
 
         public UnitOfWork(ApplicationDbContext context, IMapper mapper)
         {
@@ -41,7 +42,6 @@ namespace BrainBoost_API.Repositories.Inplementation
             QuestionRepository = new QuestionRepository(context);
             StudentEnrolledCoursesRepository = new StudentEnrolledCoursesRepository(context);
             VideoStateRepository = new VideoStateRepository(context);
-            EarningsRepository = new EarningsRepository(context, mapper);
         }
 
         public void save()

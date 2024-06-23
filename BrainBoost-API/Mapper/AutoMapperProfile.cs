@@ -22,8 +22,8 @@ namespace BrainBoost_API.Mapper
             CreateMap<WhatToLearnDTO, WhatToLearn>().ReverseMap();
             CreateMap<EnrollmentDto, Enrollment>().ReverseMap();
             CreateMap<QuizDTO, Quiz>().ReverseMap();
-            CreateMap<QuestionDTO, Question>().ReverseMap();
-            CreateMap<AnswerDTO, Answer>().ReverseMap();
+            CreateMap<DTOs.Question.QuestionDTO, Question>().ReverseMap();
+            CreateMap<DTOs.Answer.AnswerDTO, Answer>().ReverseMap();
             CreateMap<CertificateDTO, Course>().ReverseMap();
             CreateMap<Course, CourseCardDataDto>();
             CreateMap<Course, NotApprovedCoursesDTO>().ReverseMap();

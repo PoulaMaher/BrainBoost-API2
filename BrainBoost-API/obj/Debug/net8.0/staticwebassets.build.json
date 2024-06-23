@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0OJqcOVvzyW8ObZt8Kv6EOD+YMVRIZJtvN081mvRHWY=",
+  "Hash": "SITM6//Dpr1GjQeOiTy5DWDxDO4CqFzfViJpiEdVMFg=",
   "Source": "BrainBoost-API",
   "BasePath": "_content/BrainBoost-API",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "BrainBoost-API\\wwwroot",
       "Source": "BrainBoost-API",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\2f63c326-0b4f-40fa-9257-e1102b09d01d_89b69d44-16a2-473e-9d32-5bcb5674162c.jpg",
+      "Identity": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Courses/2f63c326-0b4f-40fa-9257-e1102b09d01d_89b69d44-16a2-473e-9d32-5bcb5674162c.jpg",
+      "RelativePath": "Images/Course/a/_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,7 +33,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Courses\\2f63c326-0b4f-40fa-9257-e1102b09d01d_89b69d44-16a2-473e-9d32-5bcb5674162c.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg"
     }
   ]
 }
