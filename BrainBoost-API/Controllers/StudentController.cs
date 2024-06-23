@@ -82,5 +82,18 @@ namespace BrainBoost_API.Controllers
             return BadRequest(ModelState);
 
         }
+        [HttpGet("GetTopStudent")]
+        public IActionResult GetTopStudent()
+        {
+            List<Student> students=UnitOfWork.StudentRepository.GetTopStudents();
+            return Ok(students);
+        }
+
+        [HttpGet("GetTotalNumOfEnrolledCourses")]
+        public IActionResult GetTotalNumOfEnrolledCourses()
+        {
+            int numofenrolledcourse = UnitOfWork.StudentRepository.GetTotalNumOfEnrolledCourses();
+            return Ok(numofenrolledcourse);
+        }
     }
 }

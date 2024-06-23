@@ -1,5 +1,6 @@
 
 using AutoMapper;
+using BrainBoost_API.Hubs;
 using BrainBoost_API.Mapper;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
@@ -27,6 +28,7 @@ namespace BrainBoost_API
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
+            builder.Services.AddSignalR();
             builder.Services.AddDbContext<ApplicationDbContext>(Options =>
             {
                 Options.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
@@ -105,6 +107,7 @@ namespace BrainBoost_API
             app.UseAuthorization();
             app.UseCors("MyPolicy");
             app.MapControllers();
+            app.MapHub<ChatHub>("/Chat");
             app.Run();
         }
     }

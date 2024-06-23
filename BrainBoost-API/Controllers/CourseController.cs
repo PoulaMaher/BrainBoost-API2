@@ -157,7 +157,7 @@ namespace BrainBoost_API.Controllers
                 course.IsDeleted = true;
                 UnitOfWork.CourseRepository.remove(course);
                 UnitOfWork.save();
-                return Ok("Successfully Deleted");
+                return Ok();
             }
             return BadRequest(ModelState);
         }
@@ -174,6 +174,23 @@ namespace BrainBoost_API.Controllers
             }
             return Ok(courseNotApproved);
         }
+        [HttpPut("ApproveCourse")]
+        public IActionResult ApproveCourse(int courseId)
+        {
+            if (ModelState.IsValid)
+            {
+                var course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
+                if (course == null)
+                {
+                    return NotFound("Course not found");
+                }
+                course.IsApproved = true;
+                UnitOfWork.CourseRepository.update(course);
+                UnitOfWork.save();
+                return Ok();
+            }
+            return BadRequest(ModelState);
+        }
 
         [HttpGet("GetTotalNumOfCourse")]
         public IActionResult GetTotalNumOfCourse()
@@ -182,12 +199,22 @@ namespace BrainBoost_API.Controllers
             return Ok(numofcourse);
         }
 
-        [HttpGet("GetThreeCoursesForCategory")]
-        public IActionResult GetThreeCoursesForCategory(int categoryId)
+        [HttpGet("GetLastThreeCourses")]
+        public IActionResult GetLastThreeCourses()
         {
-            List<Course> newcourses = UnitOfWork.CourseRepository.GetThreeCoursesForCategory(categoryId);
+            List<Course> newcourses = UnitOfWork.CourseRepository.GetLastThreeCourses();
             return Ok(newcourses);
         }
+        [HttpGet("GetTopEarningCourses")]
+        public IActionResult GetTopEarningCourses()
+        {
+            return Ok(UnitOfWork.CourseRepository.GetTop3CoursesByEarnings());
+        }
+        [HttpGet("GetNumOfStdsOfCourse/{courseId:int}")]
+        public IActionResult GetNumOfStdsOfCourseById(int courseId){
+            return Ok(UnitOfWork.StudentEnrolledCoursesRepository.GetNumOfStdsOfCourseById(courseId));
+        }
+        
 
     }
 }

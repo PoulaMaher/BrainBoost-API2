@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\brainboost-api\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|e:\\iti(pwd)\\e_learning_front\\backend\\brainboost-api2\\brainboost-api\\repositories\\inplementation\\earningsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\repositories\\inplementation\\earningsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\brainboost-api\\controllers\\earningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\controllers\\earningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|e:\\iti(pwd)\\e_learning_front\\backend\\brainboost-api2\\brainboost-api\\dtos\\teacher\\teacherearningdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\dtos\\teacher\\teacherearningdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\brainboost-api\\models\\earnings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\models\\earnings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\brainboost-api\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,16 +54,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SubscriptionController.cs",
-              "DocumentMoniker": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Controllers\\SubscriptionController.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\Controllers\\SubscriptionController.cs",
-              "ToolTip": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Controllers\\SubscriptionController.cs",
-              "RelativeToolTip": "BrainBoost-API\\Controllers\\SubscriptionController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "TeacherEarningData.cs",
+              "DocumentMoniker": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\DTOs\\Teacher\\TeacherEarningData.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\DTOs\\Teacher\\TeacherEarningData.cs",
+              "ToolTip": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\DTOs\\Teacher\\TeacherEarningData.cs",
+              "RelativeToolTip": "BrainBoost-API\\DTOs\\Teacher\\TeacherEarningData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T15:10:11.988Z",
+              "WhenOpened": "2024-06-22T20:02:55.305Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EarningController.cs",
+              "DocumentMoniker": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Controllers\\EarningController.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\Controllers\\EarningController.cs",
+              "ToolTip": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Controllers\\EarningController.cs",
+              "RelativeToolTip": "BrainBoost-API\\Controllers\\EarningController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAQwDAAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T08:25:02.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EarningsRepository.cs",
+              "DocumentMoniker": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Repositories\\Inplementation\\EarningsRepository.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\Repositories\\Inplementation\\EarningsRepository.cs",
+              "ToolTip": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Repositories\\Inplementation\\EarningsRepository.cs",
+              "RelativeToolTip": "BrainBoost-API\\Repositories\\Inplementation\\EarningsRepository.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAAFEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T08:16:58.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Earnings.cs",
+              "DocumentMoniker": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Models\\Earnings.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\Models\\Earnings.cs",
+              "ToolTip": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Models\\Earnings.cs",
+              "RelativeToolTip": "BrainBoost-API\\Models\\Earnings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T12:43:27.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\Models\\Enrollment.cs",
+              "ToolTip": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Models\\Enrollment.cs",
+              "RelativeToolTip": "BrainBoost-API\\Models\\Enrollment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T12:43:06.596Z"
             }
           ]
         }

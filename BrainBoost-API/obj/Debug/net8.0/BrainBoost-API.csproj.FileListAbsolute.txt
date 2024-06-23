@@ -1338,3 +1338,7 @@ G:\graduation project\BrainBoost-API2\BrainBoost-API\obj\Debug\net8.0\refint\Bra
 G:\graduation project\BrainBoost-API2\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.pdb
 G:\graduation project\BrainBoost-API2\BrainBoost-API\obj\Debug\net8.0\BrainBoost-API.genruntimeconfig.cache
 G:\graduation project\BrainBoost-API2\BrainBoost-API\obj\Debug\net8.0\ref\BrainBoost-API.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNet.SignalR.Client.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Common.dll
+E:\ITI\ITI Projects\Graduation Project\BrainBoost-API\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Features.dll

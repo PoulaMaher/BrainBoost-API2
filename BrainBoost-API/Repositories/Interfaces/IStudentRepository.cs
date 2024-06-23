@@ -6,5 +6,7 @@ namespace BrainBoost_API.Repositories.Interfaces
     public interface IStudentRepository : IRepository<Student>
     {
         int GetTotalNumOfStudent();
+        List<Student> GetTopStudents();
+        int GetTotalNumOfEnrolledCourses();
     }
 }

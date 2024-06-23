@@ -15,5 +15,21 @@ namespace BrainBoost_API.Repositories.Inplementation
             int numofstudent = Context.Students.Count<Student>();
             return numofstudent;
         }
+        public List<Student> GetTopStudents()
+        {
+            List<Student> students = Context.Students.
+                OrderByDescending(s => s.NumOfCertificates)
+                .Take(6).ToList();
+            return students;
+        }
+        public int GetTotalNumOfEnrolledCourses()
+        {
+            int numofenrolledcourses=Context.StudentEnrolledCourses
+                .Where(sec=>!sec.IsDeleted)
+                .Select(sec=>sec.CourseId)
+                .Distinct()
+                .Count();
+            return numofenrolledcourses;
+        }
     }
 }
