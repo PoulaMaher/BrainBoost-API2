@@ -15,5 +15,6 @@ namespace BrainBoost_API.Models
         
 
         public Course? Course { get; set; }
+        public List<comment> comments { get; set; }
     }
 }

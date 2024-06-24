@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JouGlsDt0mjx5gl2TxbsKQzfFeVZOupV0k0YSO/tYsI=",
+  "Hash": "zVJXPoA3JbnFGV2qti9oxOjgydhNdl7hHLBcAtLKJO8=",
   "Source": "BrainBoost-API",
   "BasePath": "_content/BrainBoost-API",
   "Mode": "Default",
@@ -36,12 +36,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\Courses\\2f63c326-0b4f-40fa-9257-e1102b09d01d_89b69d44-16a2-473e-9d32-5bcb5674162c.jpg"
     },
     {
-      "Identity": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project.mp4",
+      "Identity": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Videos/Project.mp4",
+      "RelativePath": "Images/Courses/dddddddddddddddddddddddddddddddddddd.PNG",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,15 +52,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Videos\\Project.mp4"
+      "OriginalItemSpec": "wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG"
     },
     {
-      "Identity": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project2.mp4",
+      "Identity": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Videos/Project2.mp4",
+      "RelativePath": "Images/Courses/Helper.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,45 +71,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Videos\\Project2.mp4"
-    },
-    {
-      "Identity": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project3.mp4",
-      "SourceId": "BrainBoost-API",
-      "SourceType": "Discovered",
-      "ContentRoot": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
-      "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Videos/Project3.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Videos\\Project3.mp4"
-    },
-    {
-      "Identity": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project4.mp4",
-      "SourceId": "BrainBoost-API",
-      "SourceType": "Discovered",
-      "ContentRoot": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
-      "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Videos/Project4.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Videos\\Project4.mp4"
+      "OriginalItemSpec": "wwwroot\\Images\\Courses\\Helper.jpg"
     }
   ]
 }
