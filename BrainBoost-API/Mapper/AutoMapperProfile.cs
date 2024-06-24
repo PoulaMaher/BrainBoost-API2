@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using BrainBoost_API.DTOs.Answer;
+using BrainBoost_API.DTOs.Admin;
+using BrainBoost_API.DTOs.Category;
 using BrainBoost_API.DTOs.Course;
 using BrainBoost_API.DTOs.Enrollment;
-using BrainBoost_API.DTOs.Question;
 using BrainBoost_API.DTOs.Quiz;
 using BrainBoost_API.DTOs.Review;
 using BrainBoost_API.DTOs.Student;
@@ -41,6 +41,8 @@ namespace BrainBoost_API.Mapper
 
             CreateMap<Course, CourseEarningsDto>().ReverseMap();
             CreateMap<Teacher, TeacherEarningData>().ReverseMap();
+            CreateMap<Admin, AdminDTO>().ReverseMap();
+            CreateMap<Category, CategoryDTO>().ReverseMap();
 
 
         }
