@@ -359,6 +359,11 @@ namespace BrainBoost_API.Controllers
         {
             return Ok(UnitOfWork.CourseRepository.GetTop3CoursesByEarnings());
         }
+        [HttpGet("GetNumOfStdsOfCourse/{courseId:int}")]
+        public IActionResult GetNumOfStdsOfCourseById(int courseId){
+            return Ok(UnitOfWork.StudentEnrolledCoursesRepository.GetNumOfStdsOfCourseById(courseId));
+        }
+        
 
     }
 }
