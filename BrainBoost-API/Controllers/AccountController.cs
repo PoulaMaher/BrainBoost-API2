@@ -1,8 +1,6 @@
-﻿using BrainBoost_API.DTOs;
-using BrainBoost_API.DTOs.Account;
+﻿using BrainBoost_API.DTOs.Account;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -20,7 +18,7 @@ namespace BrainBoost_API.Controllers
         private readonly IUnitOfWork UnitOfWork;
         private readonly IConfiguration Configuration;
         public readonly RoleManager<ApplicationRole> RoleManager;
-        public AccountController(UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager , IUnitOfWork unitOfWork ,IConfiguration configuration)
+        public AccountController(UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager, IUnitOfWork unitOfWork, IConfiguration configuration)
         {
             this.UserManager = userManager;
             this.UnitOfWork = unitOfWork;
@@ -31,7 +29,7 @@ namespace BrainBoost_API.Controllers
         [HttpPost("register")]
 
         public async Task<IActionResult> Register(RegisterUserDto registerUser, string role)
-        { 
+        {
             if (ModelState.IsValid)
             {
                 if (!await RoleManager.RoleExistsAsync(role))
@@ -51,34 +49,43 @@ namespace BrainBoost_API.Controllers
                 if (result.Succeeded)
                 {
                     await UserManager.AddToRoleAsync(user, role);
-                    //switch (role)
-                    //{
-                    //    case "Student":
-                    //        var student = new Student
-                    //        {
-                    //            AppUser = user,
-                    //            Fname= registerUser.FirstName,
-                    //            Lname= registerUser.LastName,
-                    //        };
-                    //        this.UnitOfWork.StudentRepository.add(student);
-                    //        break;
+                    switch (role)
+                    {
+                        case "Student":
+                            var student = new Student
+                            {
+                                AppUser = user,
+                                Fname = registerUser.FirstName,
+                                Lname = registerUser.LastName,
+                            };
+                            this.UnitOfWork.StudentRepository.add(student);
+                            break;
 
-                    //    case "Teacher":
-                    //        var teacher = new Teacher
-                    //        {
-                    //            AppUser = user,
-                    //            Fname = registerUser.FirstName,
-                    //            Lname = registerUser.LastName,
-                    //        };
-                    //        this.UnitOfWork.TeacherRepository.add(teacher);
-                    //        break;
+                        case "Teacher":
+                            var teacher = new Teacher
+                            {
+                                AppUser = user,
+                                Fname = registerUser.FirstName,
+                                Lname = registerUser.LastName,
+                            };
+                            this.UnitOfWork.TeacherRepository.add(teacher);
+                            break;
+                        case "Admin":
+                            var admin = new Admin
+                            {
+                                AppUser = user,
+                                Fname = registerUser.FirstName,
+                                Lname = registerUser.LastName,
+                            };
+                            this.UnitOfWork.AdminRepository.add(admin);
+                            break;
 
-                    //    default:
-                    //        // Handle default case if necessary
-                    //        break;
-                    //}
+                        default:
+                            // Handle default case if necessary
+                            break;
+                    }
                     this.UnitOfWork.save();
-                    return Ok(new { Msg = "Account Created", userId=user.Id,role=role });
+                    return Ok(new { Msg = "Account Created", userId = user.Id, role = role });
                 }
                 return BadRequest(new { Msg = result.Errors });
             }
@@ -91,7 +98,7 @@ namespace BrainBoost_API.Controllers
             if (ModelState.IsValid)
             {
                 ApplicationUser userFromDb = await UserManager.FindByNameAsync(loginUser.UserName);
-                if(userFromDb != null)
+                if (userFromDb != null)
                 {
                     bool found = await UserManager.CheckPasswordAsync(userFromDb, loginUser.Password);
                     if (found)
@@ -116,7 +123,7 @@ namespace BrainBoost_API.Controllers
                             signingCredentials: signingCredentials,
                             claims: userClaims
                         );
-                        return Ok(new {token = new JwtSecurityTokenHandler().WriteToken(token), expired=token.ValidTo});
+                        return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token), expired = token.ValidTo });
                     }
 
                 }

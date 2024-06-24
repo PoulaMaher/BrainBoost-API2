@@ -22,7 +22,8 @@ namespace BrainBoost_API.Repositories.Inplementation
         ICommentRepository CommentRepository { get; }
         IWhatToLearnRepository WhatToLearnRepository { get; set; }
 
-        IStudentEnrolledCoursesRepository StudentEnrolledCoursesRepository { get;}
+        IStudentEnrolledCoursesRepository StudentEnrolledCoursesRepository { get; }
+        IAdminRepository AdminRepository { get; }
 
         void save();
 
