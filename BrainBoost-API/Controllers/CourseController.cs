@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using BrainBoost_API.DTOs.Course;
-using BrainBoost_API.DTOs.Question;
 using BrainBoost_API.DTOs.Quiz;
 using BrainBoost_API.DTOs.Uploader;
 using BrainBoost_API.DTOs.Video;
@@ -41,7 +40,7 @@ namespace BrainBoost_API.Controllers
             if (ModelState.IsValid)
             {
                 Course Course = UnitOfWork.CourseRepository.Get(c => c.Id == id, "Teacher,WhatToLearn");
-                
+
                 var review = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id).ToList();
                 var numOfRates = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id).ToList().Count();
                 var numOfVideos = UnitOfWork.VideoRepository.GetList(r => r.CrsId == id).ToList().Count();
@@ -91,7 +90,7 @@ namespace BrainBoost_API.Controllers
         {
             if (ModelState.IsValid)
             {
-                Category selectedCategory = this.UnitOfWork.CategoryRepository.Get((c)=>c.Name== InsertedCourse.CategoryName);
+                Category selectedCategory = this.UnitOfWork.CategoryRepository.Get((c) => c.Name == InsertedCourse.CategoryName);
                 if (ModelState.IsValid)
                 {
                     Course NewCourse = new Course()
@@ -125,11 +124,13 @@ namespace BrainBoost_API.Controllers
                     };
                     UnitOfWork.QuizRepository.add(newQuiz);
                     UnitOfWork.save();
-                    InsertedCourse.Quiz.Questions.ForEach(q => {
-                        Question newQuestion = new Question() { 
+                    InsertedCourse.Quiz.Questions.ForEach(q =>
+                    {
+                        Question newQuestion = new Question()
+                        {
                             Content = q.HeadLine,
-                            Type=Enums.QuestionType.MultipleChoice,
-                            Degree=q.Degree,
+                            Type = Enums.QuestionType.MultipleChoice,
+                            Degree = q.Degree,
                         };
                         UnitOfWork.QuestionRepository.add(newQuestion);
                         UnitOfWork.save();
@@ -137,23 +138,23 @@ namespace BrainBoost_API.Controllers
                         {
                             Answer answer = new Answer()
                             {
-                                Content=choice.Choice,
-                                QuestionId= newQuestion.Id,
-                                IsCorrect= choice.isCorrect,
+                                Content = choice.Choice,
+                                QuestionId = newQuestion.Id,
+                                IsCorrect = choice.isCorrect,
                             };
                             UnitOfWork.AnswerRepository.add(answer);
                             UnitOfWork.save();
                         });
                     });
-                    return Ok(new {id=NewCourse.Id, WhereToStore = NewCourse.GetType().Name,FolderName=NewCourse.Name });
+                    return Ok(new { id = NewCourse.Id, WhereToStore = NewCourse.GetType().Name, FolderName = NewCourse.Name });
                 }
             }
             return BadRequest(ModelState);
         }
         [HttpPost("AddVideo/{courseId:int}")]
-        public async Task<IActionResult> AddVideo([FromForm]VideoDTO InsertedVideo,int courseId)
+        public async Task<IActionResult> AddVideo([FromForm] VideoDTO InsertedVideo, int courseId)
         {
-            Course course = UnitOfWork.CourseRepository.Get(c=>c.Id == courseId);
+            Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
             if (ModelState.IsValid)
             {
                 var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\{course.GetType().Name}\\{course.Name}\\chapter {InsertedVideo.Chapter}");
@@ -180,7 +181,7 @@ namespace BrainBoost_API.Controllers
             return Ok(ModelState);
         }
         [HttpPost("HandlePhoto/{courseId:int}/{WhereToStore:alpha}/{FolderName:alpha}")]
-        public async Task<IActionResult> HandlePhoto(IFormFile InsertedPhoto, int courseId, string WhereToStore,string FolderName)
+        public async Task<IActionResult> HandlePhoto(IFormFile InsertedPhoto, int courseId, string WhereToStore, string FolderName)
         {
             if (ModelState.IsValid)
             {
@@ -262,7 +263,7 @@ namespace BrainBoost_API.Controllers
 
         [HttpGet("GetTakingCourse/{id:int}")]
 
-        public  IActionResult GetTakingCourse(int id)
+        public IActionResult GetTakingCourse(int id)
         {
             if (ModelState.IsValid)
             {
@@ -270,14 +271,14 @@ namespace BrainBoost_API.Controllers
                 string UserID = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
                 Student std = UnitOfWork.StudentRepository.Get(c => c.UserId == UserID);
                 //info of taken course
-                Course TakenCourse=UnitOfWork.CourseRepository.Get(c=>c.Id== id, "WhatToLearn,Teacher");
+                Course TakenCourse = UnitOfWork.CourseRepository.Get(c => c.Id == id, "WhatToLearn,Teacher");
                 //info of related courses
-                List<Course> CoursesMayYouTake = UnitOfWork.CourseRepository.GetList(c => c.CategoryId == TakenCourse.CategoryId && c.TeacherId == TakenCourse.TeacherId ).Take(3).ToList();
+                List<Course> CoursesMayYouTake = UnitOfWork.CourseRepository.GetList(c => c.CategoryId == TakenCourse.CategoryId && c.TeacherId == TakenCourse.TeacherId).Take(3).ToList();
                 //info of state
                 var enrolledCourse = UnitOfWork.StudentEnrolledCoursesRepository.Get(c => c.StudentId == std.Id && c.CourseId == id);
                 //mapping
-               CourseTakingDTO Crs= UnitOfWork.CourseRepository.GetCourseTaking(TakenCourse,CoursesMayYouTake,enrolledCourse);
-               
+                CourseTakingDTO Crs = UnitOfWork.CourseRepository.GetCourseTaking(TakenCourse, CoursesMayYouTake, enrolledCourse);
+
                 return Ok(Crs);
             }
             return BadRequest(ModelState);
@@ -303,6 +304,10 @@ namespace BrainBoost_API.Controllers
             if (ModelState.IsValid)
             {
                 var course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
+                if (course == null)
+                {
+                    return NotFound();
+                }
                 course.IsDeleted = true;
                 UnitOfWork.CourseRepository.remove(course);
                 UnitOfWork.save();
