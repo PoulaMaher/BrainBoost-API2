@@ -86,6 +86,23 @@ namespace BrainBoost_API.Repositories.Inplementation
             return new CertificateDTO();
 
         }
+
+        public CourseTakingDTO GetCourseTaking(Course takingcourse, IEnumerable<Course> relatedCourses, StudentEnrolledCourses states)
+        {
+            var Crs= mapper.Map<CourseTakingDTO>(takingcourse);
+            Crs.CourseCardData=mapper.Map<IEnumerable<CourseCardDataDto>>(relatedCourses).ToList();
+            Crs.states=mapper.Map<StateDTO>(states);
+            Crs.WhatToLearn = mapper.Map<IEnumerable<WhatToLearnDTO>>(takingcourse.WhatToLearn).ToList();
+            Crs.TeacherDataDto = mapper.Map<CourseDetailsTeacherDataDto>(takingcourse.Teacher);
+
+
+            return Crs;
+        }
+        public StateDTO getCrsStates(StudentEnrolledCourses states)
+        {
+            var States = mapper.Map<StateDTO>(states);
+            return States;
+        } 
         public IEnumerable<Course> GetNotApprovedCourses(string? includeProps = null)
         {
             IQueryable<Course> courses = GetAll(includeProps).AsQueryable();

@@ -25,8 +25,8 @@
             public DbSet<WhatToLearn> WhatToLearn { get; set; }
             public DbSet<VideoState> videoStates { get; set; }
             public DbSet<Earnings> Earnings { get; set; }
-
-        public DbSet<StudentEnrolledCourses> StudentEnrolledCourses { get; set; }
+            public DbSet<comment> Comments { get; set; }
+            public DbSet<StudentEnrolledCourses> StudentEnrolledCourses { get; set; }
             public DbSet<StudentSavedCourses> StudentSavedCourses { get; set; }
             protected override void OnModelCreating(ModelBuilder builder)
             {
@@ -35,19 +35,19 @@
                 .HasMany(q => q.Answers)
                 .WithOne(a => a.Question)
                 .HasForeignKey(a => a.QuestionId);
-                //builder.Entity<Question>()
-                //.HasOne(q => q.TrueAnswer)
-                //.WithMany()
-                //.HasForeignKey(q => q.TrueAnswerId)
-                //.OnDelete(DeleteBehavior.NoAction);
+            //builder.Entity<Question>()
+            //.HasOne(q => q.TrueAnswer)
+            //.WithMany()
+            //.HasForeignKey(q => q.TrueAnswerId)
+            //.OnDelete(DeleteBehavior.NoAction);
             //////not returning
 
             //foreach (var model in builder.Model.GetEntityTypes())
             //{
             //    builder.Entity(model.Name).Property<bool>("IsDeleted").HasDefaultValue(false);
 
-
             //}
+            builder.Entity<Teacher>().HasIndex(Teacher => Teacher.UserId).IsUnique();
             foreach (var model in builder.Model.GetEntityTypes())
             {
                 var isDeletedProperty = model.FindProperty("IsDeleted");
@@ -76,6 +76,8 @@
                 builder.Entity<Video>().HasQueryFilter(e => !e.IsDeleted);
                 builder.Entity<WhatToLearn>().HasQueryFilter(e => !e.IsDeleted);
                 builder.Entity<Earnings>().HasQueryFilter(e => !e.IsDeleted);
+                builder.Entity<comment>().HasQueryFilter(e => !e.IsDeleted);
+
 
         }
     }

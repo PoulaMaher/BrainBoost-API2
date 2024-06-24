@@ -10,6 +10,7 @@ namespace BrainBoost_API.Models
 
         public bool QuizState { get; set; }
         public bool CertificateState { get; set; }
+        public bool hasFinishedallVideos { get; set; }
 
         [ForeignKey("Student")]
         public int StudentId { get; set; }

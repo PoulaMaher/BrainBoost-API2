@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
 using BrainBoost_API.DTOs.Course;
+using BrainBoost_API.DTOs.Question;
 using BrainBoost_API.DTOs.Quiz;
+using BrainBoost_API.DTOs.Uploader;
+using BrainBoost_API.DTOs.Video;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
 using Microsoft.AspNetCore.Identity;
@@ -38,6 +41,7 @@ namespace BrainBoost_API.Controllers
             if (ModelState.IsValid)
             {
                 Course Course = UnitOfWork.CourseRepository.Get(c => c.Id == id, "Teacher,WhatToLearn");
+                
                 var review = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id).ToList();
                 var numOfRates = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id).ToList().Count();
                 var numOfVideos = UnitOfWork.VideoRepository.GetList(r => r.CrsId == id).ToList().Count();
@@ -83,17 +87,124 @@ namespace BrainBoost_API.Controllers
             return BadRequest(ModelState);
         }
         [HttpPost("AddCourse")]
-        public async Task<IActionResult> AddCourse(Course NewCourse)
+        public async Task<IActionResult> AddCourse(CourseDTO InsertedCourse)
         {
             if (ModelState.IsValid)
             {
-                UnitOfWork.CourseRepository.add(NewCourse);
-                UnitOfWork.save();
-                return Ok(NewCourse);
+                Category selectedCategory = this.UnitOfWork.CategoryRepository.Get((c)=>c.Name== InsertedCourse.CategoryName);
+                if (ModelState.IsValid)
+                {
+                    Course NewCourse = new Course()
+                    {
+                        Name = InsertedCourse.Name,
+                        Description = InsertedCourse.Description,
+                        Price = InsertedCourse.Price,
+                        TeacherId = InsertedCourse.TeacherId,
+                        CategoryId = selectedCategory.Id,
+                        Language = InsertedCourse.Language,
+                        Level = InsertedCourse.Level
+                    };
+                    UnitOfWork.CourseRepository.add(NewCourse);
+                    UnitOfWork.save();
+                    foreach (var WhatToLearnPoint in InsertedCourse.WhatToLearn)
+                    {
+                        WhatToLearn newWhatToLearnPoint = new WhatToLearn()
+                        {
+                            Content = WhatToLearnPoint,
+                            CrsId = NewCourse.Id
+                        };
+                        UnitOfWork.WhatToLearnRepository.add(newWhatToLearnPoint);
+                    };
+                    UnitOfWork.save();
+                    Quiz newQuiz = new Quiz()
+                    {
+                        NumOfQuestions = InsertedCourse.Quiz.NumOfQuestions,
+                        Degree = InsertedCourse.Quiz.Degree,
+                        MinDegree = InsertedCourse.Quiz.Degree / 2,
+                        CourseId = NewCourse.Id
+                    };
+                    UnitOfWork.QuizRepository.add(newQuiz);
+                    UnitOfWork.save();
+                    InsertedCourse.Quiz.Questions.ForEach(q => {
+                        Question newQuestion = new Question() { 
+                            Content = q.HeadLine,
+                            Type=Enums.QuestionType.MultipleChoice,
+                            Degree=q.Degree,
+                        };
+                        UnitOfWork.QuestionRepository.add(newQuestion);
+                        UnitOfWork.save();
+                        q.Choices.ForEach(choice =>
+                        {
+                            Answer answer = new Answer()
+                            {
+                                Content=choice.Choice,
+                                QuestionId= newQuestion.Id,
+                                IsCorrect= choice.isCorrect,
+                            };
+                            UnitOfWork.AnswerRepository.add(answer);
+                            UnitOfWork.save();
+                        });
+                    });
+                    return Ok(new {id=NewCourse.Id, WhereToStore = NewCourse.GetType().Name,FolderName=NewCourse.Name });
+                }
             }
             return BadRequest(ModelState);
         }
+        [HttpPost("AddVideo/{courseId:int}")]
+        public async Task<IActionResult> AddVideo([FromForm]VideoDTO InsertedVideo,int courseId)
+        {
+            Course course = UnitOfWork.CourseRepository.Get(c=>c.Id == courseId);
+            if (ModelState.IsValid)
+            {
+                var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\{course.GetType().Name}\\{course.Name}\\chapter {InsertedVideo.Chapter}");
+                string videoUrl = "";
+                if (!Directory.Exists(uploads))
+                    Directory.CreateDirectory(uploads);
 
+                var filePath = Path.Combine(uploads, InsertedVideo.VideoFile.FileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await InsertedVideo.VideoFile.CopyToAsync(fileStream);
+                }
+                videoUrl = $"{Directory.GetCurrentDirectory()}/{course.GetType().Name}/{course.Name}/chapter {InsertedVideo.Chapter}/{InsertedVideo.VideoFile.FileName}";
+                Video newVideo = new Video()
+                {
+                    Title = InsertedVideo.Title,
+                    VideoUrl = videoUrl,
+                    CrsId = courseId
+                };
+                UnitOfWork.VideoRepository.add(newVideo);
+                UnitOfWork.save();
+            }
+            return Ok(ModelState);
+        }
+        [HttpPost("HandlePhoto/{courseId:int}/{WhereToStore:alpha}/{FolderName:alpha}")]
+        public async Task<IActionResult> HandlePhoto(IFormFile InsertedPhoto, int courseId, string WhereToStore,string FolderName)
+        {
+            if (ModelState.IsValid)
+            {
+                //var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\{WhereToStore}");
+                //string photoUrl = "";
+                //if (!Directory.Exists(uploads))
+                //    Directory.CreateDirectory(uploads);
+
+                //var filePath = Path.Combine(uploads, InsertedPhoto.FileName);
+
+                //using (var fileStream = new FileStream(filePath, FileMode.Create))
+                //{
+                //    await InsertedPhoto.CopyToAsync(fileStream);
+                //}
+                //photoUrl = $"http://localhost:5079/Images/{InsertedPhoto.FileName}";
+                //Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
+                //course.photoUrl = photoUrl;
+                string photoUrl = "";
+                photoUrl = await Uploader.uploadPhoto(InsertedPhoto, WhereToStore, FolderName);
+                Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
+                course.photoUrl = photoUrl;
+            }
+            return Ok(ModelState);
+        }
         [HttpGet("GetAllCoursesAsCards")]
         public ActionResult<List<CourseCardDataDto>> GetAllCoursesAsCards()
         {
@@ -135,7 +246,7 @@ namespace BrainBoost_API.Controllers
 
         [HttpGet("GetCertificate/{id:int}")]
 
-        public async Task<IActionResult> GetCertificate(int id)
+        public IActionResult GetCertificate(int id)
         {
             if (ModelState.IsValid)
             {
@@ -145,6 +256,44 @@ namespace BrainBoost_API.Controllers
                 var course = UnitOfWork.CourseRepository.Get(c => c.Id == id);
                 var cert = UnitOfWork.CourseRepository.getCrsCertificate(course, name);
                 return Ok(cert);
+            }
+            return BadRequest(ModelState);
+        }
+
+        [HttpGet("GetTakingCourse/{id:int}")]
+
+        public  IActionResult GetTakingCourse(int id)
+        {
+            if (ModelState.IsValid)
+            {
+
+                string UserID = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+                Student std = UnitOfWork.StudentRepository.Get(c => c.UserId == UserID);
+                //info of taken course
+                Course TakenCourse=UnitOfWork.CourseRepository.Get(c=>c.Id== id, "WhatToLearn,Teacher");
+                //info of related courses
+                List<Course> CoursesMayYouTake = UnitOfWork.CourseRepository.GetList(c => c.CategoryId == TakenCourse.CategoryId && c.TeacherId == TakenCourse.TeacherId ).Take(3).ToList();
+                //info of state
+                var enrolledCourse = UnitOfWork.StudentEnrolledCoursesRepository.Get(c => c.StudentId == std.Id && c.CourseId == id);
+                //mapping
+               CourseTakingDTO Crs= UnitOfWork.CourseRepository.GetCourseTaking(TakenCourse,CoursesMayYouTake,enrolledCourse);
+               
+                return Ok(Crs);
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpGet("GetState/{id:int}")]
+        public IActionResult GetState(int id)
+        {
+            if (ModelState.IsValid)
+            {
+                string UserID = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+                Student std = UnitOfWork.StudentRepository.Get(c => c.UserId == UserID);
+
+                var enrolledCourse = UnitOfWork.StudentEnrolledCoursesRepository.Get(c => c.StudentId == std.Id && c.CourseId == id);
+                var state = UnitOfWork.CourseRepository.getCrsStates(enrolledCourse);
+
+                return Ok(state);
             }
             return BadRequest(ModelState);
         }
@@ -199,12 +348,12 @@ namespace BrainBoost_API.Controllers
             return Ok(numofcourse);
         }
 
-        [HttpGet("GetLastThreeCourses")]
-        public IActionResult GetLastThreeCourses()
-        {
-            List<Course> newcourses = UnitOfWork.CourseRepository.GetLastThreeCourses();
-            return Ok(newcourses);
-        }
+        //[HttpGet("GetThreeCoursesForCategory")]
+        //public IActionResult GetThreeCoursesForCategory(int categoryId)
+        //{
+        //    List<Course> newcourses = UnitOfWork.CourseRepository.GetThreeCoursesForCategory(categoryId);
+        //    return Ok(newcourses);
+        //}
         [HttpGet("GetTopEarningCourses")]
         public IActionResult GetTopEarningCourses()
         {
