@@ -118,14 +118,40 @@ namespace BrainBoost_API.Repositories.Inplementation
             return numofCourse;
         }
 
-        public List<Course> GetThreeCoursesForCategory(int categoryid)
+        public List<Course> GetLastThreeCourses()
         {
             List<Course> lastThreeCourses = Context.Courses
-                                            .Where(c => c.CategoryId == categoryid)
                                             .OrderByDescending(c => c.LastUpdate)
                                             .Take(3)
                                             .ToList();
             return lastThreeCourses;
+        }
+        public List<CourseEarningsDto> GetTop3CoursesByEarnings()
+        {
+            var topCourses = Context.Earnings
+                .Where(e => e.enrollment != null && e.enrollment.Course != null)
+                .GroupBy(e => e.enrollment.Course)
+                .OrderByDescending(g => g.Sum(e => e.Amount))
+                .Take(3)
+                .Select(g => new
+                {
+                    Course = g.Key,
+                    TotalEarnings = g.Sum(e => e.Amount),
+                    TotalInstructorEarnings = g.Sum(e => e.InstructorEarnings),
+                    TotalWebsiteEarnings = g.Sum(e => e.WebsiteEarnings)
+                })
+                .ToList()
+                .Select(x =>
+                {
+                    var dto = mapper.Map<CourseEarningsDto>(x.Course);
+                    dto.TotalEarnings = x.TotalEarnings;
+                    dto.TotalInstructorEarnings = x.TotalInstructorEarnings;
+                    dto.TotalWebsiteEarnings = x.TotalWebsiteEarnings;
+                    return dto;
+                })
+                .ToList();
+
+            return topCourses;
         }
     }
 }

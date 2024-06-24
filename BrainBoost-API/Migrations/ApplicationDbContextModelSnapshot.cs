@@ -615,6 +615,9 @@ namespace BrainBoost_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("AboutYou")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
@@ -632,10 +635,10 @@ namespace BrainBoost_API.Migrations
                     b.Property<string>("Lname")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("NumOfCrs")
+                    b.Property<int?>("NumOfCrs")
                         .HasColumnType("int");
 
-                    b.Property<int>("NumOfFollowers")
+                    b.Property<int?>("NumOfFollowers")
                         .HasColumnType("int");
 
                     b.Property<string>("PhoneNumber")
@@ -647,9 +650,14 @@ namespace BrainBoost_API.Migrations
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("YearsOfExperience")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId")
+                        .IsUnique()
+                        .HasFilter("[UserId] IS NOT NULL");
 
                     b.ToTable("Teachers");
                 });
@@ -661,6 +669,9 @@ namespace BrainBoost_API.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Chapter")
+                        .HasColumnType("int");
 
                     b.Property<int>("CrsId")
                         .HasColumnType("int");

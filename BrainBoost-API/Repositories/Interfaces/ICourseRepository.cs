@@ -15,7 +15,7 @@ namespace BrainBoost_API.Repositories.Inplementation
 
         IEnumerable<Course> GetNotApprovedCourses(string? includeProps = null);
         int GetTotalNumOfCourse();
-        List<Course> GetThreeCoursesForCategory(int categoryid);
-
+        List<Course> GetLastThreeCourses();
+        List<CourseEarningsDto> GetTop3CoursesByEarnings();
     }
 }
