@@ -25,8 +25,8 @@
             public DbSet<WhatToLearn> WhatToLearn { get; set; }
             public DbSet<VideoState> videoStates { get; set; }
             public DbSet<Earnings> Earnings { get; set; }
-
-        public DbSet<StudentEnrolledCourses> StudentEnrolledCourses { get; set; }
+            public DbSet<comment> Comments { get; set; }
+            public DbSet<StudentEnrolledCourses> StudentEnrolledCourses { get; set; }
             public DbSet<StudentSavedCourses> StudentSavedCourses { get; set; }
             protected override void OnModelCreating(ModelBuilder builder)
             {
@@ -76,6 +76,8 @@
                 builder.Entity<Video>().HasQueryFilter(e => !e.IsDeleted);
                 builder.Entity<WhatToLearn>().HasQueryFilter(e => !e.IsDeleted);
                 builder.Entity<Earnings>().HasQueryFilter(e => !e.IsDeleted);
+                builder.Entity<comment>().HasQueryFilter(e => !e.IsDeleted);
+
 
         }
     }

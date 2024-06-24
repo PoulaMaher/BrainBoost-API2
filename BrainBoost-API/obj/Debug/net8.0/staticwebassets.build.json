@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SITM6//Dpr1GjQeOiTy5DWDxDO4CqFzfViJpiEdVMFg=",
+  "Hash": "ApZsPPf9dn+ZWtAqmJGc9GBomh7yI4SMaD8tLHiYB/o=",
   "Source": "BrainBoost-API",
   "BasePath": "_content/BrainBoost-API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BrainBoost-API\\wwwroot",
       "Source": "BrainBoost-API",
-      "ContentRoot": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
+      "Identity": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Course/a/_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "AssetKind": "All",
@@ -34,6 +34,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg"
+    },
+    {
+      "Identity": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "RelativePath": "Images/Courses/dddddddddddddddddddddddddddddddddddd.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG"
+    },
+    {
+      "Identity": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "RelativePath": "Images/Courses/Helper.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Courses\\Helper.jpg"
     }
   ]
 }

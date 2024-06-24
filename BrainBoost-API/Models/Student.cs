@@ -17,8 +17,9 @@ namespace BrainBoost_API.Models
         public bool IsDeleted { get; set; } 
 
         public ApplicationUser? AppUser { get; set; }
-        public List<Teacher>? FollowedTeachers { get; set; }
+
         public List<StudentEnrolledCourses>? EnrolledCourses { get; set; }
         public List<StudentSavedCourses>? SavedCourses { get; set; }
+        public List<comment> comments { get; set; }
     }
 }

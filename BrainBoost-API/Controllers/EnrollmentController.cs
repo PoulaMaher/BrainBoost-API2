@@ -103,7 +103,7 @@ namespace BrainBoost_API.Controllers
                     enrollment.IsActive = true;
                     unitOfWork.StudentEnrolledCoursesRepository.add(stdCourse);
                     unitOfWork.save();
-                    HandleVideoState(stdCourse.StudentId , stdCourse.CourseId,stdCourse.Id);
+                    HandleVideoState(stdCourse.CourseId, stdCourse.StudentId , stdCourse.Id);
                     HandleEarnings(enrollment.Id);
                     break;
                 case "Declined":

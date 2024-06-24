@@ -1,50 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Brain-Boost\\BrainBoost API\\",
+  "WorkspaceRootPath": "F:\\BrainBoost\\BrainBoost-API2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|d:\\brain-boost\\brainboost api\\brainboost-api\\repositories\\inplementation\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\repositories\\inplementation\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|f:\\brainboost\\brainboost-api2\\brainboost-api\\models\\studentenrolledcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\models\\studentenrolledcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|d:\\brain-boost\\brainboost api\\brainboost-api\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|f:\\brainboost\\brainboost-api2\\brainboost-api\\models\\videostate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\models\\videostate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|D:\\Brain-Boost\\BrainBoost API\\brainboost-api\\dtos\\uploader\\uploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\dtos\\uploader\\uploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|f:\\brainboost\\brainboost-api2\\brainboost-api\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|D:\\Brain-Boost\\BrainBoost API\\brainboost-api\\dtos\\teacher\\insertedteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\dtos\\teacher\\insertedteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|f:\\brainboost\\brainboost-api2\\brainboost-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|D:\\Brain-Boost\\BrainBoost API\\brainboost-api\\repositories\\inplementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\repositories\\inplementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|D:\\Brain-Boost\\BrainBoost API\\brainboost-api\\dtos\\video\\videodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\dtos\\video\\videodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|D:\\Brain-Boost\\BrainBoost API\\brainboost-api\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|D:\\Brain-Boost\\BrainBoost API\\brainboost-api\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|D:\\Brain-Boost\\BrainBoost API\\brainboost-api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|D:\\Brain-Boost\\BrainBoost API\\brainboost-api\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|f:\\brainboost\\brainboost-api2\\brainboost-api\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|D:\\Brain-Boost\\BrainBoost API\\brainboost-api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|f:\\brainboost\\brainboost-api2\\brainboost-api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,165 +34,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a83394e3-39c2-4678-a3c8-364b69d78fd3}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Repositories\\Inplementation\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\Repositories\\Inplementation\\UnitOfWork.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Repositories\\Inplementation\\UnitOfWork.cs*",
-              "RelativeToolTip": "BrainBoost-API\\Repositories\\Inplementation\\UnitOfWork.cs*",
-              "ViewState": "AQIAACEAAAAAAAAAAAAMwCwAAAAAAAAA",
+              "Title": "StudentEnrolledCourses.cs",
+              "DocumentMoniker": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\Models\\StudentEnrolledCourses.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\Models\\StudentEnrolledCourses.cs",
+              "ToolTip": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\Models\\StudentEnrolledCourses.cs",
+              "RelativeToolTip": "BrainBoost-API\\Models\\StudentEnrolledCourses.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T21:45:13.969Z",
+              "WhenOpened": "2024-06-24T03:19:03.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Repositories\\Inplementation\\Repository.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\Repositories\\Inplementation\\Repository.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Repositories\\Inplementation\\Repository.cs",
-              "RelativeToolTip": "BrainBoost-API\\Repositories\\Inplementation\\Repository.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAlwBUAAAAJAAAA",
+              "DocumentIndex": 1,
+              "Title": "VideoState.cs",
+              "DocumentMoniker": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\Models\\VideoState.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\Models\\VideoState.cs",
+              "ToolTip": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\Models\\VideoState.cs",
+              "RelativeToolTip": "BrainBoost-API\\Models\\VideoState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T17:34:31.921Z",
+              "WhenOpened": "2024-06-24T03:19:01.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TeacherController.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Controllers\\TeacherController.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\Controllers\\TeacherController.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Controllers\\TeacherController.cs",
-              "RelativeToolTip": "BrainBoost-API\\Controllers\\TeacherController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwAYAAAAfAAAA",
+              "DocumentIndex": 2,
+              "Title": "comment.cs",
+              "DocumentMoniker": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\Models\\comment.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\Models\\comment.cs",
+              "ToolTip": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\Models\\comment.cs",
+              "RelativeToolTip": "BrainBoost-API\\Models\\comment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T06:45:18.224Z",
+              "WhenOpened": "2024-06-24T03:18:53.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "insertedTeacher.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\DTOs\\Teacher\\insertedTeacher.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\DTOs\\Teacher\\insertedTeacher.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\DTOs\\Teacher\\insertedTeacher.cs",
-              "RelativeToolTip": "BrainBoost-API\\DTOs\\Teacher\\insertedTeacher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T06:42:31.462Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\Controllers\\CourseController.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "BrainBoost-API\\Controllers\\CourseController.cs",
-              "ViewState": "AQIAAPQAAAAAAAAAAIAwwKgAAABlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T18:40:46.651Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\appsettings.json",
+              "RelativeDocumentMoniker": "BrainBoost-API\\appsettings.json",
+              "ToolTip": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\appsettings.json",
+              "RelativeToolTip": "BrainBoost-API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-24T03:16:50.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Teacher.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Models\\Teacher.cs",
+              "DocumentMoniker": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\Models\\Teacher.cs",
               "RelativeDocumentMoniker": "BrainBoost-API\\Models\\Teacher.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Models\\Teacher.cs",
+              "ToolTip": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\Models\\Teacher.cs",
               "RelativeToolTip": "BrainBoost-API\\Models\\Teacher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T10:30:07.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Question.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Models\\Question.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\Models\\Question.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Models\\Question.cs",
-              "RelativeToolTip": "BrainBoost-API\\Models\\Question.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T10:59:21.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Uploader.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\DTOs\\Uploader\\Uploader.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\DTOs\\Uploader\\Uploader.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\DTOs\\Uploader\\Uploader.cs",
-              "RelativeToolTip": "BrainBoost-API\\DTOs\\Uploader\\Uploader.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T16:37:43.104Z",
+              "WhenOpened": "2024-06-24T03:12:51.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "VideoDTO.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\DTOs\\Video\\VideoDTO.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\DTOs\\Video\\VideoDTO.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\DTOs\\Video\\VideoDTO.cs",
-              "RelativeToolTip": "BrainBoost-API\\DTOs\\Video\\VideoDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "Title": "Student.cs",
+              "DocumentMoniker": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\Models\\Student.cs",
+              "ToolTip": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\Models\\Student.cs",
+              "RelativeToolTip": "BrainBoost-API\\Models\\Student.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T17:21:35.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "BrainBoost-API\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAIA5wCEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T07:39:45.999Z",
+              "WhenOpened": "2024-06-24T03:12:31.721Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "BrainBoost-API\\Controllers\\StudentController.cs",
-              "ToolTip": "D:\\Brain-Boost\\BrainBoost API\\BrainBoost-API\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "BrainBoost-API\\Controllers\\StudentController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAQwBwAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T06:47:46.583Z"
             }
           ]
         }

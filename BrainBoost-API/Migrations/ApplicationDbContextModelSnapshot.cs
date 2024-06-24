@@ -567,6 +567,9 @@ namespace BrainBoost_API.Migrations
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("hasFinishedallVideos")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CourseId");
@@ -612,6 +615,9 @@ namespace BrainBoost_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("AboutYou")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
@@ -629,10 +635,10 @@ namespace BrainBoost_API.Migrations
                     b.Property<string>("Lname")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("NumOfCrs")
+                    b.Property<int?>("NumOfCrs")
                         .HasColumnType("int");
 
-                    b.Property<int>("NumOfFollowers")
+                    b.Property<int?>("NumOfFollowers")
                         .HasColumnType("int");
 
                     b.Property<string>("PhoneNumber")
@@ -641,17 +647,17 @@ namespace BrainBoost_API.Migrations
                     b.Property<string>("PictureUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("StudentId")
-                        .HasColumnType("int");
-
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("YearsOfExperience")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("StudentId");
-
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId")
+                        .IsUnique()
+                        .HasFilter("[UserId] IS NOT NULL");
 
                     b.ToTable("Teachers");
                 });
@@ -663,6 +669,9 @@ namespace BrainBoost_API.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Chapter")
+                        .HasColumnType("int");
 
                     b.Property<int>("CrsId")
                         .HasColumnType("int");
@@ -735,6 +744,46 @@ namespace BrainBoost_API.Migrations
                     b.HasIndex("CrsId");
 
                     b.ToTable("WhatToLearn");
+                });
+
+            modelBuilder.Entity("BrainBoost_API.Models.comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CommentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("StudentName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StudentPhoto")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("VideoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("studentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("VideoId");
+
+                    b.HasIndex("studentId");
+
+                    b.ToTable("Comments");
                 });
 
             modelBuilder.Entity("BrainBoost_API.Models.subscription", b =>
@@ -1043,10 +1092,6 @@ namespace BrainBoost_API.Migrations
 
             modelBuilder.Entity("BrainBoost_API.Models.Teacher", b =>
                 {
-                    b.HasOne("BrainBoost_API.Models.Student", null)
-                        .WithMany("FollowedTeachers")
-                        .HasForeignKey("StudentId");
-
                     b.HasOne("BrainBoost_API.Models.ApplicationUser", "AppUser")
                         .WithMany()
                         .HasForeignKey("UserId");
@@ -1093,6 +1138,25 @@ namespace BrainBoost_API.Migrations
                         .IsRequired();
 
                     b.Navigation("course");
+                });
+
+            modelBuilder.Entity("BrainBoost_API.Models.comment", b =>
+                {
+                    b.HasOne("BrainBoost_API.Models.Video", "video")
+                        .WithMany("comments")
+                        .HasForeignKey("VideoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BrainBoost_API.Models.Student", "student")
+                        .WithMany("comments")
+                        .HasForeignKey("studentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("student");
+
+                    b.Navigation("video");
                 });
 
             modelBuilder.Entity("BrainBoost_API.Models.subscription", b =>
@@ -1199,9 +1263,9 @@ namespace BrainBoost_API.Migrations
                 {
                     b.Navigation("EnrolledCourses");
 
-                    b.Navigation("FollowedTeachers");
-
                     b.Navigation("SavedCourses");
+
+                    b.Navigation("comments");
                 });
 
             modelBuilder.Entity("BrainBoost_API.Models.StudentEnrolledCourses", b =>
@@ -1212,6 +1276,11 @@ namespace BrainBoost_API.Migrations
             modelBuilder.Entity("BrainBoost_API.Models.Teacher", b =>
                 {
                     b.Navigation("Crs");
+                });
+
+            modelBuilder.Entity("BrainBoost_API.Models.Video", b =>
+                {
+                    b.Navigation("comments");
                 });
 #pragma warning restore 612, 618
         }
