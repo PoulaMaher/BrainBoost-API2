@@ -48,8 +48,8 @@ namespace BrainBoost_API.Controllers
             return Ok(categoryData);
         }
 
-        [HttpPost("addategory")]
-        public async Task<IActionResult> addategory(CategoryDTO newCategory)
+        [HttpPost("addCategory")]
+        public async Task<IActionResult> addCategory(CategoryDTO newCategory)
         {
             if (ModelState.IsValid)
             {
