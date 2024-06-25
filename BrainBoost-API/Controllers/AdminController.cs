@@ -63,7 +63,7 @@ namespace BrainBoost_API.Controllers
             admin.IsDeleted = true;
             unitOfWork.AdminRepository.remove(admin);
             unitOfWork.save();
-            return Ok("Admin Deleted Successfully!");
+            return Ok();
         }
         [HttpPut("UpdateAdminData")]
         public IActionResult UpdateAdminData(AdminDTO updatedAdmin)
