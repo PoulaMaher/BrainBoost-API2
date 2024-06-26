@@ -11,10 +11,13 @@ F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Azure.Core.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Azure.Identity.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\EntityFrameworkCore.GenericRepository.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Humanizer.dll
+F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNet.SignalR.Client.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Common.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -27,6 +30,7 @@ F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFr
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Features.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 F:\BrainBoost\BrainBoost-API2\BrainBoost-API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

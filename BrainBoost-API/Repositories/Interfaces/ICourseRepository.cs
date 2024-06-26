@@ -17,5 +17,6 @@ namespace BrainBoost_API.Repositories.Inplementation
         int GetTotalNumOfCourse();
         List<Course> GetLastThreeCourses();
         List<CourseEarningsDto> GetTop3CoursesByEarnings();
+        
     }
 }
