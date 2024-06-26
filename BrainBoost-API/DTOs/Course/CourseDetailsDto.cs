@@ -17,7 +17,7 @@ namespace BrainBoost_API.DTOs.Course
         public double? Durtion { get; set; }
         public string? Level { get; set; }
         public int? Rate { get; set; }
-        public int? NumOfRates { get; set; }
+        public int? NumOfRates { get; set; } 
         public int? NumOfVideos { get; set; }
         public bool IsApproved { get; set; } = false;
         public CourseDetailsTeacherDataDto TeacherDataDto { get; set; } 
