@@ -47,7 +47,10 @@ namespace BrainBoost_API.Controllers
                 video.State = status;
                 unitOfWork.VideoStateRepository.update(video);
                 unitOfWork.save();
-                return Ok("Successfully changed");
+                var videos = unitOfWork.VideoRepository.GetList(c => c.CrsId == id).ToList();
+                var videoState = unitOfWork.VideoStateRepository.GetList(c => c.StudentEnrolledCourseId == EnrolledCrsId);
+                var videoDTO = unitOfWork.VideoStateRepository.GetVideoState(videoState, videos);
+                return Ok(videoDTO);
             }
             return BadRequest(ModelState);
         }

@@ -51,32 +51,32 @@ namespace BrainBoost_API.Controllers
                 if (result.Succeeded)
                 {
                     await UserManager.AddToRoleAsync(user, role);
-                    //switch (role)
-                    //{
-                    //    case "Student":
-                    //        var student = new Student
-                    //        {
-                    //            AppUser = user,
-                    //            Fname= registerUser.FirstName,
-                    //            Lname= registerUser.LastName,
-                    //        };
-                    //        this.UnitOfWork.StudentRepository.add(student);
-                    //        break;
+                    switch (role)
+                    {
+                        case "Student":
+                            var student = new Student
+                            {
+                                AppUser = user,
+                                Fname = registerUser.FirstName,
+                                Lname = registerUser.LastName,
+                            };
+                            this.UnitOfWork.StudentRepository.add(student);
+                            break;
 
-                    //    case "Teacher":
-                    //        var teacher = new Teacher
-                    //        {
-                    //            AppUser = user,
-                    //            Fname = registerUser.FirstName,
-                    //            Lname = registerUser.LastName,
-                    //        };
-                    //        this.UnitOfWork.TeacherRepository.add(teacher);
-                    //        break;
+                        case "Teacher":
+                            var teacher = new Teacher
+                            {
+                                AppUser = user,
+                                Fname = registerUser.FirstName,
+                                Lname = registerUser.LastName,
+                            };
+                            this.UnitOfWork.TeacherRepository.add(teacher);
+                            break;
 
-                    //    default:
-                    //        // Handle default case if necessary
-                    //        break;
-                    //}
+                        default:
+                            // Handle default case if necessary
+                            break;
+                    }
                     this.UnitOfWork.save();
                     return Ok(new { Msg = "Account Created", userId=user.Id,role=role });
                 }

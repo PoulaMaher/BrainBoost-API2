@@ -5,12 +5,36 @@
       "PackagePath": "staticwebassets\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg"
     },
     {
+      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\java\\Fish.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\java\\Fish.jpg"
+    },
+    {
       "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
       "PackagePath": "staticwebassets\\Images\\Courses\\Helper.jpg"
     },
     {
       "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG",
       "PackagePath": "staticwebassets\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG"
+    },
+    {
+      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg",
+      "PackagePath": "staticwebassets\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg"
+    },
+    {
+      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\Project.mp4"
+    },
+    {
+      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project2.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\Project2.mp4"
+    },
+    {
+      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project3.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\Project3.mp4"
+    },
+    {
+      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project4.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\Project4.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props",

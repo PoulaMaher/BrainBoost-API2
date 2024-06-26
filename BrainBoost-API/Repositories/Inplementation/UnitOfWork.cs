@@ -45,6 +45,7 @@ namespace BrainBoost_API.Repositories.Inplementation
             VideoStateRepository = new VideoStateRepository(context,mapper);
             EarningsRepository = new EarningsRepository(context,mapper);
             CommentRepository=new CommentRepository(context,mapper);
+            WhatToLearnRepository=new WhatToLearnRepository(context);
 
         }
 
