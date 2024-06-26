@@ -43,10 +43,12 @@ namespace BrainBoost_API.Repositories.Inplementation
             AnswerRepository = new AnswerRepository(context);
             QuestionRepository = new QuestionRepository(context);
             StudentEnrolledCoursesRepository = new StudentEnrolledCoursesRepository(context);
+            WhatToLearnRepository=new WhatToLearnRepository(context);
             VideoStateRepository = new VideoStateRepository(context, mapper);
             EarningsRepository = new EarningsRepository(context, mapper);
             CommentRepository = new CommentRepository(context, mapper);
             AdminRepository = new AdminRepository(context);
+
 
         }
 
