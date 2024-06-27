@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jSHQDbVgC7Z4+TfHhd23uk49niEj9EKDBh7w9uCENzw=",
+  "Hash": "eDWT05pzg/n1uvQ9vfsXACRgREh/fbbWGl+USj7it9Y=",
   "Source": "BrainBoost-API",
   "BasePath": "_content/BrainBoost-API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BrainBoost-API\\wwwroot",
       "Source": "BrainBoost-API",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
+      "Identity": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Course/a/_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\java\\Fish.jpg",
+      "Identity": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\java\\Fish.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Course/java/Fish.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Course\\java\\Fish.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG",
+      "Identity": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Courses/dddddddddddddddddddddddddddddddddddd.PNG",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
+      "Identity": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Courses/Helper.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Courses\\Helper.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg",
+      "Identity": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "G:\\graduation project\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Teacher/Osama Ibrahem/439204437_10161238831654812_1251412392274984282_n.jpg",
       "AssetKind": "All",
