@@ -51,18 +51,33 @@ namespace BrainBoost_API.Controllers
             adminData = mapper.Map<AdminDTO>(admin);
             return Ok(adminData);
         }
-
         [HttpDelete("DeleteAdmin/{id}")]
-        public IActionResult DeleteAdmin(int id)
+        public async Task<IActionResult> DeleteAdmin(int id)
         {
             Admin admin = unitOfWork.AdminRepository.Get(a => a.Id == id);
             if (admin == null)
             {
                 return NotFound();
             }
+
+            ApplicationUser userFromDb = await userManager.FindByIdAsync(admin.UserId);
+            if (userFromDb == null)
+            {
+                return NotFound();
+            }
+
+            userFromDb.IsDeleted = true;
+            IdentityResult result = await userManager.UpdateAsync(userFromDb);
+
+            if (!result.Succeeded)
+            {
+                return BadRequest(result.Errors);
+            }
+
             admin.IsDeleted = true;
             unitOfWork.AdminRepository.remove(admin);
             unitOfWork.save();
+
             return Ok();
         }
         [HttpPut("UpdateAdminData")]
