@@ -81,16 +81,22 @@ namespace BrainBoost_API.Controllers
             return Ok();
         }
         [HttpPut("UpdateAdminData")]
-        public IActionResult UpdateAdminData(AdminDTO updatedAdmin)
+        public IActionResult UpdateAdminData(AdminDTO updatedAdmin, int id)
         {
-            if (ModelState.IsValid)
+            Admin adminfromDB = unitOfWork.AdminRepository.Get(s => s.Id == id);
+            if (adminfromDB == null)
             {
-                Admin admin = mapper.Map<Admin>(updatedAdmin);
-                unitOfWork.AdminRepository.update(admin);
-                unitOfWork.save();
-                return Ok("Successfully Updated");
+                return NotFound();
             }
-            return BadRequest(ModelState);
+
+            if (updatedAdmin.Id == id && ModelState.IsValid)
+            {
+                mapper.Map(updatedAdmin, adminfromDB);
+                unitOfWork.AdminRepository.update(adminfromDB);
+                unitOfWork.save();
+                return Ok("Data Updated Successfully");
+            }
+            return BadRequest(ModelState); ;
         }
     }
 }
