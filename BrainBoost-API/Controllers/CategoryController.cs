@@ -73,11 +73,11 @@ namespace BrainBoost_API.Controllers
             category.IsDeleted = true;
             unitOfWork.CategoryRepository.remove(category);
             unitOfWork.save();
-            return Ok("Category Deleted Successfully!");
+            return Ok();
         }
 
-        [HttpPut("UpdateCategory")]
-        public IActionResult UpdateCategory(CategoryDTO categoryDTO, int id)
+        [HttpPut("UpdateCategory/{id}")]
+        public IActionResult UpdateCategory(int id, [FromBody] CategoryDTO categoryDTO)
         {
             Category categoryfromDB = unitOfWork.CategoryRepository.Get(s => s.Id == id);
             if (categoryfromDB == null)
@@ -90,7 +90,7 @@ namespace BrainBoost_API.Controllers
                 mapper.Map(categoryDTO, categoryfromDB);
                 unitOfWork.CategoryRepository.update(categoryfromDB);
                 unitOfWork.save();
-                return Ok("Data Updated Successfully");
+                return Ok();
             }
             return BadRequest(ModelState);
         }
