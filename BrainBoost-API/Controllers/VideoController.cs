@@ -47,7 +47,10 @@ namespace BrainBoost_API.Controllers
                 video.State = status;
                 unitOfWork.VideoStateRepository.update(video);
                 unitOfWork.save();
-                return Ok("Successfully changed");
+                var videos = unitOfWork.VideoRepository.GetList(c => c.CrsId == id).ToList();
+                var videoState = unitOfWork.VideoStateRepository.GetList(c => c.StudentEnrolledCourseId == EnrolledCrsId);
+                var videoDTO = unitOfWork.VideoStateRepository.GetVideoState(videoState, videos);
+                return Ok(videoDTO);
             }
             return BadRequest(ModelState);
         }
@@ -67,35 +70,6 @@ namespace BrainBoost_API.Controllers
                 unitOfWork.save();
 
                 return Ok();
-            }
-            return BadRequest(ModelState);
-        }
-        [HttpGet("getComment/{id:int}")]
-        public async Task<IActionResult> getComment(int id)
-        {
-            if (ModelState.IsValid)
-            {
-              var comments=unitOfWork.CommentRepository.GetList(c=>c.VideoId == id);
-                var commentDTO=unitOfWork.CommentRepository.getComments(comments).ToList();
-
-                return Ok(commentDTO);
-            }
-            return BadRequest(ModelState);
-        }
-
-        [HttpPost("addComment")]
-        public async Task<IActionResult> addComment(addCommentDTO comment)
-        {
-            if (ModelState.IsValid)
-            {
-                string UserID = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
-                Student std = unitOfWork.StudentRepository.Get(c => c.UserId == UserID);
-                comment com = unitOfWork.CommentRepository.addComment(std, comment);
-                unitOfWork.CommentRepository.add(com);
-                unitOfWork.save();
-                var comments = unitOfWork.CommentRepository.GetList(c => c.VideoId == comment.VideoId);
-                var commentDTO = unitOfWork.CommentRepository.getComments(comments).ToList();
-                return Ok(commentDTO);
             }
             return BadRequest(ModelState);
         }

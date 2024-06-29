@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EQmH2v6gEP/NfYAFxYPwGeYPdNFRgQkf0vU4NAeImtg=",
+  "Hash": "HtrMB0g+h9NmNKCtnyt95/vHJs1N6CFeTgqv3VXu7is=",
   "Source": "BrainBoost-API",
   "BasePath": "_content/BrainBoost-API",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\angular.mp4",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "RelativePath": "angular.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\angular.mp4"
+    },
     {
       "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "SourceId": "BrainBoost-API",
@@ -34,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg"
+    },
+    {
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\java\\Fish.jpg",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "RelativePath": "Images/Course/java/Fish.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Course\\java\\Fish.jpg"
     },
     {
       "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG",
@@ -72,6 +110,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Courses\\Helper.jpg"
+    },
+    {
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "RelativePath": "Images/Teacher/Osama Ibrahem/439204437_10161238831654812_1251412392274984282_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg"
+    },
+    {
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Poula Maher\\ph.jpg",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "RelativePath": "Images/Teacher/Poula Maher/ph.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Teacher\\Poula Maher\\ph.jpg"
     }
   ]
 }
