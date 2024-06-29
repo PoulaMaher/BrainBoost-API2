@@ -81,22 +81,62 @@ namespace BrainBoost_API.Controllers
             return Ok();
         }
         [HttpPut("UpdateAdminData")]
-        public IActionResult UpdateAdminData(AdminDTO updatedAdmin, int id)
+        public IActionResult UpdateAdminData(AdminDTO updatedAdmin)
         {
-            Admin adminfromDB = unitOfWork.AdminRepository.Get(s => s.Id == id);
+            Admin adminfromDB = unitOfWork.AdminRepository.Get(s => s.Id == updatedAdmin.Id);
             if (adminfromDB == null)
             {
                 return NotFound();
             }
 
-            if (updatedAdmin.Id == id && ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 mapper.Map(updatedAdmin, adminfromDB);
                 unitOfWork.AdminRepository.update(adminfromDB);
                 unitOfWork.save();
-                return Ok("Data Updated Successfully");
+                return Ok();
             }
             return BadRequest(ModelState); ;
         }
+        [HttpPost("uploadimage/{adminId:int}")]
+        public async Task<IActionResult> UploadImage(IFormFile file, int adminId)
+        {
+            if (ModelState.IsValid)
+            {
+                if (file == null || file.Length == 0)
+                { return BadRequest("No file uploaded."); }
+
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", "Admin");
+                var fileName = Guid.NewGuid().ToString() + "_" + file.FileName;
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+
+                try
+                {
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
+                    var photoUrl = $"http://localhost:43827/Images/Admin/{fileName}";
+                    Admin admin = unitOfWork.AdminRepository.Get(a => a.Id == adminId);
+                    if (admin == null)
+                    {
+                        return NotFound("Admin not found.");
+                    }
+                    admin.PictureUrl = photoUrl;
+                    unitOfWork.AdminRepository.update(admin);
+                    unitOfWork.save();
+                    return Ok(photoUrl);
+                }
+                catch (Exception ex)
+                {
+                    // Add logging here
+                    return StatusCode(500, "Internal server error: " + ex.Message);
+                }
+            }
+            return BadRequest(ModelState);
+        }
+
+
     }
 }
