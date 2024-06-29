@@ -54,8 +54,10 @@ namespace BrainBoost_API
             builder.Services.AddCors(options => {
                 options.AddPolicy("MyPolicy",
                                   policy => policy.AllowAnyMethod()
-                                  .AllowAnyOrigin()
-                                  .AllowAnyHeader());
+                                  .AllowAnyMethod()
+                                  .AllowAnyHeader()
+                                  .AllowCredentials()
+                                  .SetIsOriginAllowed(allow => true));
             });
 
             //get section pay link from appsettings.json
@@ -108,7 +110,7 @@ namespace BrainBoost_API
             app.UseAuthorization();
             app.UseCors("MyPolicy");
             app.MapControllers();
-            app.MapHub<ChatHub>("/Chat");
+            app.MapHub<CommentHub>("/DiscussionBox");
             app.Run();
         }
     }

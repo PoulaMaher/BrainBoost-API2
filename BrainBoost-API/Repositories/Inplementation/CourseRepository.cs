@@ -21,8 +21,9 @@ namespace BrainBoost_API.Repositories.Inplementation
         {
             if (crs != null)
             {
-                CourseDetailsDto crsDetails = mapper.Map<CourseDetailsDto>(crs);
 
+                CourseDetailsDto crsDetails = mapper.Map<CourseDetailsDto>(crs);
+                crsDetails.NumOfVideos = crs.videos?.Count;
                 crsDetails.Review = mapper.Map<IEnumerable<ReviewDTO>>(review).ToList();
                 crsDetails.WhatToLearn = mapper.Map<IEnumerable<WhatToLearnDTO>>(crs.WhatToLearn).ToList();
                 crsDetails.TeacherDataDto = mapper.Map<CourseDetailsTeacherDataDto>(crs.Teacher);
@@ -36,7 +37,7 @@ namespace BrainBoost_API.Repositories.Inplementation
         public IEnumerable<Course> GetFilteredCourses(CourseFilterationDto filter, string? includeProps = null)
         {
             IQueryable<Course> courses = GetAll(includeProps).AsQueryable();
-            if (!string.IsNullOrEmpty(filter.CategoryName))
+            if (filter.CategoryName != null)
             {
                 courses = courses.Where(c => c.Category.Name == filter.CategoryName);
             }
