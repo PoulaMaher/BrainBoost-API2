@@ -10,19 +10,20 @@ namespace BrainBoost_API.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private ICategoryRepository CategoryRepository;
         private readonly IMapper mapper;
-        public CategoryController(ICategoryRepository CategoryRepository, IMapper mapper)
+        private readonly IUnitOfWork unitOfWork;
+
+        public CategoryController(IMapper mapper,IUnitOfWork unitOfWork)
         {
-            this.CategoryRepository = CategoryRepository;
             this.mapper = mapper;
+            this.unitOfWork = unitOfWork;
         }
         [HttpGet("GetAllCategories")]
         public async Task<IActionResult> GetAllCategories()
         {
             if (ModelState.IsValid)
             {
-                List<Category> categories = CategoryRepository.GetAll().ToList();
+                List<Category> categories = unitOfWork.CategoryRepository.GetAll().ToList();
                 List<CategoryDTO> categoriesdata = new List<CategoryDTO>();
                 foreach (Category category in categories)
                 {
@@ -37,7 +38,7 @@ namespace BrainBoost_API.Controllers
         [HttpGet("GetCategoryById/{id}")]
         public IActionResult GetCategoryById(int id)
         {
-            Category category = CategoryRepository.Get(a => a.Id == id);
+            Category category = unitOfWork.CategoryRepository.Get(a => a.Id == id);
 
             if (category == null)
             {
@@ -49,14 +50,13 @@ namespace BrainBoost_API.Controllers
         }
 
         [HttpPost("addCategory")]
-        public async Task<IActionResult> addCategory(CategoryDTO newCategory)
+        public IActionResult addCategory(CategoryDTO newCategory)
         {
             if (ModelState.IsValid)
             {
-                Category category = new Category();
-                category = mapper.Map<Category>(newCategory);
-                CategoryRepository.add(category);
-                CategoryRepository.save();
+                Category category = mapper.Map<Category>(newCategory);
+                unitOfWork.CategoryRepository.add(category);
+                unitOfWork.save();
                 return Ok();
             }
             return BadRequest(ModelState);
@@ -65,25 +65,32 @@ namespace BrainBoost_API.Controllers
         [HttpDelete("DeleteCategory/{id}")]
         public IActionResult DeleteCategory(int id)
         {
-            Category category = CategoryRepository.Get(a => a.Id == id);
+            Category category = unitOfWork.CategoryRepository.Get(a => a.Id == id);
             if (category == null)
             {
                 return NotFound();
             }
             category.IsDeleted = true;
-            CategoryRepository.remove(category);
-            CategoryRepository.save();
-            return Ok("Category Deleted Successfully!");
+            unitOfWork.CategoryRepository.remove(category);
+            unitOfWork.save();
+            return Ok();
         }
-        [HttpPut("UpdateCategory")]
-        public IActionResult UpdateCategory(CategoryDTO updatedCategory)
+
+        [HttpPut("UpdateCategory/{id}")]
+        public IActionResult UpdateCategory(int id, [FromBody] CategoryDTO categoryDTO)
         {
-            if (ModelState.IsValid)
+            Category categoryfromDB = unitOfWork.CategoryRepository.Get(s => s.Id == id);
+            if (categoryfromDB == null)
             {
-                Category category = mapper.Map<Category>(updatedCategory);
-                CategoryRepository.update(category);
-                CategoryRepository.save();
-                return Ok("Successfully Updated");
+                return NotFound();
+            }
+
+            if (categoryDTO.Id == id && ModelState.IsValid)
+            {
+                mapper.Map(categoryDTO, categoryfromDB);
+                unitOfWork.CategoryRepository.update(categoryfromDB);
+                unitOfWork.save();
+                return Ok();
             }
             return BadRequest(ModelState);
         }
