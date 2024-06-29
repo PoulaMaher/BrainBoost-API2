@@ -22,7 +22,7 @@ namespace BrainBoost_API.Controllers
             this.userManager = userManager;
         }
         [HttpPost("AddTeacher")]
-        public async Task<IActionResult> AddTeacher([FromForm]insertedTeacher insertedTeacher)
+        public async Task<IActionResult> AddTeacher([FromForm] insertedTeacher insertedTeacher)
         {
             ApplicationUser applicationUser = await userManager.FindByIdAsync(insertedTeacher.userId);
             if (applicationUser != null)
@@ -37,7 +37,7 @@ namespace BrainBoost_API.Controllers
                     Lname = applicationUser.Lname,
                     NumOfFollowers = 0
                 };
-                string photoUrl = await Uploader.uploadPhoto(insertedTeacher.photo, teacher.GetType().Name,teacher.Fname +" "+teacher.Lname );
+                string photoUrl = await Uploader.uploadPhoto(insertedTeacher.photo, teacher.GetType().Name, teacher.Fname + " " + teacher.Lname);
                 teacher.PictureUrl = photoUrl;
                 unitOfWork.TeacherRepository.add(teacher);
                 unitOfWork.save();
@@ -77,17 +77,33 @@ namespace BrainBoost_API.Controllers
         }
 
         [HttpDelete("DeleteTeacher")]
-        public IActionResult DeleteTeacher(int teacherId)
+        public async Task<IActionResult> DeleteTeacher(int teacherId)
         {
-            if (ModelState.IsValid)
+            Teacher teacher = unitOfWork.TeacherRepository.Get(t => t.Id == teacherId);
+            if (teacher == null)
             {
-                var teacher = unitOfWork.TeacherRepository.Get(c => c.Id == teacherId);
-                teacher.IsDeleted = true;
-                unitOfWork.TeacherRepository.remove(teacher);
-                unitOfWork.save();
-                return Ok("Successfully Deleted");
+                return NotFound();
             }
-            return BadRequest(ModelState);
+
+            ApplicationUser userFromDb = await userManager.FindByIdAsync(teacher.UserId);
+            if (userFromDb == null)
+            {
+                return NotFound();
+            }
+
+            userFromDb.IsDeleted = true;
+            IdentityResult result = await userManager.UpdateAsync(userFromDb);
+
+            if (!result.Succeeded)
+            {
+                return BadRequest(result.Errors);
+            }
+
+            teacher.IsDeleted = true;
+            unitOfWork.TeacherRepository.remove(teacher);
+            unitOfWork.save();
+
+            return Ok();
         }
 
         [HttpPut("UpdateTeacherData")]
@@ -99,6 +115,43 @@ namespace BrainBoost_API.Controllers
                 unitOfWork.TeacherRepository.update(teacher);
                 unitOfWork.save();
                 return Ok("Successfully Updated");
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpPost("uploadimage/{teacherId:int}")]
+        public async Task<IActionResult> UploadImage(IFormFile file, int teacherId)
+        {
+            if (ModelState.IsValid)
+            {
+                if (file == null || file.Length == 0)
+                { return BadRequest("No file uploaded."); }
+
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", "Teacher");
+                var fileName = Guid.NewGuid().ToString() + "_" + file.FileName;
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+
+                try
+                {
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
+                    var photoUrl = $"http://localhost:43827/Images/Admin/{fileName}";
+                    Teacher teacher = unitOfWork.TeacherRepository.Get(t => t.Id == teacherId);
+                    if (teacher == null)
+                    {
+                        return NotFound("teacher not found.");
+                    }
+                    teacher.PictureUrl = photoUrl;
+                    unitOfWork.TeacherRepository.update(teacher);
+                    unitOfWork.save();
+                    return Ok(photoUrl);
+                }
+                catch (Exception ex)
+                {
+                    return StatusCode(500, "Internal server error: " + ex.Message);
+                }
             }
             return BadRequest(ModelState);
         }

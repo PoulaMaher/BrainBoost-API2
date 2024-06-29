@@ -1,9 +1,8 @@
 ﻿using AutoMapper;
 using BrainBoost_API.DTOs.Student;
-using BrainBoost_API.DTOs.Teacher;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BrainBoost_API.Controllers
@@ -14,11 +13,13 @@ namespace BrainBoost_API.Controllers
     {
         private readonly IUnitOfWork UnitOfWork;
         private readonly IMapper Mapper;
-        
-        public StudentController(IUnitOfWork unitOfWork,IMapper mapper)
+        private readonly UserManager<ApplicationUser> userManager;
+
+        public StudentController(IUnitOfWork unitOfWork, IMapper mapper, UserManager<ApplicationUser> userManager)
         {
             UnitOfWork = unitOfWork;
             Mapper = mapper;
+            this.userManager = userManager;
         }
         //[HttpPost("AddStudent")]
         //public IActionResult AddStudent()
@@ -53,13 +54,28 @@ namespace BrainBoost_API.Controllers
         }
 
         [HttpDelete("Delete/{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             Student student = UnitOfWork.StudentRepository.Get(s => s.Id == id);
             if (student == null)
             {
                 return NotFound();
             }
+
+            ApplicationUser userFromDb = await userManager.FindByIdAsync(student.UserId);
+            if (userFromDb == null)
+            {
+                return NotFound();
+            }
+
+            userFromDb.IsDeleted = true;
+            IdentityResult result = await userManager.UpdateAsync(userFromDb);
+
+            if (!result.Succeeded)
+            {
+                return BadRequest(result.Errors);
+            }
+
             student.IsDeleted = true;
             UnitOfWork.StudentRepository.remove(student);
             UnitOfWork.save();
@@ -91,10 +107,47 @@ namespace BrainBoost_API.Controllers
             return BadRequest(ModelState);
 
         }
+        [HttpPost("uploadimage/{studentId:int}")]
+        public async Task<IActionResult> UploadImage(IFormFile file, int studentId)
+        {
+            if (ModelState.IsValid)
+            {
+                if (file == null || file.Length == 0)
+                { return BadRequest("No file uploaded."); }
+
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", "Student");
+                var fileName = Guid.NewGuid().ToString() + "_" + file.FileName;
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+
+                try
+                {
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
+                    var photoUrl = $"http://localhost:43827/Images/Admin/{fileName}";
+                    Student student = UnitOfWork.StudentRepository.Get(s => s.Id == studentId);
+                    if (student == null)
+                    {
+                        return NotFound("student not found.");
+                    }
+                    student.PictureUrl = photoUrl;
+                    UnitOfWork.StudentRepository.update(student);
+                    UnitOfWork.save();
+                    return Ok(photoUrl);
+                }
+                catch (Exception ex)
+                {
+                    return StatusCode(500, "Internal server error: " + ex.Message);
+                }
+            }
+            return BadRequest(ModelState);
+        }
         [HttpGet("GetTopStudent")]
         public IActionResult GetTopStudent()
         {
-            List<Student> students=UnitOfWork.StudentRepository.GetTopStudents();
+            List<Student> students = UnitOfWork.StudentRepository.GetTopStudents();
             return Ok(students);
         }
 
