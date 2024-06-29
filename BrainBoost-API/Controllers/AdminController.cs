@@ -130,7 +130,6 @@ namespace BrainBoost_API.Controllers
                 }
                 catch (Exception ex)
                 {
-                    // Add logging here
                     return StatusCode(500, "Internal server error: " + ex.Message);
                 }
             }

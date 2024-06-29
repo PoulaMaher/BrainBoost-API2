@@ -1,24 +1,44 @@
 {
   "Files": [
     {
-      "Id": "G:\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "PackagePath": "staticwebassets\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg"
     },
     {
-      "Id": "G:\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\java\\Fish.jpg",
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\java\\Fish.jpg",
       "PackagePath": "staticwebassets\\Images\\Course\\java\\Fish.jpg"
     },
     {
-      "Id": "G:\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
       "PackagePath": "staticwebassets\\Images\\Courses\\Helper.jpg"
     },
     {
-      "Id": "G:\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG",
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG",
       "PackagePath": "staticwebassets\\Images\\Courses\\dddddddddddddddddddddddddddddddddddd.PNG"
     },
     {
-      "Id": "G:\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg",
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\3dc40b2f-e149-48f8-b65d-d8dbb3ed6775_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\3dc40b2f-e149-48f8-b65d-d8dbb3ed6775_1.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\dfae6d5e-5bde-4531-a376-be1328a8e4a8_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\dfae6d5e-5bde-4531-a376-be1328a8e4a8_1.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg",
       "PackagePath": "staticwebassets\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\e000178d-732c-4798-afbf-20dba4078147_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Teacher\\e000178d-732c-4798-afbf-20dba4078147_1.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props",
