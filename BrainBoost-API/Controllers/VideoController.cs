@@ -73,34 +73,5 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
-        [HttpGet("getComment/{id:int}")]
-        public async Task<IActionResult> getComment(int id)
-        {
-            if (ModelState.IsValid)
-            {
-              var comments=unitOfWork.CommentRepository.GetList(c=>c.VideoId == id);
-                var commentDTO=unitOfWork.CommentRepository.getComments(comments).ToList();
-
-                return Ok(commentDTO);
-            }
-            return BadRequest(ModelState);
-        }
-
-        [HttpPost("addComment")]
-        public async Task<IActionResult> addComment(addCommentDTO comment)
-        {
-            if (ModelState.IsValid)
-            {
-                string UserID = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
-                Student std = unitOfWork.StudentRepository.Get(c => c.UserId == UserID);
-                comment com = unitOfWork.CommentRepository.addComment(std, comment);
-                unitOfWork.CommentRepository.add(com);
-                unitOfWork.save();
-                var comments = unitOfWork.CommentRepository.GetList(c => c.VideoId == comment.VideoId);
-                var commentDTO = unitOfWork.CommentRepository.getComments(comments).ToList();
-                return Ok(commentDTO);
-            }
-            return BadRequest(ModelState);
-        }
     }
 }

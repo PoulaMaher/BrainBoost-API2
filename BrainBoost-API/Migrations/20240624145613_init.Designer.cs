@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BrainBoost_API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240624031509_init")]
+    [Migration("20240624145613_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -955,13 +955,13 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Category", "Category")
                         .WithMany("Courses")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BrainBoost_API.Models.Teacher", "Teacher")
                         .WithMany("Crs")
                         .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Category");
@@ -983,13 +983,13 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Course", "Course")
                         .WithMany()
                         .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BrainBoost_API.Models.Student", "Student")
                         .WithMany()
                         .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Course");
@@ -1002,7 +1002,7 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Course", "Course")
                         .WithOne("quiz")
                         .HasForeignKey("BrainBoost_API.Models.Quiz", "CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Course");
@@ -1013,13 +1013,13 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Question", "Question")
                         .WithMany("Quizzes")
                         .HasForeignKey("QuestionId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BrainBoost_API.Models.Quiz", "Quiz")
                         .WithMany("Questions")
                         .HasForeignKey("QuizId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Question");
@@ -1032,13 +1032,13 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Course", "Course")
                         .WithMany()
                         .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BrainBoost_API.Models.Student", "Student")
                         .WithMany()
                         .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Course");
@@ -1060,13 +1060,13 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Course", "Course")
                         .WithMany("EnrolledCourses")
                         .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BrainBoost_API.Models.Student", "Student")
                         .WithMany("EnrolledCourses")
                         .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Course");
@@ -1079,13 +1079,13 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Course", "Course")
                         .WithMany("SavedCourses")
                         .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BrainBoost_API.Models.Student", "Student")
                         .WithMany("SavedCourses")
                         .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Course");
@@ -1107,7 +1107,7 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Course", "Course")
                         .WithMany("videos")
                         .HasForeignKey("CrsId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Course");
@@ -1118,13 +1118,13 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.StudentEnrolledCourses", "StudentEnrolledCourses")
                         .WithMany("videoStates")
                         .HasForeignKey("StudentEnrolledCourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BrainBoost_API.Models.Video", "Video")
                         .WithMany()
                         .HasForeignKey("VideoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("StudentEnrolledCourses");
@@ -1137,7 +1137,7 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Course", "course")
                         .WithMany("WhatToLearn")
                         .HasForeignKey("CrsId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("course");
@@ -1148,13 +1148,13 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Video", "video")
                         .WithMany("comments")
                         .HasForeignKey("VideoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BrainBoost_API.Models.Student", "student")
                         .WithMany("comments")
                         .HasForeignKey("studentId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("student");
@@ -1167,13 +1167,13 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.Plan", "Plan")
                         .WithMany()
                         .HasForeignKey("PlanId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BrainBoost_API.Models.Teacher", "Teacher")
                         .WithMany()
                         .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Plan");
@@ -1186,7 +1186,7 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });
 
@@ -1195,7 +1195,7 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });
 
@@ -1204,7 +1204,7 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });
 
@@ -1213,13 +1213,13 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BrainBoost_API.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });
 
@@ -1228,7 +1228,7 @@ namespace BrainBoost_API.Migrations
                     b.HasOne("BrainBoost_API.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });
 
