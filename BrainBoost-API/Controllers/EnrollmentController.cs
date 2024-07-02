@@ -149,7 +149,7 @@ namespace BrainBoost_API.Controllers
 
 
                 callBackUrl = $"http://localhost:4200/EnrollmentSuccess/{orderNumber}/{enrollmentDto.CourseId}",
-                cancelUrl = $"http://localhost:4200/EnrollmentSuccess/{orderNumber}/{enrollmentDto.CourseId}",
+                cancelUrl = $"http://localhost:4200/EnrollmentFailed/{orderNumber}/{enrollmentDto.CourseId}",
                 currency = "SAR",
                 note = "Test invoice",
 

@@ -41,7 +41,7 @@ namespace BrainBoost_API.Controllers
             {
                 Course Course = UnitOfWork.CourseRepository.Get(c => c.Id == id, "Teacher,WhatToLearn");
 
-                var review = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id).ToList();
+                var review = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id, "Student").ToList();
                 var numOfRates = UnitOfWork.ReviewRepository.GetList(r => r.CourseId == id).ToList().Count();
                 var numOfVideos = UnitOfWork.VideoRepository.GetList(r => r.CrsId == id).ToList().Count();
 
@@ -254,8 +254,10 @@ namespace BrainBoost_API.Controllers
                 string UserID = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
                 var std = UnitOfWork.StudentRepository.Get(c => c.UserId == UserID);
                 var name = std.Fname + std.Lname;
-                var course = UnitOfWork.CourseRepository.Get(c => c.Id == id);
-                var cert = UnitOfWork.CourseRepository.getCrsCertificate(course, name);
+                var course = UnitOfWork.CourseRepository.Get(c => c.Id == id, "Teacher");
+                var teacherName = course.Teacher.Fname + " " + course.Teacher.Lname;
+                var duration = course.Durtion;
+                var cert = UnitOfWork.CourseRepository.getCrsCertificate(course, name,teacherName,duration);
                 return Ok(cert);
             }
             return BadRequest(ModelState);
