@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj": {}
+    "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API.csproj": {}
   },
   "projects": {
-    "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj": {
+    "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
+        "projectUniqueName": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API.csproj",
         "projectName": "BrainBoost-API",
-        "projectPath": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
-        "packagesPath": "C:\\Users\\Osama\\.nuget\\packages\\",
-        "outputPath": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\obj\\",
+        "projectPath": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API.csproj",
+        "packagesPath": "C:\\Users\\Polpol\\.nuget\\packages\\",
+        "outputPath": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Osama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Polpol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -119,7 +119,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -3,6 +3,7 @@ using BrainBoost_API.DTOs.Course;
 using BrainBoost_API.DTOs.Review;
 using BrainBoost_API.DTOs.Teacher;
 using BrainBoost_API.Models;
+using System.Linq;
 
 namespace BrainBoost_API.Repositories.Inplementation
 {
@@ -36,25 +37,44 @@ namespace BrainBoost_API.Repositories.Inplementation
         }
         public IEnumerable<Course> GetFilteredCourses(CourseFilterationDto filter, string? includeProps = null)
         {
-            IQueryable<Course> courses = GetAll(includeProps).AsQueryable();
+            IQueryable<Course> courses = GetAll(includeProps).AsQueryable().Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
             if (filter.CategoryName != null)
             {
-                courses = courses.Where(c => c.Category.Name == filter.CategoryName);
+                courses = courses.Where(c => c.Category.Name == filter.CategoryName).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
             }
             if (filter.Price != -1)
             {
                 if (filter.Price == 0)
                 {
-                    courses = courses.Where(c => c.Price == filter.Price);
+                    courses = courses.Where(c => c.Price == filter.Price).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
                 }
                 if (filter.Price > 0)
                 {
-                    courses = courses.Where(c => c.Price >= filter.Price);
+                    courses = courses.Where(c => c.Price >= filter.Price).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
                 }
             }
             if (filter.Rate != -1)
             {
-                courses = courses.Where(c => c.Rate == filter.Rate);
+                courses = courses.Where(c => c.Rate == filter.Rate).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+            }
+            if(filter.Durtion > -1)
+            {
+                if(filter.Durtion == 0)
+                {
+                    courses = courses.Where(c => c.Durtion >= 0 && c.Durtion <=5).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                }
+                if (filter.Durtion == 6)
+                {
+                    courses = courses.Where(c => c.Durtion >= 6 && c.Durtion <= 10).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                }
+                if (filter.Durtion == 11)
+                {
+                    courses = courses.Where(c => c.Durtion >= 11 && c.Durtion <= 15).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                }
+                if (filter.Durtion == 15)
+                {
+                    courses = courses.Where(c => c.Durtion >= 15).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                }
             }
             var filteredCourses = new List<Course>();
             filteredCourses = courses.ToList();
@@ -154,6 +174,18 @@ namespace BrainBoost_API.Repositories.Inplementation
 
             return topCourses;
         }
-        
+        public IEnumerable<CourseCardDataDto> GetTop4RatedCrs()
+        {
+            var top4Courses = Context.Courses
+                                .OrderByDescending(c => c.LastUpdate) // Ensure you order them
+                                .Take(4)
+                                .ToList()
+                                .Select(c =>
+                                {
+                                    var dto = mapper.Map<CourseCardDataDto>(c);
+                                    return dto;
+                                }).ToList();
+            return top4Courses;
+        }
     }
 }
