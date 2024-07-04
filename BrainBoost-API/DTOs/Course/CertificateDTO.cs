@@ -3,8 +3,8 @@
     public class CertificateDTO
     {
         public string? Name { get; set; }
-        public string? CertificateHeadline { get; set; }
-        public string? CertificateAppreciationParagraph { get; set; }
+        public string? TeacherName { get; set; }
+        public double? Duration { get; set; }
         public string? StdName { get; set; }
 
     }
