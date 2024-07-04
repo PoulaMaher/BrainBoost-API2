@@ -107,8 +107,8 @@ namespace BrainBoost_API
                 app.UseSwaggerUI();
             }
             app.UseStaticFiles();
-            app.UseAuthorization();
             app.UseCors("MyPolicy");
+            app.UseAuthorization();
             app.MapControllers();
             app.MapHub<CommentHub>("/DiscussionBox");
             app.Run();

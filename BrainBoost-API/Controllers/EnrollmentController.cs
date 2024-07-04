@@ -37,7 +37,6 @@ namespace BrainBoost_API.Controllers
         }
 
         // Enroll Course
-
         [HttpPost("Enroll")]
         //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IActionResult> Enroll(EnrollmentDto enrollmentDto)
@@ -91,7 +90,6 @@ namespace BrainBoost_API.Controllers
             var response = await client.GetAsync(request);
             //var rst = response.Content;
             var result = JsonConvert.DeserializeObject<GatewayOrderResponse>(response.Content);
-
             // using swatch to check status of subscribtion
             switch (result.OrderStatus)
             {
@@ -139,27 +137,20 @@ namespace BrainBoost_API.Controllers
             request.AddJsonBody(new
             {
 
-                amount = course.Price, //100.0,
-                //clientMobile = 05156325333,// studentInfo.PhoneNumber,//"0512345678",
+                amount = course.Price,
                 clientName = string.Format("{0} {1}", studentInfo.Fname, studentInfo.Lname),
-                //"Mohammed Ali",
-                clientEmail = studentInfo.AppUser.Email,//"mohammed@test.com",
-
-                orderNumber = orderNumber,// "123456789",
-
-
+                clientEmail = studentInfo.AppUser.Email,
+                orderNumber = orderNumber,
                 callBackUrl = $"http://localhost:4200/EnrollmentSuccess/{orderNumber}/{enrollmentDto.CourseId}",
                 cancelUrl = $"http://localhost:4200/EnrollmentFailed/{orderNumber}/{enrollmentDto.CourseId}",
                 currency = "SAR",
                 note = "Test invoice",
-
                 products = new List<object>
                 {
                     new
                     {
-
-                        title = course.Name,//"test",
-                        price =course.Price,//100.0,
+                        title = course.Name,
+                        price =course.Price,
                         qty = 1,
                         imageSrc = "",
                         description = "",
@@ -196,12 +187,9 @@ namespace BrainBoost_API.Controllers
             });
             var response = await client.PostAsync(request);
             var result = response.Content;
-
             // i need get id_token desrialize it and return it
             var token = JsonConvert.DeserializeObject<tokenPaylink>(result);
-
             // return token.id_token;
-
             return token.id_token;
 
         }
@@ -242,7 +230,6 @@ namespace BrainBoost_API.Controllers
                         return Ok(false);
                     }
                 }
-                
             }
             return BadRequest(ModelState);
         }

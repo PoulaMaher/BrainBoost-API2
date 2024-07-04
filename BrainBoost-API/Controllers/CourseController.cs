@@ -229,7 +229,15 @@ namespace BrainBoost_API.Controllers
                 CourseCardDataDto currentCourseCard = mapper.Map<CourseCardDataDto>(course);
                 filteredCourseCards.Add(currentCourseCard);
             }
-            return Ok(filteredCourseCards);
+            var totalItems = UnitOfWork.CourseRepository.GetAll("Teacher").Count();
+            var totalPages = (int)Math.Ceiling(totalItems / (double)filter.PageSize);
+            var response = new
+            {
+                totalItems = totalItems,
+                totalPages = totalPages,
+                courses = filteredCourseCards,
+            };
+            return Ok(response);
         }
 
         [HttpGet("GetSearchedCourses")]
@@ -366,6 +374,11 @@ namespace BrainBoost_API.Controllers
         public IActionResult GetNumOfStdsOfCourseById(int courseId)
         {
             return Ok(UnitOfWork.StudentEnrolledCoursesRepository.GetNumOfStdsOfCourseById(courseId));
+        }
+        [HttpGet("GetTop4Crs")]
+        public IActionResult GetTop4Crs()
+        {
+            return Ok(UnitOfWork.CourseRepository.GetTop4RatedCrs());
         }
 
 

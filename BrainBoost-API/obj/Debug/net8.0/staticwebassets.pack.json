@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg"
     },
     {
+      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\Business\\flat-design-api-illustration_23-2149392285.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\Business\\flat-design-api-illustration_23-2149392285.jpg"
+    },
+    {
       "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "PackagePath": "staticwebassets\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg"
     },
@@ -47,22 +51,6 @@
     {
       "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\instructor.jpg",
       "PackagePath": "staticwebassets\\Images\\Teacher\\instructor.jpg"
-    },
-    {
-      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project.mp4",
-      "PackagePath": "staticwebassets\\Images\\Videos\\Project.mp4"
-    },
-    {
-      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project2.mp4",
-      "PackagePath": "staticwebassets\\Images\\Videos\\Project2.mp4"
-    },
-    {
-      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project3.mp4",
-      "PackagePath": "staticwebassets\\Images\\Videos\\Project3.mp4"
-    },
-    {
-      "Id": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\Project4.mp4",
-      "PackagePath": "staticwebassets\\Images\\Videos\\Project4.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props",
