@@ -9191,19 +9191,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Osama\\.nuget\\packages\\": {}
+    "C:\\Users\\AL-Majd\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
+      "projectUniqueName": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
       "projectName": "BrainBoost-API",
-      "projectPath": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
-      "packagesPath": "C:\\Users\\Osama\\.nuget\\packages\\",
-      "outputPath": "F:\\BrainBoost\\BrainBoost-API2\\BrainBoost-API\\obj\\",
+      "projectPath": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\BrainBoost-API.csproj",
+      "packagesPath": "C:\\Users\\AL-Majd\\.nuget\\packages\\",
+      "outputPath": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Osama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AL-Majd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
