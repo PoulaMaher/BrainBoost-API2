@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "Hash": "oHtDzQHgryqAufdG7MU3nBU4qp8DOqa3MIMDmdPYluY=",
+=======
   "Hash": "Yten0LSL2Lgq6kc9hEqC294XaXMZz+YR+q47SI/6xKo=",
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
   "Source": "BrainBoost-API",
   "BasePath": "_content/BrainBoost-API",
   "Mode": "Default",
@@ -10,19 +14,30 @@
     {
       "Name": "BrainBoost-API\\wwwroot",
       "Source": "BrainBoost-API",
+<<<<<<< HEAD
+      "ContentRoot": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+=======
       "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
       "BasePath": "_content/BrainBoost-API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
+      "Identity": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\osama\\chapter 1\\video.mp4",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+=======
       "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
       "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Admin/276eb287-13a6-4904-a927-6c60f27ec012_1.jpg",
+      "RelativePath": "Course/osama/chapter 1/video.mp4",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,15 +48,22 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg"
+      "OriginalItemSpec": "wwwroot\\Course\\osama\\chapter 1\\video.mp4"
     },
     {
+<<<<<<< HEAD
+      "Identity": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\t\\chapter 1\\video.mp4",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+=======
       "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
       "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Admin/ac71d89a-0687-4681-99df-a21bce27f688_5.jpg",
+      "RelativePath": "Course/t/chapter 1/video.mp4",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,15 +74,22 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg"
+      "OriginalItemSpec": "wwwroot\\Course\\t\\chapter 1\\video.mp4"
     },
     {
+<<<<<<< HEAD
+      "Identity": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 1\\video.mp4",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+=======
       "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
       "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Course/a/_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
+      "RelativePath": "Course/tomas/chapter 1/video.mp4",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,9 +100,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg"
+      "OriginalItemSpec": "wwwroot\\Course\\tomas\\chapter 1\\video.mp4"
     },
     {
+<<<<<<< HEAD
+      "Identity": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 2\\video.mp4",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+=======
       "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\Business\\flat-design-api-illustration_23-2149392285.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
@@ -97,8 +132,9 @@
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
       "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Course/java/Fish.jpg",
+      "RelativePath": "Course/tomas/chapter 2/video.mp4",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,15 +145,22 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Course\\java\\Fish.jpg"
+      "OriginalItemSpec": "wwwroot\\Course\\tomas\\chapter 2\\video.mp4"
     },
     {
+<<<<<<< HEAD
+      "Identity": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\osama\\133616786245543612.jpg",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+=======
       "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Courses\\C.PNG",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
       "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Courses/C.PNG",
+      "RelativePath": "Images/Course/osama/133616786245543612.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,15 +171,22 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Courses\\C.PNG"
+      "OriginalItemSpec": "wwwroot\\Images\\Course\\osama\\133616786245543612.jpg"
     },
     {
+<<<<<<< HEAD
+      "Identity": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+=======
       "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
       "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Courses/Helper.jpg",
+      "RelativePath": "Images/Course/t/screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,9 +197,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Courses\\Helper.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png"
     },
     {
+<<<<<<< HEAD
+      "Identity": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\tomas\\Capture_1.PNG",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+=======
       "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\1aac6595-9c83-4dbb-a873-768892330597_5.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
@@ -249,8 +305,9 @@
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
       "BasePath": "_content/BrainBoost-API",
-      "RelativePath": "Images/Student/3dc40b2f-e149-48f8-b65d-d8dbb3ed6775_1.jpg",
+      "RelativePath": "Images/Course/tomas/Capture_1.PNG",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -261,6 +318,9 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
+      "OriginalItemSpec": "wwwroot\\Images\\Course\\tomas\\Capture_1.PNG"
+=======
       "OriginalItemSpec": "wwwroot\\Images\\Student\\3dc40b2f-e149-48f8-b65d-d8dbb3ed6775_1.jpg"
     },
     {
@@ -452,6 +512,7 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Teacher\\Poula Maher\\ph.jpg"
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
     }
   ]
 }

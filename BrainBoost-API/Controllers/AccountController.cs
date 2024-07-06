@@ -1,6 +1,7 @@
 ﻿using BrainBoost_API.DTOs.Account;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
+using BrainBoost_API.Services.OTP_security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -54,9 +55,9 @@ namespace BrainBoost_API.Controllers
                         case "Student":
                             var student = new Student
                             {
-                                AppUser = user,
                                 Fname = registerUser.FirstName,
                                 Lname = registerUser.LastName,
+                                UserId = user.Id,
                             };
                             this.UnitOfWork.StudentRepository.add(student);
                             break;
@@ -64,9 +65,10 @@ namespace BrainBoost_API.Controllers
                         case "Teacher":
                             var teacher = new Teacher
                             {
-                                AppUser = user,
                                 Fname = registerUser.FirstName,
                                 Lname = registerUser.LastName,
+                                YearsOfExperience = 0,
+                                UserId= user.Id,
                             };
                             this.UnitOfWork.TeacherRepository.add(teacher);
                             break;
@@ -76,6 +78,7 @@ namespace BrainBoost_API.Controllers
                                 AppUser = user,
                                 Fname = registerUser.FirstName,
                                 Lname = registerUser.LastName,
+                                UserId = user.Id
                             };
                             this.UnitOfWork.AdminRepository.add(admin);
                             break;
@@ -88,6 +91,17 @@ namespace BrainBoost_API.Controllers
                     return Ok(new { Msg = "Account Created", userId = user.Id, role = role });
                 }
                 return BadRequest(new { Msg = result.Errors });
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpGet("sendMail")]
+
+        public async Task<IActionResult> sendMail(string EmailReceiver)
+        {
+            if (ModelState.IsValid)
+            {
+                string ActivationCode = OTPsecurity.sendmail(EmailReceiver);
+                return Ok(new { ActivationCode = ActivationCode, ExpirationDate = DateTime.Now.AddMinutes(3) });
             }
             return BadRequest(ModelState);
         }
@@ -108,10 +122,21 @@ namespace BrainBoost_API.Controllers
                         userClaims.Add(new Claim(ClaimTypes.NameIdentifier, userFromDb.Id));
                         userClaims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
                         var roles = await UserManager.GetRolesAsync(userFromDb);
+                        int roleId;
                         foreach (var role in roles)
                         {
                             userClaims.Add(new Claim(ClaimTypes.Role, role));
                         }
+                        if (roles[0]=="Student") {
+                            roleId = this.UnitOfWork.StudentRepository.Get(T => T.UserId == userFromDb.Id).Id;
+                        }
+                        else
+                        {
+                            roleId = this.UnitOfWork.TeacherRepository.Get(T => T.UserId == userFromDb.Id).Id;
+                        }
+                        //int? roleId = this.UnitOfWork.TeacherRepository.Get(T=>T.UserId==userFromDb.Id).Id==null?null:null;
+                        //roleId = roleId==null? this.UnitOfWork.TeacherRepository.Get(T => T.UserId == userFromDb.Id).Id:roleId;
+                        userClaims.Add(new Claim("roleId",roleId.ToString()));
                         var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:SecretKey"]));
                         SigningCredentials signingCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
 

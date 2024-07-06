@@ -21,7 +21,7 @@ namespace BrainBoost_API.Repositories.Inplementation
         IEarningsRepository EarningsRepository { get; set; }
         ICommentRepository CommentRepository { get; }
         IWhatToLearnRepository WhatToLearnRepository { get; set; }
-
+        IQuizQuestionRepository QuizQuestionRepository { get; set; }
         IStudentEnrolledCoursesRepository StudentEnrolledCoursesRepository { get; }
         IAdminRepository AdminRepository { get; }
 

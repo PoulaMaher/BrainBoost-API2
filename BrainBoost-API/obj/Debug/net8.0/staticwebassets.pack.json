@@ -1,6 +1,34 @@
 {
   "Files": [
     {
+<<<<<<< HEAD
+      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\osama\\chapter 1\\video.mp4",
+      "PackagePath": "staticwebassets\\Course\\osama\\chapter 1\\video.mp4"
+    },
+    {
+      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\t\\chapter 1\\video.mp4",
+      "PackagePath": "staticwebassets\\Course\\t\\chapter 1\\video.mp4"
+    },
+    {
+      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 1\\video.mp4",
+      "PackagePath": "staticwebassets\\Course\\tomas\\chapter 1\\video.mp4"
+    },
+    {
+      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 2\\video.mp4",
+      "PackagePath": "staticwebassets\\Course\\tomas\\chapter 2\\video.mp4"
+    },
+    {
+      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\osama\\133616786245543612.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\osama\\133616786245543612.jpg"
+    },
+    {
+      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png",
+      "PackagePath": "staticwebassets\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png"
+    },
+    {
+      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\tomas\\Capture_1.PNG",
+      "PackagePath": "staticwebassets\\Images\\Course\\tomas\\Capture_1.PNG"
+=======
       "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg",
       "PackagePath": "staticwebassets\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg"
     },
@@ -91,6 +119,7 @@
     {
       "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\instructor.jpg",
       "PackagePath": "staticwebassets\\Images\\Teacher\\instructor.jpg"
+>>>>>>> 137c1ef9aef18ee4a0b4848334972f9ca228f748
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props",

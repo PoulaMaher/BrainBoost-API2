@@ -14,7 +14,7 @@
             {
                 await InsertedPhoto.CopyToAsync(fileStream);
             }
-            photoUrl = $"http://localhost:5079/Images/{WhereToStore}/{folderName}/{InsertedPhoto.FileName}";
+            photoUrl = $"http://localhost:43827/Images/{WhereToStore}/{folderName}/{InsertedPhoto.FileName}";
             return photoUrl;
         }
     }
