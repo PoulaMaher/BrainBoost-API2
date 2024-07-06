@@ -291,7 +291,15 @@ namespace BrainBoost_API.Controllers
                 CourseCardDataDto currentCourseCard = mapper.Map<CourseCardDataDto>(course);
                 filteredCourseCards.Add(currentCourseCard);
             }
-            return Ok(filteredCourseCards);
+            var totalItems = UnitOfWork.CourseRepository.GetAll("Teacher").Count();
+            var totalPages = (int)Math.Ceiling(totalItems / (double)filter.PageSize);
+            var response = new
+            {
+                totalItems = totalItems,
+                totalPages = totalPages,
+                courses = filteredCourseCards,
+            };
+            return Ok(response);
         }
 
         [HttpGet("GetSearchedCourses")]
@@ -319,7 +327,7 @@ namespace BrainBoost_API.Controllers
                 var course = UnitOfWork.CourseRepository.Get(c => c.Id == id, "Teacher");
                 var teacherName = course.Teacher.Fname + " " + course.Teacher.Lname;
                 var duration = course.Durtion;
-                var cert = UnitOfWork.CourseRepository.getCrsCertificate(course, name,teacherName,duration);
+                var cert = UnitOfWork.CourseRepository.getCrsCertificate(course, name, teacherName, duration);
                 return Ok(cert);
             }
             return BadRequest(ModelState);
@@ -427,5 +435,27 @@ namespace BrainBoost_API.Controllers
         {
             return Ok(UnitOfWork.StudentEnrolledCoursesRepository.GetNumOfStdsOfCourseById(courseId));
         }
+        [HttpGet("GetTop4Crs")]
+        public IActionResult GetTop4Crs()
+        {
+            return Ok(UnitOfWork.CourseRepository.GetTop4RatedCrs());
+        }
+        [HttpGet("GetStudentCourses/{stdId:int}")]
+        public IActionResult GetCoursesByStdId(int stdId)
+        {
+            if (ModelState.IsValid)
+            {
+                var courses = UnitOfWork.CourseRepository.GetCoursesByStdId(stdId);
+                if (courses != null)
+                {
+                    return Ok(courses.ToList());
+                }
+                return NotFound("There Is No Courses");
+            }
+            return BadRequest(ModelState);
+            
+        }
+
+
     }
 }

@@ -89,24 +89,39 @@ namespace BrainBoost_API.Controllers
         }
 
         [HttpPut("Update")]
-        public IActionResult Update(StudentDTO studentDTO, int id)
+        public IActionResult UpdateStudent([FromForm] StudentDTO request)
         {
-            Student studentfromDB = UnitOfWork.StudentRepository.Get(s => s.Id == id);
-            if (studentfromDB == null)
+            var student = UnitOfWork.StudentRepository.Get(s => s.Id == request.Id);
+            if (student == null)
             {
-                return NotFound();
+                return NotFound("Student not found.");
             }
-
-            if (studentDTO.Id == id && ModelState.IsValid)
-            {
-                Mapper.Map(studentDTO, studentfromDB);
-                UnitOfWork.StudentRepository.update(studentfromDB);
-                UnitOfWork.save();
-                return Ok("Data Updated Successfully");
-            }
-            return BadRequest(ModelState);
+            student.Fname = request.Fname;
+            student.Lname = request.Lname;
+            UnitOfWork.StudentRepository.update(student);
+            UnitOfWork.save();
+            return Ok();
 
         }
+
+        //public IActionResult Update(StudentDTO studentDTO, int id)
+        //{
+        //    Student studentfromDB = UnitOfWork.StudentRepository.Get(s => s.Id == id);
+        //    if (studentfromDB == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    if (studentDTO.Id == id && ModelState.IsValid)
+        //    {
+        //        Mapper.Map(studentDTO, studentfromDB);
+        //        UnitOfWork.StudentRepository.update(studentfromDB);
+        //        UnitOfWork.save();
+        //        return Ok("Data Updated Successfully");
+        //    }
+        //    return BadRequest(ModelState);
+
+        //}
         [HttpPost("uploadimage/{studentId:int}")]
         public async Task<IActionResult> UploadImage(IFormFile file, int studentId)
         {
@@ -126,7 +141,7 @@ namespace BrainBoost_API.Controllers
                     {
                         await file.CopyToAsync(stream);
                     }
-                    var photoUrl = $"http://localhost:43827/Images/Admin/{fileName}";
+                    var photoUrl = $"http://localhost:43827/Images/Student/{fileName}";
                     Student student = UnitOfWork.StudentRepository.Get(s => s.Id == studentId);
                     if (student == null)
                     {
@@ -144,6 +159,30 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
+
+        [HttpPost("UpdatePassword")]
+        public async Task<IActionResult> UpdatePassword([FromBody] UpdatePasswordRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var user = await userManager.FindByIdAsync(request.UserId);
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            var result = await userManager.ChangePasswordAsync(user, request.CurrentPassword, request.NewPassword);
+            if (!result.Succeeded)
+            {
+                return BadRequest(result.Errors);
+            }
+
+            return Ok();
+        }
+
         [HttpGet("GetTopStudent")]
         public IActionResult GetTopStudent()
         {
