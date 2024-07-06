@@ -201,5 +201,13 @@ namespace BrainBoost_API.Repositories.Inplementation
                                 }).ToList();
             return top4Courses;
         }
+        public IEnumerable<CourseCardDataDto> GetCoursesByStdId(int stdId)
+        {
+            var courses = from SEC in Context.StudentEnrolledCourses
+                          join C in Context.Courses on SEC.CourseId equals C.Id
+                          where SEC.StudentId == stdId
+                          select mapper.Map<CourseCardDataDto>(C);
+            return courses;
+        }
     }
 }

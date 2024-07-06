@@ -18,5 +18,6 @@ namespace BrainBoost_API.Repositories.Inplementation
         List<Course> GetLastThreeCourses();
         List<CourseEarningsDto> GetTop3CoursesByEarnings();
         IEnumerable<CourseCardDataDto> GetTop4RatedCrs();
+        IEnumerable<CourseCardDataDto> GetCoursesByStdId(int stdId);
     }
 }
