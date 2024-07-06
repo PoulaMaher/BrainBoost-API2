@@ -6,7 +6,7 @@ namespace BrainBoost_API.Repositories.Inplementation
     public interface ICourseRepository : IRepository<Course>
     {
         CourseDetailsDto getCrsDetails(Course crs, List<Review> review);
-        CertificateDTO getCrsCertificate(Course crs, string s);
+        CertificateDTO getCrsCertificate(Course crs, string s, string teacherName, double ?duration);
         IEnumerable<Course> GetFilteredCourses(CourseFilterationDto filter, string? includeProps);
         List<Course> SearchCourses(string searchString, string? includeProps);
 
@@ -18,5 +18,6 @@ namespace BrainBoost_API.Repositories.Inplementation
         List<Course> GetLastThreeCourses();
         List<CourseEarningsDto> GetTop3CoursesByEarnings();
         IEnumerable<CourseCardDataDto> GetTop4RatedCrs();
+        IEnumerable<CourseCardDataDto> GetCoursesByStdId(int stdId);
     }
 }

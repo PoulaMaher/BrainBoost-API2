@@ -2,6 +2,7 @@ using AutoMapper;
 using BrainBoost_API.DTOs.Course;
 using BrainBoost_API.DTOs.Review;
 using BrainBoost_API.DTOs.Teacher;
+using BrainBoost_API.DTOs.Video;
 using BrainBoost_API.Models;
 using System.Linq;
 
@@ -26,6 +27,15 @@ namespace BrainBoost_API.Repositories.Inplementation
                 CourseDetailsDto crsDetails = mapper.Map<CourseDetailsDto>(crs);
                 crsDetails.NumOfVideos = crs.videos?.Count;
                 crsDetails.Review = mapper.Map<IEnumerable<ReviewDTO>>(review).ToList();
+                var reviewDict = review.ToDictionary(vs => vs.Id);
+                foreach (var rev  in crsDetails.Review)
+                {
+                    if (reviewDict.TryGetValue(rev.Id, out var revv))
+                    {
+                        rev.PhotoUrl = revv.Student.PictureUrl;
+                        rev.Name = revv.Student.Fname + " " + revv.Student.Lname;
+                    }
+                }
                 crsDetails.WhatToLearn = mapper.Map<IEnumerable<WhatToLearnDTO>>(crs.WhatToLearn).ToList();
                 crsDetails.TeacherDataDto = mapper.Map<CourseDetailsTeacherDataDto>(crs.Teacher);
 
@@ -95,12 +105,14 @@ namespace BrainBoost_API.Repositories.Inplementation
                 return new List<Course>();
             }
         }
-        public CertificateDTO getCrsCertificate(Course crs, string s)
+        public CertificateDTO getCrsCertificate(Course crs, string s,string teacherName,double? duration)
         {
             if (crs != null)
             {
                 var cert = mapper.Map<CertificateDTO>(crs);
                 cert.StdName = s;
+                cert.TeacherName = teacherName;
+                cert.Duration = duration;
                 return cert;
 
             }
@@ -186,6 +198,14 @@ namespace BrainBoost_API.Repositories.Inplementation
                                     return dto;
                                 }).ToList();
             return top4Courses;
+        }
+        public IEnumerable<CourseCardDataDto> GetCoursesByStdId(int stdId)
+        {
+            var courses = from SEC in Context.StudentEnrolledCourses
+                          join C in Context.Courses on SEC.CourseId equals C.Id
+                          where SEC.StudentId == stdId
+                          select mapper.Map<CourseCardDataDto>(C);
+            return courses;
         }
     }
 }

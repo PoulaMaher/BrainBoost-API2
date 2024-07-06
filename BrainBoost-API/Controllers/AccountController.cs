@@ -119,7 +119,7 @@ namespace BrainBoost_API.Controllers
                         JwtSecurityToken token = new JwtSecurityToken(
                             issuer: Configuration["JWT:ValidIssuer"],
                             audience: Configuration["JWT:ValidAudience"],
-                            expires: DateTime.Now.AddHours(1),
+                            expires: DateTime.Now.AddHours(29),
                             signingCredentials: signingCredentials,
                             claims: userClaims
                         );

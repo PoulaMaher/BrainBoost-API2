@@ -142,7 +142,7 @@ namespace BrainBoost_API.Controllers
                 clientEmail = studentInfo.AppUser.Email,
                 orderNumber = orderNumber,
                 callBackUrl = $"http://localhost:4200/EnrollmentSuccess/{orderNumber}/{enrollmentDto.CourseId}",
-                cancelUrl = $"http://localhost:4200/EnrollmentSuccess/{orderNumber}/{enrollmentDto.CourseId}",
+                cancelUrl = $"http://localhost:4200/EnrollmentFailed/{orderNumber}/{enrollmentDto.CourseId}",
                 currency = "SAR",
                 note = "Test invoice",
                 products = new List<object>

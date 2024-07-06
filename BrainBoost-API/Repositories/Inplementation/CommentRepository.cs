@@ -28,7 +28,7 @@ namespace BrainBoost_API.Repositories.Inplementation
                           { 
                             CommentDate = DateTime.Now,
                             StudentPhoto=student.PictureUrl,
-                            StudentName=student.Fname+' '+student.Lname,
+                            StudentName=student.AppUser.UserName,
                             studentId=student.Id,   
                             Content=comment.Content,
                             VideoId=comment.VideoId,
