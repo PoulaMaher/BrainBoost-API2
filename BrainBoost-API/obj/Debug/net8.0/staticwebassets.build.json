@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qxbiY5xHHU5C/rLOipGzMZpOS5lavDzYel3ZYpg2YT0=",
+  "Hash": "Yten0LSL2Lgq6kc9hEqC294XaXMZz+YR+q47SI/6xKo=",
   "Source": "BrainBoost-API",
   "BasePath": "_content/BrainBoost-API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BrainBoost-API\\wwwroot",
       "Source": "BrainBoost-API",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Admin/276eb287-13a6-4904-a927-6c60f27ec012_1.jpg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Admin/ac71d89a-0687-4681-99df-a21bce27f688_5.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Course/a/_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\Business\\flat-design-api-illustration_23-2149392285.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\Business\\flat-design-api-illustration_23-2149392285.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Course/Business/flat-design-api-illustration_23-2149392285.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Course\\Business\\flat-design-api-illustration_23-2149392285.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\java\\Fish.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\java\\Fish.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Course/java/Fish.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Course\\java\\Fish.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\C.PNG",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Courses\\C.PNG",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Courses/C.PNG",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Courses\\C.PNG"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Courses/Helper.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Courses\\Helper.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\1aac6595-9c83-4dbb-a873-768892330597_5.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\1aac6595-9c83-4dbb-a873-768892330597_5.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/1aac6595-9c83-4dbb-a873-768892330597_5.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\1aac6595-9c83-4dbb-a873-768892330597_5.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\21fca183-a6ce-4262-ac75-286caba3c904_3.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\21fca183-a6ce-4262-ac75-286caba3c904_3.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/21fca183-a6ce-4262-ac75-286caba3c904_3.jpg",
       "AssetKind": "All",
@@ -188,10 +188,29 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\21fca183-a6ce-4262-ac75-286caba3c904_3.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\2d98c4d3-c89d-4fc1-9e79-fac2e507ec9b_6.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\244b6a91-bf43-498b-8cae-c4261fbfc8f4_2.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "RelativePath": "Images/Student/244b6a91-bf43-498b-8cae-c4261fbfc8f4_2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Student\\244b6a91-bf43-498b-8cae-c4261fbfc8f4_2.jpg"
+    },
+    {
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\2d98c4d3-c89d-4fc1-9e79-fac2e507ec9b_6.jpg",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/2d98c4d3-c89d-4fc1-9e79-fac2e507ec9b_6.jpg",
       "AssetKind": "All",
@@ -207,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\2d98c4d3-c89d-4fc1-9e79-fac2e507ec9b_6.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\3a24c0fa-a297-4dd0-a190-788a92579710_1.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\3a24c0fa-a297-4dd0-a190-788a92579710_1.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/3a24c0fa-a297-4dd0-a190-788a92579710_1.jpg",
       "AssetKind": "All",
@@ -226,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\3a24c0fa-a297-4dd0-a190-788a92579710_1.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\3dc40b2f-e149-48f8-b65d-d8dbb3ed6775_1.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\3dc40b2f-e149-48f8-b65d-d8dbb3ed6775_1.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/3dc40b2f-e149-48f8-b65d-d8dbb3ed6775_1.jpg",
       "AssetKind": "All",
@@ -245,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\3dc40b2f-e149-48f8-b65d-d8dbb3ed6775_1.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\43706826-c8f6-4305-b9eb-5c334cd0b509_5.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\43706826-c8f6-4305-b9eb-5c334cd0b509_5.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/43706826-c8f6-4305-b9eb-5c334cd0b509_5.jpg",
       "AssetKind": "All",
@@ -264,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\43706826-c8f6-4305-b9eb-5c334cd0b509_5.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\8f8e40a9-864e-42df-a570-f383bfefaea0_2.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\8f8e40a9-864e-42df-a570-f383bfefaea0_2.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/8f8e40a9-864e-42df-a570-f383bfefaea0_2.jpg",
       "AssetKind": "All",
@@ -283,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\8f8e40a9-864e-42df-a570-f383bfefaea0_2.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\c04dc0f4-0f8d-4535-b6f9-f592c41a482c_3.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\c04dc0f4-0f8d-4535-b6f9-f592c41a482c_3.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/c04dc0f4-0f8d-4535-b6f9-f592c41a482c_3.jpg",
       "AssetKind": "All",
@@ -302,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\c04dc0f4-0f8d-4535-b6f9-f592c41a482c_3.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\c183174e-165e-4d6b-9fbc-51ce115d9768_2.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\c183174e-165e-4d6b-9fbc-51ce115d9768_2.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/c183174e-165e-4d6b-9fbc-51ce115d9768_2.jpg",
       "AssetKind": "All",
@@ -321,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\c183174e-165e-4d6b-9fbc-51ce115d9768_2.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\d6cf6d55-32e7-4610-a635-0c9e0e35713b_2.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\d6cf6d55-32e7-4610-a635-0c9e0e35713b_2.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/d6cf6d55-32e7-4610-a635-0c9e0e35713b_2.jpg",
       "AssetKind": "All",
@@ -340,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\d6cf6d55-32e7-4610-a635-0c9e0e35713b_2.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\dfae6d5e-5bde-4531-a376-be1328a8e4a8_1.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\dfae6d5e-5bde-4531-a376-be1328a8e4a8_1.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Student/dfae6d5e-5bde-4531-a376-be1328a8e4a8_1.jpg",
       "AssetKind": "All",
@@ -359,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Student\\dfae6d5e-5bde-4531-a376-be1328a8e4a8_1.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\e000178d-732c-4798-afbf-20dba4078147_1.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\e000178d-732c-4798-afbf-20dba4078147_1.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Teacher/e000178d-732c-4798-afbf-20dba4078147_1.jpg",
       "AssetKind": "All",
@@ -378,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Teacher\\e000178d-732c-4798-afbf-20dba4078147_1.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\instructor.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\instructor.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Teacher/instructor.jpg",
       "AssetKind": "All",
@@ -397,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Teacher\\instructor.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Teacher/Osama Ibrahem/439204437_10161238831654812_1251412392274984282_n.jpg",
       "AssetKind": "All",
@@ -416,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg"
     },
     {
-      "Identity": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Poula Maher\\ph.jpg",
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Poula Maher\\ph.jpg",
       "SourceId": "BrainBoost-API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
       "BasePath": "_content/BrainBoost-API",
       "RelativePath": "Images/Teacher/Poula Maher/ph.jpg",
       "AssetKind": "All",

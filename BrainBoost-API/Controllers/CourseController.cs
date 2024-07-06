@@ -265,7 +265,7 @@ namespace BrainBoost_API.Controllers
                 var course = UnitOfWork.CourseRepository.Get(c => c.Id == id, "Teacher");
                 var teacherName = course.Teacher.Fname + " " + course.Teacher.Lname;
                 var duration = course.Durtion;
-                var cert = UnitOfWork.CourseRepository.getCrsCertificate(course, name,teacherName,duration);
+                var cert = UnitOfWork.CourseRepository.getCrsCertificate(course, name, teacherName, duration);
                 return Ok(cert);
             }
             return BadRequest(ModelState);
@@ -379,6 +379,21 @@ namespace BrainBoost_API.Controllers
         public IActionResult GetTop4Crs()
         {
             return Ok(UnitOfWork.CourseRepository.GetTop4RatedCrs());
+        }
+        [HttpGet("GetStudentCourses/{stdId:int}")]
+        public IActionResult GetCoursesByStdId(int stdId)
+        {
+            if (ModelState.IsValid)
+            {
+                var courses = UnitOfWork.CourseRepository.GetCoursesByStdId(stdId);
+                if (courses != null)
+                {
+                    return Ok(courses.ToList());
+                }
+                return NotFound("There Is No Courses");
+            }
+            return BadRequest(ModelState);
+            
         }
 
 
