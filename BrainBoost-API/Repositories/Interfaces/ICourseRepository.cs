@@ -14,6 +14,7 @@ namespace BrainBoost_API.Repositories.Inplementation
         StateDTO getCrsStates(StudentEnrolledCourses states);
 
         IEnumerable<Course> GetNotApprovedCourses(string? includeProps = null);
+        Course GetNotApprovedCoursesbyid(int id);
         int GetTotalNumOfCourse();
         List<Course> GetLastThreeCourses();
         List<CourseEarningsDto> GetTop3CoursesByEarnings();

@@ -399,7 +399,8 @@ namespace BrainBoost_API.Controllers
         {
             if (ModelState.IsValid)
             {
-                var course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
+
+                var course = UnitOfWork.CourseRepository.GetNotApprovedCoursesbyid(courseId);
                 if (course == null)
                 {
                     return NotFound("Course not found");
