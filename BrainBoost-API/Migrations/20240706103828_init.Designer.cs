@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BrainBoost_API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240624194334_admin")]
-    partial class admin
+    [Migration("20240706103828_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

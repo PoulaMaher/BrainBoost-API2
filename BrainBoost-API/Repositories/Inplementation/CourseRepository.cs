@@ -4,6 +4,7 @@ using BrainBoost_API.DTOs.Review;
 using BrainBoost_API.DTOs.Teacher;
 using BrainBoost_API.DTOs.Video;
 using BrainBoost_API.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
 namespace BrainBoost_API.Repositories.Inplementation
@@ -47,7 +48,7 @@ namespace BrainBoost_API.Repositories.Inplementation
         }
         public IEnumerable<Course> GetFilteredCourses(CourseFilterationDto filter, string? includeProps = null)
         {
-            IQueryable<Course> courses = GetAll(includeProps).AsQueryable().Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+            IQueryable<Course> courses = GetAll( includeProps).AsQueryable().Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
             if (filter.CategoryName != null)
             {
                 courses = courses.Where(c => c.Category.Name == filter.CategoryName).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
@@ -92,7 +93,8 @@ namespace BrainBoost_API.Repositories.Inplementation
         }
         public List<Course> SearchCourses(string searchString, string? includeProps)
         {
-            var courses = GetList(c => c.Name.Contains(searchString) || c.Description.Contains(searchString)
+            
+             var courses = GetList(c => c.Name.Contains(searchString) || c.Description.Contains(searchString)
                             || c.Teacher.Fname.Contains(searchString) || c.Teacher.Lname.Contains(searchString), includeProps);
 
 
@@ -139,7 +141,7 @@ namespace BrainBoost_API.Repositories.Inplementation
         public IEnumerable<Course> GetNotApprovedCourses(string? includeProps = null)
         {
             IQueryable<Course> courses = GetAll(includeProps).AsQueryable();
-            courses = courses.Where(c => c.IsApproved == false);
+            courses = courses.IgnoreQueryFilters().Where(c => c.IsApproved == false&& c.IsDeleted==false);
             var filteredCourses = new List<Course>();
             filteredCourses = courses.ToList();
             return filteredCourses;

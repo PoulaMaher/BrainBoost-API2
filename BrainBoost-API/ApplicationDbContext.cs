@@ -77,6 +77,8 @@ namespace BrainBoost_API
             builder.Entity<Earnings>().HasQueryFilter(e => !e.IsDeleted);
             builder.Entity<comment>().HasQueryFilter(e => !e.IsDeleted);
             builder.Entity<Admin>().HasQueryFilter(e => !e.IsDeleted);
+            builder.Entity<Course>().HasQueryFilter(e => e.IsApproved);
+
 
 
         }
