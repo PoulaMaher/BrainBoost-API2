@@ -25,6 +25,7 @@ namespace BrainBoost_API.Repositories.Inplementation
         public ICommentRepository CommentRepository { get; set; }
         public IWhatToLearnRepository WhatToLearnRepository { get; set; }
         public IAdminRepository AdminRepository { get; private set; }
+        public IQuizQuestionRepository QuizQuestionRepository { get ; set ; }
 
         public UnitOfWork(ApplicationDbContext context, IMapper mapper)
         {
@@ -48,8 +49,7 @@ namespace BrainBoost_API.Repositories.Inplementation
             EarningsRepository = new EarningsRepository(context, mapper);
             CommentRepository = new CommentRepository(context, mapper);
             AdminRepository = new AdminRepository(context);
-
-
+            QuizQuestionRepository = new QuizQuestionRepository(context);
         }
 
         public void save()

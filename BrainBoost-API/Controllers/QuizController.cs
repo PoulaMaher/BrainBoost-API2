@@ -1,4 +1,5 @@
 ﻿using BrainBoost_API.DTOs.Course;
+using BrainBoost_API.DTOs.Quiz;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
 using Microsoft.AspNetCore.Http;
@@ -35,5 +36,55 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
+        [HttpGet("GetQuizByCourseId/{id:int}")]
+        public async Task<IActionResult> GetQuizByCourseId(int id)
+        {
+            if (ModelState.IsValid)
+            {
+                Quiz retrievedQuiz = UnitOfWork.QuizRepository.Get(c => c.CourseId == id, "Questions");
+                if (retrievedQuiz != null)
+                {
+                    List<Question> questions = new List<Question>();
+                    foreach (var question in retrievedQuiz.Questions)
+                    {
+                        Question retrievedQuestion = UnitOfWork.QuestionRepository.Get(q=>q.Id == question.QuestionId,"Answers");
+                        foreach (var Answer in retrievedQuestion.Answers)
+                        {
+                            Answer.Question = null;
+                        }
+                        retrievedQuestion.Quizzes=null;
+                        questions.Add(retrievedQuestion);
+                    }
+                    return Ok(questions);
+                }
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpPut("UpdateCourseQuiz/{courseId:int}")]
+        public async Task<IActionResult> UpdateCourseQuiz(editedQuizz editedQuizz, int courseId)
+        {
+            if (ModelState.IsValid)
+            {
+                Quiz quiz = UnitOfWork.QuizRepository.Get(c => c.CourseId == courseId);
+                if (quiz != null)
+                {
+                    quiz.NumOfQuestions = editedQuizz.Questions.Count;
+                    foreach (var Question in editedQuizz.Questions)
+                    {
+                        Question question = UnitOfWork.QuestionRepository.Get(q => q.Id == Question.Id, "Answers");
+                        if (question != null)
+                        {
+
+                        }
+                        else
+                        {
+
+                        }
+                    }
+                }
+            }
+            return Ok(ModelState);
+        }
+
     }
 }
