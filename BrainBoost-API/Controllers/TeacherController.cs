@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using BrainBoost_API.DTOs.Teacher;
-using BrainBoost_API.DTOs.Uploader;
+using BrainBoost_API.Services.Uploader;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
 using Microsoft.AspNetCore.Identity;
@@ -21,31 +21,7 @@ namespace BrainBoost_API.Controllers
             this.mapper = mapper;
             this.userManager = userManager;
         }
-        [HttpPost("AddTeacher")]
-        public async Task<IActionResult> AddTeacher([FromForm] insertedTeacher insertedTeacher)
-        {
-            ApplicationUser applicationUser = await userManager.FindByIdAsync(insertedTeacher.userId);
-            if (applicationUser != null)
-            {
-                Teacher teacher = new Teacher()
-                {
-                    YearsOfExperience = insertedTeacher.yearsOfExperience,
-                    Career = insertedTeacher.jobTitles,
-                    AboutYou = insertedTeacher.aboutYou,
-                    UserId = insertedTeacher.userId,
-                    Fname = applicationUser.Fname,
-                    Lname = applicationUser.Lname,
-                    NumOfFollowers = 0
-                };
-                string photoUrl = await Uploader.uploadPhoto(insertedTeacher.photo, teacher.GetType().Name, teacher.Fname + " " + teacher.Lname);
-                teacher.PictureUrl = photoUrl;
-                unitOfWork.TeacherRepository.add(teacher);
-                unitOfWork.save();
-                return Ok(insertedTeacher);
-            }
-            return NotFound("User is not Valid");
-        }
-        [HttpGet("{id}")]
+        [HttpGet("GetTeacherById/{id}")]
         public IActionResult GetTeacherById(int id)
         {
             Teacher teacher = unitOfWork.TeacherRepository.GetTeacherById(id);
@@ -58,7 +34,12 @@ namespace BrainBoost_API.Controllers
             List<Course> Courses = unitOfWork.TeacherRepository.GetCoursesForTeacher(TeacherId);
             return Ok(Courses);
         }
-
+        [HttpGet("GetCoursesCardsForTeacher")]
+        public IActionResult GetCoursesCardsForTeacher(int TeacherId)
+        {
+            var Courses = unitOfWork.TeacherRepository.GetCoursesCardsForTeacher(TeacherId);
+            return Ok(Courses);
+        }
         [HttpGet("GetTeachers")]
         public async Task<IActionResult> GetTeachers()
         {
@@ -105,15 +86,34 @@ namespace BrainBoost_API.Controllers
 
             return Ok();
         }
-
         [HttpPut("UpdateTeacherData")]
-        public IActionResult UpdateTeacherData(TeacherDataDTO updatedTeacher)
+        public async Task<IActionResult> UpdateTeacherData([FromForm]TeacherDataDTO updatedTeacher)
         {
             if (ModelState.IsValid)
             {
-                Teacher teacher = mapper.Map<Teacher>(updatedTeacher);
+                //Teacher teacher = mapper.Map<Teacher>(updatedTeacher);
+                Teacher teacher = unitOfWork.TeacherRepository.GetTeacherById(updatedTeacher.UserId);
+                teacher.Career = updatedTeacher.Career;
+                teacher.AboutYou = updatedTeacher.AboutYou;
+                teacher.PhoneNumber = updatedTeacher.PhoneNumber;
+                teacher.Address = updatedTeacher.Address;
+                teacher.YearsOfExperience = updatedTeacher.YearsOfExperience;
                 unitOfWork.TeacherRepository.update(teacher);
+                if (updatedTeacher.Photo!=null)
+                {
+                  teacher.PictureUrl = await Uploader.uploadPhoto(updatedTeacher.Photo, teacher.GetType().Name, teacher.Fname+" "+teacher.Lname);
+                }
                 unitOfWork.save();
+                return Ok("Successfully Updated");
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpGet("GetCoursesEarnings/{id}")]
+        public async Task<IActionResult> GetCoursesEarnings(int id)
+        {
+            if (ModelState.IsValid)
+            {
+               
                 return Ok("Successfully Updated");
             }
             return BadRequest(ModelState);

@@ -1,13 +1,16 @@
 ﻿using AutoMapper;
 using BrainBoost_API.DTOs.Course;
+using BrainBoost_API.DTOs.Photo;
 using BrainBoost_API.DTOs.Quiz;
-using BrainBoost_API.DTOs.Uploader;
+using BrainBoost_API.Services.Uploader;
 using BrainBoost_API.DTOs.Video;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using BrainBoost_API.DTOs.WhatToLearn;
 
 namespace BrainBoost_API.Controllers
 {
@@ -34,7 +37,27 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
-        [HttpGet("GetCourse/{id:int}")]
+        [HttpGet("GetCourseById/{id:int}")]
+        public async Task<IActionResult> GetCourseById(int id)
+        {
+            if (ModelState.IsValid)
+            {
+                Course Course = UnitOfWork.CourseRepository.Get(c=>c.Id == id);
+                return Ok(Course);
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpGet("GetWhatToLearnByCourseId/{id:int}")]
+        public async Task<IActionResult> GetWhatToLearnByCourseId(int id)
+        {
+            if (ModelState.IsValid)
+            {
+                List<WhatToLearn> WhatToLearn = UnitOfWork.WhatToLearnRepository.GetList(w=>w.CrsId == id).ToList();
+                return Ok(WhatToLearn);
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpGet("GetCourse/")]
         public async Task<IActionResult> GetCourseDetails(int id)
         {
             if (ModelState.IsValid)
@@ -85,6 +108,55 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
+        [HttpPut("UpdateCourseDetails/{id:int}")]
+        public async Task<IActionResult> UpdateCourseDetails([FromBody]editedCourse editedCourse,int id)
+        {
+            if (ModelState.IsValid)
+            {
+                Course retrievedCourse = UnitOfWork.CourseRepository.Get(c=>c.Id == id);
+                if (retrievedCourse != null)
+                {
+                    Category selectedCategory = this.UnitOfWork.CategoryRepository.Get((c) => c.Name == editedCourse.categoryName);
+                    retrievedCourse.Name=editedCourse.name;
+                    retrievedCourse.Description=editedCourse.description;
+                    retrievedCourse.Price=editedCourse.price;
+                    retrievedCourse.Language=editedCourse.language;
+                    retrievedCourse.Level=editedCourse.level;
+                    retrievedCourse.CategoryId = selectedCategory.Id;
+                    UnitOfWork.save();
+                    return Ok("Updated Successfully");
+                }
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpPut("UpdateCourseWhatToLearn/{id:int}")]
+        public async Task<IActionResult> UpdateCourseWhatToLearn( List<editedWhatToLearn> editedWhatToLearn, int id)
+        {
+            if (ModelState.IsValid)
+            {
+                Course retrievedCourse = UnitOfWork.CourseRepository.Get(c => c.Id == id);
+                if (retrievedCourse != null)
+                {
+                    foreach (var item in editedWhatToLearn)
+                    {
+                        if (item.id != 0)
+                        {
+                            WhatToLearn whatToLearn = UnitOfWork.WhatToLearnRepository.Get(w => w.Id == item.id);
+                            whatToLearn.Content = item.name;
+                        }
+                        else
+                        {
+                            WhatToLearn newWhatToLearn = new WhatToLearn()
+                            { Content = item.name, CrsId = retrievedCourse.Id };
+                            UnitOfWork.WhatToLearnRepository.add(newWhatToLearn);
+                        }
+                    }
+                    UnitOfWork.save();
+                }
+                return Ok("Updated Successfully");
+            }
+            return BadRequest(ModelState);
+        }
         [HttpPost("AddCourse")]
         public async Task<IActionResult> AddCourse(CourseDTO InsertedCourse)
         {
@@ -101,7 +173,8 @@ namespace BrainBoost_API.Controllers
                         TeacherId = InsertedCourse.TeacherId,
                         CategoryId = selectedCategory.Id,
                         Language = InsertedCourse.Language,
-                        Level = InsertedCourse.Level
+                        Level = InsertedCourse.Level,
+                        LastUpdate=DateTime.Now,
                     };
                     UnitOfWork.CourseRepository.add(NewCourse);
                     UnitOfWork.save();
@@ -133,6 +206,8 @@ namespace BrainBoost_API.Controllers
                             Degree = q.Degree,
                         };
                         UnitOfWork.QuestionRepository.add(newQuestion);
+                        UnitOfWork.save();
+                        UnitOfWork.QuizQuestionRepository.add(new QuizQuesitons { QuestionId = newQuestion.Id, QuizId = newQuiz.Id });
                         UnitOfWork.save();
                         q.Choices.ForEach(choice =>
                         {
@@ -180,29 +255,16 @@ namespace BrainBoost_API.Controllers
             }
             return Ok(ModelState);
         }
-        [HttpPost("HandlePhoto/{courseId:int}/{WhereToStore:alpha}/{FolderName:alpha}")]
-        public async Task<IActionResult> HandlePhoto(IFormFile InsertedPhoto, int courseId, string WhereToStore, string FolderName)
+        [HttpPost("HandlePhoto/{courseId:int}")]
+        public async Task<IActionResult> HandlePhoto(InsertedPhoto insertedPhoto,int courseId)
         {
             if (ModelState.IsValid)
             {
-                //var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\{WhereToStore}");
-                //string photoUrl = "";
-                //if (!Directory.Exists(uploads))
-                //    Directory.CreateDirectory(uploads);
-
-                //var filePath = Path.Combine(uploads, InsertedPhoto.FileName);
-
-                //using (var fileStream = new FileStream(filePath, FileMode.Create))
-                //{
-                //    await InsertedPhoto.CopyToAsync(fileStream);
-                //}
-                //photoUrl = $"http://localhost:5079/Images/{InsertedPhoto.FileName}";
-                //Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
-                //course.photoUrl = photoUrl;
                 string photoUrl = "";
-                photoUrl = await Uploader.uploadPhoto(InsertedPhoto, WhereToStore, FolderName);
+                photoUrl = await Uploader.uploadPhoto(insertedPhoto.Photo, insertedPhoto.WhereToStore, insertedPhoto.folderName);
                 Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
                 course.photoUrl = photoUrl;
+                UnitOfWork.save();
             }
             return Ok(ModelState);
         }
@@ -270,9 +332,7 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
-
         [HttpGet("GetTakingCourse/{id:int}")]
-
         public IActionResult GetTakingCourse(int id)
         {
             if (ModelState.IsValid)

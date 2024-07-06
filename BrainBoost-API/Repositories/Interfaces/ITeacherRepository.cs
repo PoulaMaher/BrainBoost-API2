@@ -9,5 +9,6 @@ namespace BrainBoost_API.Repositories.Interfaces
         List<Course> GetCoursesForTeacher(int TeacherId);
         List<Teacher> GetTopTeachers();
         int GetTotalNumOfTeachers();
+        dynamic GetCoursesCardsForTeacher(int TeacherId);
     }
 }
