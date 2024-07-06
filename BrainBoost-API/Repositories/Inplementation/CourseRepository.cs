@@ -48,47 +48,55 @@ namespace BrainBoost_API.Repositories.Inplementation
         }
         public IEnumerable<Course> GetFilteredCourses(CourseFilterationDto filter, string? includeProps = null)
         {
-            IQueryable<Course> courses = GetAll( includeProps).AsQueryable().Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
-            if (filter.CategoryName != null)
+            IQueryable<Course> courses = GetAll(includeProps).AsQueryable();
+
+            if (filter.CategoryName != null && filter.CategoryName != "all")
             {
-                courses = courses.Where(c => c.Category.Name == filter.CategoryName).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                courses = courses.Where(c => c.Category.Name == filter.CategoryName);
             }
+
             if (filter.Price != -1)
             {
                 if (filter.Price == 0)
                 {
-                    courses = courses.Where(c => c.Price == filter.Price).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                    courses = courses.Where(c => c.Price == filter.Price);
                 }
-                if (filter.Price > 0)
+                else if (filter.Price > 0)
                 {
-                    courses = courses.Where(c => c.Price >= filter.Price).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                    courses = courses.Where(c => c.Price >= filter.Price);
                 }
             }
+
             if (filter.Rate != -1)
             {
-                courses = courses.Where(c => c.Rate == filter.Rate).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                courses = courses.Where(c => c.Rate == filter.Rate);
             }
-            if(filter.Durtion > -1)
+
+            if (filter.Durtion > -1)
             {
-                if(filter.Durtion == 0)
+                if (filter.Durtion == 0)
                 {
-                    courses = courses.Where(c => c.Durtion >= 0 && c.Durtion <=5).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                    courses = courses.Where(c => c.Durtion >= 0 && c.Durtion <= 5);
                 }
-                if (filter.Durtion == 6)
+                else if (filter.Durtion == 6)
                 {
-                    courses = courses.Where(c => c.Durtion >= 6 && c.Durtion <= 10).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                    courses = courses.Where(c => c.Durtion >= 6 && c.Durtion <= 10);
                 }
-                if (filter.Durtion == 11)
+                else if (filter.Durtion == 11)
                 {
-                    courses = courses.Where(c => c.Durtion >= 11 && c.Durtion <= 15).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                    courses = courses.Where(c => c.Durtion >= 11 && c.Durtion <= 15);
                 }
-                if (filter.Durtion == 15)
+                else if (filter.Durtion == 15)
                 {
-                    courses = courses.Where(c => c.Durtion >= 15).Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize);
+                    courses = courses.Where(c => c.Durtion >= 15);
                 }
             }
-            var filteredCourses = new List<Course>();
-            filteredCourses = courses.ToList();
+
+            // Apply pagination after all filters
+            var filteredCourses = courses.Skip((filter.PageNumber - 1) * filter.PageSize)
+                                         .Take(filter.PageSize)
+                                         .ToList();
+
             return filteredCourses;
         }
         public List<Course> SearchCourses(string searchString, string? includeProps)
@@ -140,13 +148,20 @@ namespace BrainBoost_API.Repositories.Inplementation
         } 
         public IEnumerable<Course> GetNotApprovedCourses(string? includeProps = null)
         {
-            IQueryable<Course> courses = GetAll(includeProps).AsQueryable();
+            //IQueryable<Course> courses = GetAll(includeProps).AsQueryable();
+            IQueryable<Course> courses = Context.Courses.IgnoreQueryFilters();
+
             courses = courses.IgnoreQueryFilters().Where(c => c.IsApproved == false&& c.IsDeleted==false);
             var filteredCourses = new List<Course>();
             filteredCourses = courses.ToList();
             return filteredCourses;
         }
-
+        public Course GetNotApprovedCoursesbyid(int id)
+        {
+            
+            Course course = Context.Courses.IgnoreQueryFilters().Where(c => c.Id == id ).FirstOrDefault();
+            return course;
+        }
         public int GetTotalNumOfCourse()
         {
             int numofCourse = Context.Courses.Count<Course>();
@@ -209,5 +224,6 @@ namespace BrainBoost_API.Repositories.Inplementation
                           select mapper.Map<CourseCardDataDto>(C);
             return courses;
         }
+        
     }
 }
