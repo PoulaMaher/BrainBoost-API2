@@ -124,7 +124,7 @@ namespace BrainBoost_API.Controllers
                     retrievedCourse.Level=editedCourse.level;
                     retrievedCourse.CategoryId = selectedCategory.Id;
                     UnitOfWork.save();
-                    return Ok("Updated Successfully");
+                    return Ok(new {msg= "Updated Successfully" });
                 }
             }
             return BadRequest(ModelState);
@@ -152,8 +152,9 @@ namespace BrainBoost_API.Controllers
                         }
                     }
                     UnitOfWork.save();
+                    return Ok(new { msg = "Updated Successfully" });
                 }
-                return Ok("Updated Successfully");
+                return NotFound(new {msg="not found"});
             }
             return BadRequest(ModelState);
         }
@@ -227,6 +228,7 @@ namespace BrainBoost_API.Controllers
             return BadRequest(ModelState);
         }
         [HttpPost("AddVideo/{courseId:int}")]
+        //[RequestSizeLimit(512*1024*1024)]
         public async Task<IActionResult> AddVideo([FromForm] VideoDTO InsertedVideo, int courseId)
         {
             Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
