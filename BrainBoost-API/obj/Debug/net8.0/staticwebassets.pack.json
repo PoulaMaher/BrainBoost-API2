@@ -1,48 +1,316 @@
 {
   "Files": [
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 1\\video.mp4",
-      "PackagePath": "staticwebassets\\Course\\europe\\chapter 1\\video.mp4"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 2\\video.mp4",
-      "PackagePath": "staticwebassets\\Course\\europe\\chapter 2\\video.mp4"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Admin\\7a636b4d-1633-4656-8f2c-3964b92572e1_10.jpg",
+      "PackagePath": "staticwebassets\\Images\\Admin\\7a636b4d-1633-4656-8f2c-3964b92572e1_10.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\osama\\chapter 1\\video.mp4",
-      "PackagePath": "staticwebassets\\Course\\osama\\chapter 1\\video.mp4"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Admin\\a286b48e-c031-4324-b005-5484d42f1033_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Admin\\a286b48e-c031-4324-b005-5484d42f1033_3.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\t\\chapter 1\\video.mp4",
-      "PackagePath": "staticwebassets\\Course\\t\\chapter 1\\video.mp4"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 1\\video.mp4",
-      "PackagePath": "staticwebassets\\Course\\tomas\\chapter 1\\video.mp4"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Admin\\df9663f3-c9a1-4b8f-a3f4-6d05eac90a79_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Admin\\df9663f3-c9a1-4b8f-a3f4-6d05eac90a79_2.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 2\\video.mp4",
-      "PackagePath": "staticwebassets\\Course\\tomas\\chapter 2\\video.mp4"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Admin\\eea4c2cf-dade-4abd-af7c-bdcf4655fa54_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Admin\\eea4c2cf-dade-4abd-af7c-bdcf4655fa54_5.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\europe\\screencapture-member5-4-smarterasp-net-cp-filemanager-asp-2024-07-05-02_08_06.png",
-      "PackagePath": "staticwebassets\\Images\\Course\\europe\\screencapture-member5-4-smarterasp-net-cp-filemanager-asp-2024-07-05-02_08_06.png"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\1.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\osama\\133616786245543612.jpg",
-      "PackagePath": "staticwebassets\\Images\\Course\\osama\\133616786245543612.jpg"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\10.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\10.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png",
-      "PackagePath": "staticwebassets\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\2.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\tomas\\Capture_1.PNG",
-      "PackagePath": "staticwebassets\\Images\\Course\\tomas\\Capture_1.PNG"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\3.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Tomas Wagdy\\Tomas.jpg",
-      "PackagePath": "staticwebassets\\Images\\Teacher\\Tomas Wagdy\\Tomas.jpg"
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\4.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\5.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\6.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\6.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\7.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\7.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\8.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\8.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Course\\9.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\9.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\1.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\10.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\10.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\2.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\3.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\4.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\5.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\6.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\6.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\7.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\7.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\8.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\8.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Courses\\9.jpg",
+      "PackagePath": "staticwebassets\\Images\\Courses\\9.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\1.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\10.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\10.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\2.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\3.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\4.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\4aba883d-9197-46d2-abee-0e53e2831f72_ying-ge--Yo1cWJVKFY-unsplash.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\4aba883d-9197-46d2-abee-0e53e2831f72_ying-ge--Yo1cWJVKFY-unsplash.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\5.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\6.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\6.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\7.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\7.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\8.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\8.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Student\\9.jpg",
+      "PackagePath": "staticwebassets\\Images\\Student\\9.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Teacher\\1.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Teacher\\2.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Teacher\\3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Teacher\\3.jpg"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\1.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\1.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\10.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\10.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\11.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\11.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\12.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\12.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\13.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\13.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\14.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\14.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\15.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\15.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\16.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\16.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\17.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\17.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\18.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\18.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\19.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\19.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\2.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\2.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\20.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\20.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\21.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\21.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\22.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\22.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\23.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\23.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\24.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\24.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\25.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\25.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\26.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\26.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\27.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\27.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\28.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\28.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\29.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\29.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\3.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\3.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\30.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\30.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\31.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\31.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\32.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\32.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\33.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\33.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\34.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\34.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\35.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\35.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\36.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\36.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\37.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\37.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\38.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\38.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\4.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\4.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\5.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\5.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\6.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\6.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\7.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\7.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\8.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\8.mp4"
+    },
+    {
+      "Id": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\wwwroot\\Images\\Videos\\9.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\9.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props",

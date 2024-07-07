@@ -1,7 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
 
 namespace BrainBoost_API.Repositories.Inplementation
@@ -16,7 +13,7 @@ namespace BrainBoost_API.Repositories.Inplementation
             this.DbSet = Context.Set<T>();
         }
 
-       public void add(T entity)
+        public void add(T entity)
         {
             DbSet.Add(entity);
         }
@@ -24,10 +21,10 @@ namespace BrainBoost_API.Repositories.Inplementation
         public T Get(Expression<Func<T, bool>> filter, string? includeProps)
         {
             IQueryable<T> query = DbSet;
-            query=query.Where(filter);
+            query = query.Where(filter);
             if (!string.IsNullOrEmpty(includeProps))
             {
-                foreach(var includeProp in includeProps.Split(new char[] { ',' } , StringSplitOptions.RemoveEmptyEntries))
+                foreach (var includeProp in includeProps.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeProp);
                 }
@@ -63,19 +60,19 @@ namespace BrainBoost_API.Repositories.Inplementation
             return query.ToList();
         }
 
-       public void remove(T entity)
+        public void remove(T entity)
         {
             DbSet.Update(entity);
         }
 
-       public  void removeRange(IEnumerable<T> entities)
+        public void removeRange(IEnumerable<T> entities)
         {
             DbSet.UpdateRange(entities);
         }
 
-       
 
-         public void update(T entity)
+
+        public void update(T entity)
         {
             DbSet.Update(entity);
 

@@ -2,10 +2,8 @@ using AutoMapper;
 using BrainBoost_API.DTOs.Course;
 using BrainBoost_API.DTOs.Review;
 using BrainBoost_API.DTOs.Teacher;
-using BrainBoost_API.DTOs.Video;
 using BrainBoost_API.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
 
 namespace BrainBoost_API.Repositories.Inplementation
 {
@@ -29,7 +27,7 @@ namespace BrainBoost_API.Repositories.Inplementation
                 crsDetails.NumOfVideos = crs.videos?.Count;
                 crsDetails.Review = mapper.Map<IEnumerable<ReviewDTO>>(review).ToList();
                 var reviewDict = review.ToDictionary(vs => vs.Id);
-                foreach (var rev  in crsDetails.Review)
+                foreach (var rev in crsDetails.Review)
                 {
                     if (reviewDict.TryGetValue(rev.Id, out var revv))
                     {
@@ -101,9 +99,9 @@ namespace BrainBoost_API.Repositories.Inplementation
         }
         public List<Course> SearchCourses(string searchString, string? includeProps)
         {
-            
-             var courses = GetList(c => c.Name.Contains(searchString) || c.Description.Contains(searchString)
-                            || c.Teacher.Fname.Contains(searchString) || c.Teacher.Lname.Contains(searchString), includeProps);
+
+            var courses = GetList(c => c.Name.Contains(searchString) || c.Description.Contains(searchString)
+                           || c.Teacher.Fname.Contains(searchString) || c.Teacher.Lname.Contains(searchString), includeProps);
 
 
             if (courses != null)
@@ -115,7 +113,7 @@ namespace BrainBoost_API.Repositories.Inplementation
                 return new List<Course>();
             }
         }
-        public CertificateDTO getCrsCertificate(Course crs, string s,string teacherName,double? duration)
+        public CertificateDTO getCrsCertificate(Course crs, string s, string teacherName, double? duration)
         {
             if (crs != null)
             {
@@ -132,9 +130,9 @@ namespace BrainBoost_API.Repositories.Inplementation
 
         public CourseTakingDTO GetCourseTaking(Course takingcourse, IEnumerable<Course> relatedCourses, StudentEnrolledCourses states)
         {
-            var Crs= mapper.Map<CourseTakingDTO>(takingcourse);
-            Crs.CourseCardData=mapper.Map<IEnumerable<CourseCardDataDto>>(relatedCourses).ToList();
-            Crs.states=mapper.Map<StateDTO>(states);
+            var Crs = mapper.Map<CourseTakingDTO>(takingcourse);
+            Crs.CourseCardData = mapper.Map<IEnumerable<CourseCardDataDto>>(relatedCourses).ToList();
+            Crs.states = mapper.Map<StateDTO>(states);
             Crs.WhatToLearn = mapper.Map<IEnumerable<WhatToLearnDTO>>(takingcourse.WhatToLearn).ToList();
             Crs.TeacherDataDto = mapper.Map<CourseDetailsTeacherDataDto>(takingcourse.Teacher);
 
@@ -145,21 +143,21 @@ namespace BrainBoost_API.Repositories.Inplementation
         {
             var States = mapper.Map<StateDTO>(states);
             return States;
-        } 
+        }
         public IEnumerable<Course> GetNotApprovedCourses(string? includeProps = null)
         {
             //IQueryable<Course> courses = GetAll(includeProps).AsQueryable();
             IQueryable<Course> courses = Context.Courses.IgnoreQueryFilters();
 
-            courses = courses.IgnoreQueryFilters().Where(c => c.IsApproved == false&& c.IsDeleted==false);
+            courses = courses.IgnoreQueryFilters().Where(c => c.IsApproved == false && c.IsDeleted == false);
             var filteredCourses = new List<Course>();
             filteredCourses = courses.ToList();
             return filteredCourses;
         }
         public Course GetNotApprovedCoursesbyid(int id)
         {
-            
-            Course course = Context.Courses.IgnoreQueryFilters().Where(c => c.Id == id ).FirstOrDefault();
+
+            Course course = Context.Courses.IgnoreQueryFilters().Where(c => c.Id == id).FirstOrDefault();
             return course;
         }
         public int GetTotalNumOfCourse()
@@ -224,6 +222,6 @@ namespace BrainBoost_API.Repositories.Inplementation
                           select mapper.Map<CourseCardDataDto>(C);
             return courses;
         }
-        
+
     }
 }
