@@ -43,7 +43,9 @@ namespace BrainBoost_API.Mapper
             CreateMap<Teacher, TeacherEarningData>().ReverseMap();
             CreateMap<Admin, AdminDTO>().ReverseMap();
             CreateMap<Category, CategoryDTO>().ReverseMap();
-
+            CreateMap<ModTeacherDTO, Teacher>().ReverseMap();
+            CreateMap< TeacherDataDTO, Teacher>().ReverseMap();
+            CreateMap<TeacherAllDTO, Teacher>().ReverseMap();
 
         }
     }

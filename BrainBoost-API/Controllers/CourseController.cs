@@ -57,7 +57,7 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
-        [HttpGet("GetCourse/")]
+        [HttpGet("GetCourse/{id:int}")]
         public async Task<IActionResult> GetCourseDetails(int id)
         {
             if (ModelState.IsValid)
@@ -286,14 +286,15 @@ namespace BrainBoost_API.Controllers
         [HttpGet("GetFilteredCourses")]
         public ActionResult<List<CourseCardDataDto>> GetFilteredCourses([FromQuery] CourseFilterationDto filter)
         {
-            List<Course> courses = UnitOfWork.CourseRepository.GetFilteredCourses(filter, "Category,Teacher").ToList();
+            var data = UnitOfWork.CourseRepository.GetFilteredCourses(filter, "Category,Teacher");
+            List<Course> courses = data.filteredCourses;
             List<CourseCardDataDto> filteredCourseCards = new List<CourseCardDataDto>();
             foreach (Course course in courses)
             {
                 CourseCardDataDto currentCourseCard = mapper.Map<CourseCardDataDto>(course);
                 filteredCourseCards.Add(currentCourseCard);
             }
-            var totalItems = UnitOfWork.CourseRepository.GetAll("Teacher").Count();
+            var totalItems = data.Count;
             var totalPages = (int)Math.Ceiling(totalItems / (double)filter.PageSize);
             var response = new
             {

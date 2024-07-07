@@ -55,6 +55,7 @@ namespace BrainBoost_API.Controllers
                         case "Student":
                             var student = new Student
                             {
+                                AppUser = user,
                                 Fname = registerUser.FirstName,
                                 Lname = registerUser.LastName,
                                 UserId = user.Id,
@@ -65,6 +66,7 @@ namespace BrainBoost_API.Controllers
                         case "Teacher":
                             var teacher = new Teacher
                             {
+                                AppUser = user,
                                 Fname = registerUser.FirstName,
                                 Lname = registerUser.LastName,
                                 YearsOfExperience = 0,
