@@ -940,6 +940,22 @@
   },
   {
     "ContainingType": "BrainBoost_API.Controllers.ReviewController",
+    "Method": "Getreviews",
+    "RelativePath": "api/Review/Getreviews/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.ReviewController",
     "Method": "SetRate",
     "RelativePath": "api/Review/SetRate",
     "HttpMethod": "POST",

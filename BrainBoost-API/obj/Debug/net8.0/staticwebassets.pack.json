@@ -1,144 +1,48 @@
 {
   "Files": [
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 1\\video.mp4",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 1\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\europe\\chapter 1\\video.mp4"
     },
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 2\\video.mp4",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 2\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\europe\\chapter 2\\video.mp4"
     },
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\osama\\chapter 1\\video.mp4",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\osama\\chapter 1\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\osama\\chapter 1\\video.mp4"
     },
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\t\\chapter 1\\video.mp4",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\t\\chapter 1\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\t\\chapter 1\\video.mp4"
     },
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 1\\video.mp4",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 1\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\tomas\\chapter 1\\video.mp4"
     },
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 2\\video.mp4",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 2\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\tomas\\chapter 2\\video.mp4"
     },
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg",
-      "PackagePath": "staticwebassets\\Images\\Admin\\276eb287-13a6-4904-a927-6c60f27ec012_1.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg",
-      "PackagePath": "staticwebassets\\Images\\Admin\\ac71d89a-0687-4681-99df-a21bce27f688_5.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\Business\\flat-design-api-illustration_23-2149392285.jpg",
-      "PackagePath": "staticwebassets\\Images\\Course\\Business\\flat-design-api-illustration_23-2149392285.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg",
-      "PackagePath": "staticwebassets\\Images\\Course\\a\\_8790a4b4-ba61-493d-8ec6-37f128429475.jpeg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\europe\\screencapture-member5-4-smarterasp-net-cp-filemanager-asp-2024-07-05-02_08_06.png",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\europe\\screencapture-member5-4-smarterasp-net-cp-filemanager-asp-2024-07-05-02_08_06.png",
       "PackagePath": "staticwebassets\\Images\\Course\\europe\\screencapture-member5-4-smarterasp-net-cp-filemanager-asp-2024-07-05-02_08_06.png"
     },
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\java\\Fish.jpg",
-      "PackagePath": "staticwebassets\\Images\\Course\\java\\Fish.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\osama\\133616786245543612.jpg",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\osama\\133616786245543612.jpg",
       "PackagePath": "staticwebassets\\Images\\Course\\osama\\133616786245543612.jpg"
     },
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png",
       "PackagePath": "staticwebassets\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png"
     },
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\tomas\\Capture_1.PNG",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\tomas\\Capture_1.PNG",
       "PackagePath": "staticwebassets\\Images\\Course\\tomas\\Capture_1.PNG"
     },
     {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Courses\\C.PNG",
-      "PackagePath": "staticwebassets\\Images\\Courses\\C.PNG"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Courses\\Helper.jpg",
-      "PackagePath": "staticwebassets\\Images\\Courses\\Helper.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\1aac6595-9c83-4dbb-a873-768892330597_5.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\1aac6595-9c83-4dbb-a873-768892330597_5.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\1b14ee99-8286-4699-a561-ca54b01418e2_images.png",
-      "PackagePath": "staticwebassets\\Images\\Student\\1b14ee99-8286-4699-a561-ca54b01418e2_images.png"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\21fca183-a6ce-4262-ac75-286caba3c904_3.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\21fca183-a6ce-4262-ac75-286caba3c904_3.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\244b6a91-bf43-498b-8cae-c4261fbfc8f4_2.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\244b6a91-bf43-498b-8cae-c4261fbfc8f4_2.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\2d98c4d3-c89d-4fc1-9e79-fac2e507ec9b_6.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\2d98c4d3-c89d-4fc1-9e79-fac2e507ec9b_6.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\3a24c0fa-a297-4dd0-a190-788a92579710_1.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\3a24c0fa-a297-4dd0-a190-788a92579710_1.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\3dc40b2f-e149-48f8-b65d-d8dbb3ed6775_1.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\3dc40b2f-e149-48f8-b65d-d8dbb3ed6775_1.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\43706826-c8f6-4305-b9eb-5c334cd0b509_5.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\43706826-c8f6-4305-b9eb-5c334cd0b509_5.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\8f8e40a9-864e-42df-a570-f383bfefaea0_2.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\8f8e40a9-864e-42df-a570-f383bfefaea0_2.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\c04dc0f4-0f8d-4535-b6f9-f592c41a482c_3.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\c04dc0f4-0f8d-4535-b6f9-f592c41a482c_3.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\c183174e-165e-4d6b-9fbc-51ce115d9768_2.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\c183174e-165e-4d6b-9fbc-51ce115d9768_2.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\d6cf6d55-32e7-4610-a635-0c9e0e35713b_2.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\d6cf6d55-32e7-4610-a635-0c9e0e35713b_2.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Student\\dfae6d5e-5bde-4531-a376-be1328a8e4a8_1.jpg",
-      "PackagePath": "staticwebassets\\Images\\Student\\dfae6d5e-5bde-4531-a376-be1328a8e4a8_1.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg",
-      "PackagePath": "staticwebassets\\Images\\Teacher\\Osama Ibrahem\\439204437_10161238831654812_1251412392274984282_n.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Poula Maher\\ph.jpg",
-      "PackagePath": "staticwebassets\\Images\\Teacher\\Poula Maher\\ph.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Tomas Wagdy\\Tomas.jpg",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Tomas Wagdy\\Tomas.jpg",
       "PackagePath": "staticwebassets\\Images\\Teacher\\Tomas Wagdy\\Tomas.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\e000178d-732c-4798-afbf-20dba4078147_1.jpg",
-      "PackagePath": "staticwebassets\\Images\\Teacher\\e000178d-732c-4798-afbf-20dba4078147_1.jpg"
-    },
-    {
-      "Id": "D:\\Brain-Boost\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\instructor.jpg",
-      "PackagePath": "staticwebassets\\Images\\Teacher\\instructor.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BrainBoost-API.Microsoft.AspNetCore.StaticWebAssets.props",
