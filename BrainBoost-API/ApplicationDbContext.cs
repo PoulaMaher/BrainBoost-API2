@@ -1,6 +1,7 @@
 ﻿using BrainBoost_API.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 
 namespace BrainBoost_API
 {
@@ -30,10 +31,10 @@ namespace BrainBoost_API
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            builder.Entity<Question>()
-            .HasMany(q => q.Answers)
-            .WithOne(a => a.Question)
-            .HasForeignKey(a => a.QuestionId);
+            //builder.Entity<Question>()
+            //.HasMany(q => q.Answers)
+            //.WithOne(a => a.Question)
+            //.HasForeignKey(a => a.QuestionId);
             //builder.Entity<Question>()
             //.HasOne(q => q.TrueAnswer)
             //.WithMany()
@@ -77,6 +78,8 @@ namespace BrainBoost_API
             builder.Entity<Earnings>().HasQueryFilter(e => !e.IsDeleted);
             builder.Entity<comment>().HasQueryFilter(e => !e.IsDeleted);
             builder.Entity<Admin>().HasQueryFilter(e => !e.IsDeleted);
+            builder.Entity<Course>().HasQueryFilter(e => e.IsApproved);
+
 
 
         }

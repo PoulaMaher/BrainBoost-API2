@@ -1,5 +1,6 @@
 ﻿using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace BrainBoost_API.Repositories.Inplementation
 {
@@ -24,7 +25,18 @@ namespace BrainBoost_API.Repositories.Inplementation
                                    .Where(c => c.TeacherId == TeacherId)
                                    .ToList();
             return Courses;
-
+        }
+        public dynamic GetCoursesCardsForTeacher(int TeacherId)
+        {
+            var Courses = Context.Courses
+                                   .Where(c => c.TeacherId == TeacherId)
+                                   .Include(c=>c.EnrolledCourses)
+                                   .Include(c=>c.Category)
+                                   .Select(c=>new {id=c.Id,name=c.Name,description=c.Description,category=c.Category.Name,
+                                   photoUrl=c.photoUrl,price=c.Price,enrolledStudents=c.EnrolledCourses.Count })
+                                   .ToList();
+            
+            return Courses;
         }
         public List<Teacher> GetTopTeachers()
         {
