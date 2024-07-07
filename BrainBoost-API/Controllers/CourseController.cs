@@ -231,7 +231,7 @@ namespace BrainBoost_API.Controllers
         //[RequestSizeLimit(512*1024*1024)]
         public async Task<IActionResult> AddVideo([FromForm] VideoDTO InsertedVideo, int courseId)
         {
-            Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
+            Course course = UnitOfWork.CourseRepository.GetNotApprovedCoursesbyid(courseId);
             if (ModelState.IsValid)
             {
                 var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\{course.GetType().Name}\\{course.Name}\\chapter {InsertedVideo.Chapter}");
@@ -264,9 +264,12 @@ namespace BrainBoost_API.Controllers
             {
                 string photoUrl = "";
                 photoUrl = await Uploader.uploadPhoto(insertedPhoto.Photo, insertedPhoto.WhereToStore, insertedPhoto.folderName);
-                Course course = UnitOfWork.CourseRepository.Get(c => c.Id == courseId);
-                course.photoUrl = photoUrl;
-                UnitOfWork.save();
+                Course course = UnitOfWork.CourseRepository.GetNotApprovedCoursesbyid(courseId);
+                if (course != null)
+                {
+                    course.photoUrl = photoUrl;
+                    UnitOfWork.save();
+                }
             }
             return Ok(ModelState);
         }

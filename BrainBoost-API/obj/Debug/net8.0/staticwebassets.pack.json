@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\cours\\chapter 1\\01.Learn Css3 in Arabic #01 - Introduction and What's New in Css 3.mp4",
+      "PackagePath": "staticwebassets\\Course\\cours\\chapter 1\\01.Learn Css3 in Arabic #01 - Introduction and What's New in Css 3.mp4"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\cours\\chapter 1\\02.Learn Css3 in Arabic #02 - What's Vendor Prefixes.mp4",
+      "PackagePath": "staticwebassets\\Course\\cours\\chapter 1\\02.Learn Css3 in Arabic #02 - What's Vendor Prefixes.mp4"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\cours\\chapter 1\\03.Learn Css3 in Arabic #03 - Border Radius.mp4",
+      "PackagePath": "staticwebassets\\Course\\cours\\chapter 1\\03.Learn Css3 in Arabic #03 - Border Radius.mp4"
+    },
+    {
       "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 1\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\europe\\chapter 1\\video.mp4"
     },
@@ -23,6 +35,10 @@
     {
       "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 2\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\tomas\\chapter 2\\video.mp4"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\cours\\pdfToWord.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\cours\\pdfToWord.jpg"
     },
     {
       "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\europe\\screencapture-member5-4-smarterasp-net-cp-filemanager-asp-2024-07-05-02_08_06.png",
