@@ -46,7 +46,7 @@ namespace BrainBoost_API.Repositories.Inplementation
             }
             return new CourseDetailsDto();
         }
-        public IEnumerable<Course> GetFilteredCourses(CourseFilterationDto filter, string? includeProps = null)
+        public dynamic GetFilteredCourses(CourseFilterationDto filter, string? includeProps = null)
         {
             IQueryable<Course> courses = GetAll(includeProps).AsQueryable();
 
@@ -91,13 +91,13 @@ namespace BrainBoost_API.Repositories.Inplementation
                     courses = courses.Where(c => c.Durtion >= 15);
                 }
             }
-
+            var Count = courses.Count();
             // Apply pagination after all filters
-            var filteredCourses = courses.Skip((filter.PageNumber - 1) * filter.PageSize)
+            List<Course> filteredCourses = courses.Skip((filter.PageNumber - 1) * filter.PageSize)
                                          .Take(filter.PageSize)
                                          .ToList();
 
-            return filteredCourses;
+            return new { filteredCourses = filteredCourses , Count = Count };
         }
         public List<Course> SearchCourses(string searchString, string? includeProps)
         {

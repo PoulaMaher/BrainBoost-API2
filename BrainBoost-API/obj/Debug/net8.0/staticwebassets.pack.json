@@ -1,47 +1,47 @@
 {
   "Files": [
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 1\\video.mp4",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 1\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\europe\\chapter 1\\video.mp4"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 2\\video.mp4",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 2\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\europe\\chapter 2\\video.mp4"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\osama\\chapter 1\\video.mp4",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\osama\\chapter 1\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\osama\\chapter 1\\video.mp4"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\t\\chapter 1\\video.mp4",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\t\\chapter 1\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\t\\chapter 1\\video.mp4"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 1\\video.mp4",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 1\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\tomas\\chapter 1\\video.mp4"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 2\\video.mp4",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\tomas\\chapter 2\\video.mp4",
       "PackagePath": "staticwebassets\\Course\\tomas\\chapter 2\\video.mp4"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\europe\\screencapture-member5-4-smarterasp-net-cp-filemanager-asp-2024-07-05-02_08_06.png",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\europe\\screencapture-member5-4-smarterasp-net-cp-filemanager-asp-2024-07-05-02_08_06.png",
       "PackagePath": "staticwebassets\\Images\\Course\\europe\\screencapture-member5-4-smarterasp-net-cp-filemanager-asp-2024-07-05-02_08_06.png"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\osama\\133616786245543612.jpg",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\osama\\133616786245543612.jpg",
       "PackagePath": "staticwebassets\\Images\\Course\\osama\\133616786245543612.jpg"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png",
       "PackagePath": "staticwebassets\\Images\\Course\\t\\screencapture-friendscleanmg-de-DE-Services-2024-06-28-17_12_33.png"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\tomas\\Capture_1.PNG",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\tomas\\Capture_1.PNG",
       "PackagePath": "staticwebassets\\Images\\Course\\tomas\\Capture_1.PNG"
     },
     {
-      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Tomas Wagdy\\Tomas.jpg",
+      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Tomas Wagdy\\Tomas.jpg",
       "PackagePath": "staticwebassets\\Images\\Teacher\\Tomas Wagdy\\Tomas.jpg"
     },
     {
