@@ -104,7 +104,7 @@ namespace BrainBoost_API.Controllers
                   teacher.PictureUrl = await Uploader.uploadPhoto(updatedTeacher.Photo, teacher.GetType().Name, teacher.Fname+" "+teacher.Lname);
                 }
                 unitOfWork.save();
-                return Ok("Successfully Updated");
+                return Ok(new {msg = "Updated succesfully"});
             }
             return BadRequest(ModelState);
         }

@@ -6,6 +6,7 @@ using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
 using HelperPlan.DTO.Paylink;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -53,7 +54,8 @@ namespace BrainBoost_API
             });
             builder.Services.AddCors(options => {
                 options.AddPolicy("MyPolicy",
-                                  policy => policy.AllowAnyMethod()
+                                  policy => policy
+                                  .AllowAnyMethod()
                                   .AllowAnyMethod()
                                   .AllowAnyHeader()
                                   .AllowCredentials()
@@ -62,7 +64,16 @@ namespace BrainBoost_API
 
             //get section pay link from appsettings.json
             builder.Services.Configure<EnvironmentPaylink>(builder.Configuration.GetSection("Paylink"));
+            //builder.WebHost.ConfigureKestrel(serverOptions =>
+            //{
+            //    serverOptions.Limits.MaxRequestBodySize = long.MaxValue; // Use long.MaxValue for large files
+            //});
 
+            //// Configure form options to allow large files
+            //builder.Services.Configure<FormOptions>(options =>
+            //{
+            //    options.MultipartBodyLengthLimit = long.MaxValue; // Use long.MaxValue for large files
+            //});
 
             //swagger
             builder.Services.AddSwaggerGen(swagger =>
