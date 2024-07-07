@@ -1,9 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\BrainBoost-API\\",
+  "WorkspaceRootPath": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|d:\\brainboost-api\\brainboost-api\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|e:\\iti(pwd)\\e_learning_front\\backend\\brainboost-api2\\brainboost-api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|e:\\iti(pwd)\\e_learning_front\\backend\\brainboost-api2\\brainboost-api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\brainboost-api\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F2CEB32-4EA4-4C38-B49C-CA6181E624D2}|BrainBoost-API\\BrainBoost-API.csproj|solutionrelative:brainboost-api\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,18 +26,6 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
@@ -37,17 +33,54 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a83394e3-39c2-4678-a3c8-364b69d78fd3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\Controllers\\AdminController.cs",
+              "ToolTip": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "BrainBoost-API\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAGwAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T11:54:58.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BrainBoost-API\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BrainBoost-API\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAAAIkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T11:34:55.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EnrollmentController.cs",
-              "DocumentMoniker": "D:\\BrainBoost-API\\BrainBoost-API\\Controllers\\EnrollmentController.cs",
+              "DocumentMoniker": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Controllers\\EnrollmentController.cs",
               "RelativeDocumentMoniker": "BrainBoost-API\\Controllers\\EnrollmentController.cs",
-              "ToolTip": "D:\\BrainBoost-API\\BrainBoost-API\\Controllers\\EnrollmentController.cs",
+              "ToolTip": "E:\\ITI(PWD)\\e_learning_front\\backend\\BrainBoost-API2\\BrainBoost-API\\Controllers\\EnrollmentController.cs",
               "RelativeToolTip": "BrainBoost-API\\Controllers\\EnrollmentController.cs",
               "ViewState": "AQIAAE0AAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T04:09:36.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T04:09:36.939Z"
             }
           ]
         }

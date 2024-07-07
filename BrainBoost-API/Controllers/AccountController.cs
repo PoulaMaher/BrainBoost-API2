@@ -68,7 +68,7 @@ namespace BrainBoost_API.Controllers
                                 Fname = registerUser.FirstName,
                                 Lname = registerUser.LastName,
                                 YearsOfExperience = 0,
-                                UserId= user.Id,
+                                UserId = user.Id,
                             };
                             this.UnitOfWork.TeacherRepository.add(teacher);
                             break;
@@ -127,8 +127,13 @@ namespace BrainBoost_API.Controllers
                         {
                             userClaims.Add(new Claim(ClaimTypes.Role, role));
                         }
-                        if (roles[0]=="Student") {
+                        if (roles[0] == "Student")
+                        {
                             roleId = this.UnitOfWork.StudentRepository.Get(T => T.UserId == userFromDb.Id).Id;
+                        }
+                        else if (roles[0] == "Admin")
+                        {
+                            roleId = this.UnitOfWork.AdminRepository.Get(A => A.UserId == userFromDb.Id).Id;
                         }
                         else
                         {
@@ -136,7 +141,7 @@ namespace BrainBoost_API.Controllers
                         }
                         //int? roleId = this.UnitOfWork.TeacherRepository.Get(T=>T.UserId==userFromDb.Id).Id==null?null:null;
                         //roleId = roleId==null? this.UnitOfWork.TeacherRepository.Get(T => T.UserId == userFromDb.Id).Id:roleId;
-                        userClaims.Add(new Claim("roleId",roleId.ToString()));
+                        userClaims.Add(new Claim("roleId", roleId.ToString()));
                         var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:SecretKey"]));
                         SigningCredentials signingCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
 
