@@ -106,8 +106,7 @@
               "RelativeToolTip": "BrainBoost-API\\DTOs\\Course\\CourseDetailsDto.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAIA7wAgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T01:22:04.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T01:22:04.078Z"
             },
             {
               "$type": "Document",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "BrainBoost-API\\Controllers\\EarningController.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAAACkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T00:16:31.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T00:16:31.427Z"
             },
             {
               "$type": "Document",
@@ -145,8 +143,7 @@
               "RelativeToolTip": "BrainBoost-API\\Controllers\\AccountController.cs",
               "ViewState": "AQIAADYAAAAAAAAAAAAAAEQAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T01:24:59.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T01:24:59.227Z"
             },
             {
               "$type": "Document",
@@ -158,8 +155,7 @@
               "RelativeToolTip": "BrainBoost-API\\Models\\Teacher.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAABQAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T01:27:05.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T01:27:05.043Z"
             },
             {
               "$type": "Document",
@@ -171,8 +167,7 @@
               "RelativeToolTip": "BrainBoost-API\\Controllers\\TeacherController.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAIA5wCwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T22:02:55.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T22:02:55.219Z"
             },
             {
               "$type": "Document",
@@ -184,8 +179,7 @@
               "RelativeToolTip": "BrainBoost-API\\Repositories\\Inplementation\\CourseRepository.cs",
               "ViewState": "AQIAACMAAAAAAAAAAIAwwDEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T23:17:36.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T23:17:36.15Z"
             },
             {
               "$type": "Document",
@@ -221,8 +215,7 @@
               "RelativeToolTip": "BrainBoost-API\\ApplicationDbContext.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAMwDsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T21:11:28.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T21:11:28.384Z"
             },
             {
               "$type": "Document",

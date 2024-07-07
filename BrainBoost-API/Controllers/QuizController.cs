@@ -71,19 +71,68 @@ namespace BrainBoost_API.Controllers
                     quiz.NumOfQuestions = editedQuizz.Questions.Count;
                     foreach (var Question in editedQuizz.Questions)
                     {
-                        Question question = UnitOfWork.QuestionRepository.Get(q => q.Id == Question.Id, "Answers");
-                        if (question != null)
+                        Question retrievedQuestion = UnitOfWork.QuestionRepository.Get(q => q.Id == Question.Id, "Answers");
+                        if (retrievedQuestion != null)
                         {
-
+                            retrievedQuestion.Content = Question.HeadLine;
+                            retrievedQuestion.Degree = Question.Degree;
+                            foreach (var item in Question.Choices)
+                            {
+                                Answer retrievedAnswer = UnitOfWork.AnswerRepository.Get(a => a.Id == item.Id);
+                                if (retrievedAnswer != null)
+                                {
+                                    retrievedAnswer.Content = item.Choice;
+                                    retrievedAnswer.IsCorrect = item.isCorrect;
+                                }
+                                else
+                                {
+                                    Answer newAnswer = new Answer()
+                                    {
+                                        Content = item.Choice,
+                                        IsCorrect = item.isCorrect,
+                                        QuestionId = retrievedQuestion.Id
+                                    };
+                                    UnitOfWork.AnswerRepository.add(newAnswer);
+                                }
+                            }
+                            UnitOfWork.save();
                         }
                         else
                         {
-
+                            Question newQuestion = new Question()
+                            {
+                                Content = Question.HeadLine,
+                                Degree = Question.Degree,
+                                Type = Enums.QuestionType.MultipleChoice
+                            };
+                            UnitOfWork.QuestionRepository.add(newQuestion);
+                            UnitOfWork.save();
+                            UnitOfWork.QuizQuestionRepository.add(new QuizQuesitons
+                            {
+                                QuizId = quiz.Id,
+                                QuestionId = newQuestion.Id,
+                            });
+                            UnitOfWork.save();
+                            foreach (var item in Question.Choices)
+                            {
+                                Answer newAnswer = new Answer()
+                                {
+                                    Content = item.Choice,
+                                    IsCorrect = item.isCorrect,
+                                    QuestionId = newQuestion.Id
+                                };
+                                UnitOfWork.AnswerRepository.add(newAnswer);
+                                UnitOfWork.save();
+                            }
                         }
                     }
+                    return Ok(new 
+                    {
+                       msg ="done"
+                    });
                 }
             }
-            return Ok(ModelState);
+            return BadRequest(ModelState);
         }
 
     }
