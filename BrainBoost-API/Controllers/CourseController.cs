@@ -57,7 +57,7 @@ namespace BrainBoost_API.Controllers
             }
             return BadRequest(ModelState);
         }
-        [HttpGet("GetCourse/")]
+        [HttpGet("GetCourse/{id:int}")]
         public async Task<IActionResult> GetCourseDetails(int id)
         {
             if (ModelState.IsValid)

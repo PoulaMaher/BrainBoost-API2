@@ -46,10 +46,10 @@ namespace BrainBoost_API.Controllers
             if (ModelState.IsValid)
             {
                 List<Teacher> teachers = unitOfWork.TeacherRepository.GetAll().ToList();
-                List<TeacherDataDTO> teachersData = new List<TeacherDataDTO>();
+                List<TeacherAllDTO> teachersData = new List<TeacherAllDTO>();
                 foreach (Teacher teacher in teachers)
                 {
-                    TeacherDataDTO teacherData = mapper.Map<TeacherDataDTO>(teacher);
+                    TeacherAllDTO teacherData = mapper.Map<TeacherAllDTO>(teacher);
                     teachersData.Add(teacherData);
                 }
                 return Ok(teachersData);
@@ -161,10 +161,10 @@ namespace BrainBoost_API.Controllers
             if (ModelState.IsValid)
             {
                 List<Teacher> teachers = unitOfWork.TeacherRepository.GetTopTeachers();
-                List<TeacherDataDTO> teachersData = new List<TeacherDataDTO>();
+                List<ModTeacherDTO> teachersData = new List<ModTeacherDTO>();
                 foreach (Teacher teacher in teachers)
                 {
-                    TeacherDataDTO teacherData = mapper.Map<TeacherDataDTO>(teacher);
+                    ModTeacherDTO teacherData = mapper.Map<ModTeacherDTO>(teacher);
                     teachersData.Add(teacherData);
                 }
                 return Ok(teachersData);

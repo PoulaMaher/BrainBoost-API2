@@ -60,7 +60,7 @@ namespace BrainBoost_API
             builder.Entity<ApplicationRole>().HasQueryFilter(e => !e.IsDeleted);
             builder.Entity<ApplicationUser>().HasQueryFilter(e => !e.IsDeleted);
             builder.Entity<Category>().HasQueryFilter(e => !e.IsDeleted);
-            builder.Entity<Course>().HasQueryFilter(e => !e.IsDeleted);
+            builder.Entity<Course>().HasQueryFilter(e => !e.IsDeleted && e.IsApproved);
             builder.Entity<Enrollment>().HasQueryFilter(e => !e.IsDeleted);
             builder.Entity<FacebookUser>().HasQueryFilter(e => !e.IsDeleted);
             builder.Entity<Plan>().HasQueryFilter(e => !e.IsDeleted);
@@ -78,7 +78,7 @@ namespace BrainBoost_API
             builder.Entity<Earnings>().HasQueryFilter(e => !e.IsDeleted);
             builder.Entity<comment>().HasQueryFilter(e => !e.IsDeleted);
             builder.Entity<Admin>().HasQueryFilter(e => !e.IsDeleted);
-            builder.Entity<Course>().HasQueryFilter(e => e.IsApproved);
+            //builder.Entity<Course>().HasQueryFilter(e => e.IsApproved);
 
 
 
