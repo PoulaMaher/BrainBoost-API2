@@ -437,6 +437,21 @@
         "Name": "Rate",
         "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
+      },
+      {
+        "Name": "Durtion",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -531,6 +546,22 @@
   },
   {
     "ContainingType": "BrainBoost_API.Controllers.CourseController",
+    "Method": "GetCoursesByStdId",
+    "RelativePath": "api/Course/GetStudentCourses/{stdId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stdId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.CourseController",
     "Method": "GetTakingCourse",
     "RelativePath": "api/Course/GetTakingCourse/{id}",
     "HttpMethod": "GET",
@@ -549,6 +580,16 @@
     "ContainingType": "BrainBoost_API.Controllers.CourseController",
     "Method": "GetThreeCoursesForCategory",
     "RelativePath": "api/Course/GetThreeCoursesForCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.CourseController",
+    "Method": "GetTop4Crs",
+    "RelativePath": "api/Course/GetTop4Crs",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1003,21 +1044,62 @@
   },
   {
     "ContainingType": "BrainBoost_API.Controllers.StudentController",
-    "Method": "Update",
+    "Method": "UpdateStudent",
     "RelativePath": "api/Student/Update",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "studentDTO",
-        "Type": "BrainBoost_API.DTOs.Student.StudentDTO",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
+        "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "NumOfCrsEnrolled",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "NumOfCertificates",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "NumOfCrsSaved",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Fname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Lname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PictureUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.StudentController",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/Student/UpdatePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BrainBoost_API.DTOs.Student.UpdatePasswordRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
