@@ -1,7 +1,7 @@
 ﻿using BrainBoost_API.DTOs.video;
+using BrainBoost_API.DTOs.Video;
 using BrainBoost_API.Models;
 using BrainBoost_API.Repositories.Inplementation;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -70,6 +70,70 @@ namespace BrainBoost_API.Controllers
                 unitOfWork.save();
 
                 return Ok();
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpGet("getVideosByCourseId/{CourseId:int}")]
+        public async Task<IActionResult> getVideosByCourseId(int CourseId)
+        {
+            if (ModelState.IsValid)
+            {
+                List<Video> videos = unitOfWork.VideoRepository.GetList(v=>v.CrsId == CourseId).ToList();
+                return Ok(videos);
+            }
+            return BadRequest(ModelState);
+        }
+        [HttpPut("editVideo")]
+        public async Task<IActionResult> editVideo([FromForm]editedVideoDto editedVideo)
+        {
+            if (ModelState.IsValid)
+            {
+                Course retrievedCourse = unitOfWork.CourseRepository.Get(c=>c.Id==editedVideo.crsId);
+                Video retrievedVideo = unitOfWork.VideoRepository.Get(v => v.Id == editedVideo.id);
+                if (retrievedCourse != null && retrievedVideo != null)
+                {
+                    
+                    var uploads = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot\\{retrievedCourse.GetType().Name}\\{retrievedCourse.Name}\\chapter {retrievedVideo.Chapter}");
+                    if (!Directory.Exists(uploads))
+                        Directory.CreateDirectory(uploads);
+
+                    // Get all existing files in the directory and delete them
+                    var existingFiles = Directory.GetFiles(uploads);
+                    foreach (var file in existingFiles)
+                    {
+                        try
+                        {
+                            System.IO.File.Delete(file);
+                        }
+                        catch (IOException ioEx)
+                        {
+                            // Handle any exceptions if needed
+                            throw new IOException($"Error deleting existing file: {ioEx.Message}");
+                        }
+                    }
+
+                    // Save the new file
+                    var filePath = Path.Combine(uploads, editedVideo.videoFile.FileName);
+                    try
+                    {
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await editedVideo.videoFile.CopyToAsync(fileStream);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Handle any exceptions if needed
+                        throw new Exception($"Error saving file: {ex.Message}");
+                    }
+                    // Construct the video URL
+                    string videoUrl = "";
+                    videoUrl = $"http://localhost:43827/{retrievedCourse.GetType().Name}/{retrievedCourse.Name}/chapter {retrievedVideo.Chapter}/{editedVideo.videoFile.FileName}";
+                    retrievedVideo.VideoUrl = videoUrl;
+                    retrievedVideo.Title = editedVideo.title;
+                    unitOfWork.save();
+                }
+                return Ok(retrievedVideo);
             }
             return BadRequest(ModelState);
         }

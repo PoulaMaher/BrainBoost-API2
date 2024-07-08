@@ -228,7 +228,6 @@ namespace BrainBoost_API.Controllers
             return BadRequest(ModelState);
         }
         [HttpPost("AddVideo/{courseId:int}")]
-        //[RequestSizeLimit(512*1024*1024)]
         public async Task<IActionResult> AddVideo([FromForm] VideoDTO InsertedVideo, int courseId)
         {
             Course course = UnitOfWork.CourseRepository.GetNotApprovedCoursesbyid(courseId);
@@ -245,7 +244,7 @@ namespace BrainBoost_API.Controllers
                 {
                     await InsertedVideo.VideoFile.CopyToAsync(fileStream);
                 }
-                videoUrl = $"{Directory.GetCurrentDirectory()}/{course.GetType().Name}/{course.Name}/chapter {InsertedVideo.Chapter}/{InsertedVideo.VideoFile.FileName}";
+                videoUrl = $"http://localhost:43827/{course.GetType().Name}/{course.Name}/chapter {InsertedVideo.Chapter}/{InsertedVideo.VideoFile.FileName}";
                 Video newVideo = new Video()
                 {
                     Title = InsertedVideo.Title,

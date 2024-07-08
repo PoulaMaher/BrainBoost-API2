@@ -1,11 +1,23 @@
 {
   "Files": [
     {
-      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Morkos Maher\\ph.jpg",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 1\\Introduction to Internationalization in Angular.mp4",
+      "PackagePath": "staticwebassets\\Course\\europe\\chapter 1\\Introduction to Internationalization in Angular.mp4"
+    },
+    {
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Course\\europe\\chapter 2\\Meet - kaq-aahz-gfh - Awesome Screenshot.mp4",
+      "PackagePath": "staticwebassets\\Course\\europe\\chapter 2\\Meet - kaq-aahz-gfh - Awesome Screenshot.mp4"
+    },
+    {
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Course\\learn how to earn money\\Back ID.jpg",
+      "PackagePath": "staticwebassets\\Images\\Course\\learn how to earn money\\Back ID.jpg"
+    },
+    {
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Morkos Maher\\ph.jpg",
       "PackagePath": "staticwebassets\\Images\\Teacher\\Morkos Maher\\ph.jpg"
     },
     {
-      "Id": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Moudy Rasmy\\images.png",
+      "Id": "D:\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Moudy Rasmy\\images.png",
       "PackagePath": "staticwebassets\\Images\\Teacher\\Moudy Rasmy\\images.png"
     },
     {
