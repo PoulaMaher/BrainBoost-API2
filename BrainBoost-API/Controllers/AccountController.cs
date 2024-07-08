@@ -55,6 +55,7 @@ namespace BrainBoost_API.Controllers
                         case "Student":
                             var student = new Student
                             {
+                                AppUser = user,
                                 Fname = registerUser.FirstName,
                                 Lname = registerUser.LastName,
                                 UserId = user.Id,
@@ -65,6 +66,7 @@ namespace BrainBoost_API.Controllers
                         case "Teacher":
                             var teacher = new Teacher
                             {
+                                AppUser = user,
                                 Fname = registerUser.FirstName,
                                 Lname = registerUser.LastName,
                                 YearsOfExperience = 0,
@@ -127,8 +129,13 @@ namespace BrainBoost_API.Controllers
                         {
                             userClaims.Add(new Claim(ClaimTypes.Role, role));
                         }
-                        if (roles[0]=="Student") {
+                        if (roles[0] == "Student")
+                        {
                             roleId = this.UnitOfWork.StudentRepository.Get(T => T.UserId == userFromDb.Id).Id;
+                        }
+                        else if (roles[0] == "Admin")
+                        {
+                            roleId = this.UnitOfWork.AdminRepository.Get(A => A.UserId == userFromDb.Id).Id;
                         }
                         else
                         {

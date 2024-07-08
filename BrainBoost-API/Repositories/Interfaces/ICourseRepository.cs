@@ -7,7 +7,7 @@ namespace BrainBoost_API.Repositories.Inplementation
     {
         CourseDetailsDto getCrsDetails(Course crs, List<Review> review);
         CertificateDTO getCrsCertificate(Course crs, string s, string teacherName, double ?duration);
-        IEnumerable<Course> GetFilteredCourses(CourseFilterationDto filter, string? includeProps);
+        dynamic GetFilteredCourses(CourseFilterationDto filter, string? includeProps);
         List<Course> SearchCourses(string searchString, string? includeProps);
 
         CourseTakingDTO GetCourseTaking(Course takingcourse,IEnumerable<Course> relatedCourses,StudentEnrolledCourses states );

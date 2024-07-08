@@ -360,7 +360,7 @@
   {
     "ContainingType": "BrainBoost_API.Controllers.CourseController",
     "Method": "GetCourseDetails",
-    "RelativePath": "api/Course/GetCourse",
+    "RelativePath": "api/Course/GetCourse/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -368,7 +368,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
