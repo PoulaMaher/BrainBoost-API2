@@ -1404,6 +1404,37 @@
   },
   {
     "ContainingType": "BrainBoost_API.Controllers.VideoController",
+    "Method": "editVideo",
+    "RelativePath": "api/Video/editVideo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "videoFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "crsId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.VideoController",
     "Method": "GetCrsVideo",
     "RelativePath": "api/Video/GetCourseVideos/{id}",
     "HttpMethod": "GET",
@@ -1412,6 +1443,22 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BrainBoost_API.Controllers.VideoController",
+    "Method": "getVideosByCourseId",
+    "RelativePath": "api/Video/getVideosByCourseId/{CourseId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CourseId",
         "Type": "System.Int32",
         "IsRequired": true
       }
