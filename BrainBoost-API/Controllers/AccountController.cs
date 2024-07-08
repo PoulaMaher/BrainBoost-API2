@@ -129,8 +129,13 @@ namespace BrainBoost_API.Controllers
                         {
                             userClaims.Add(new Claim(ClaimTypes.Role, role));
                         }
-                        if (roles[0]=="Student") {
+                        if (roles[0] == "Student")
+                        {
                             roleId = this.UnitOfWork.StudentRepository.Get(T => T.UserId == userFromDb.Id).Id;
+                        }
+                        else if (roles[0] == "Admin")
+                        {
+                            roleId = this.UnitOfWork.AdminRepository.Get(A => A.UserId == userFromDb.Id).Id;
                         }
                         else
                         {

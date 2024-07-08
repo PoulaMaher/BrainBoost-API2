@@ -79,7 +79,7 @@ namespace BrainBoost_API.Controllers
             student.IsDeleted = true;
             UnitOfWork.StudentRepository.remove(student);
             UnitOfWork.save();
-            return Ok("Student Deleted Successfully!");
+            return Ok();
         }
         [HttpGet("GetTotalNumOfStudent")]
         public IActionResult GetTotalNumOfStudent()

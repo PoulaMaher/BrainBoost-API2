@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "7a1AmiwQD9TkyN6VhhrYmejcO8BrVNXQtFoukBgAQTk=",
+  "Source": "BrainBoost-API",
+  "BasePath": "_content/BrainBoost-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BrainBoost-API\\wwwroot",
+      "Source": "BrainBoost-API",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Morkos Maher\\ph.jpg",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "RelativePath": "Images/Teacher/Morkos Maher/ph.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Teacher\\Morkos Maher\\ph.jpg"
+    },
+    {
+      "Identity": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\Images\\Teacher\\Moudy Rasmy\\images.png",
+      "SourceId": "BrainBoost-API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ITI\\ITI Projects\\Graduation Project\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API\\wwwroot\\",
+      "BasePath": "_content/BrainBoost-API",
+      "RelativePath": "Images/Teacher/Moudy Rasmy/images.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Teacher\\Moudy Rasmy\\images.png"
+    }
+  ]
+}
