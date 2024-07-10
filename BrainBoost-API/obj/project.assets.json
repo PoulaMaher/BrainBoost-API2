@@ -9419,23 +9419,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BlueLap2\\.nuget\\packages\\": {},
+    "C:\\Users\\AL-Majd\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API.csproj",
+      "projectUniqueName": "E:\\ITI(PWD)\\e_learning_front\\المشروع\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API.csproj",
       "projectName": "BrainBoost-API",
-      "projectPath": "D:\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API.csproj",
-      "packagesPath": "C:\\Users\\BlueLap2\\.nuget\\packages\\",
-      "outputPath": "D:\\BrainBoost-API\\BrainBoost-API\\obj\\",
+      "projectPath": "E:\\ITI(PWD)\\e_learning_front\\المشروع\\BrainBoost-API\\BrainBoost-API\\BrainBoost-API.csproj",
+      "packagesPath": "C:\\Users\\AL-Majd\\.nuget\\packages\\",
+      "outputPath": "E:\\ITI(PWD)\\e_learning_front\\المشروع\\BrainBoost-API\\BrainBoost-API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\BlueLap2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AL-Majd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -9549,7 +9549,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
